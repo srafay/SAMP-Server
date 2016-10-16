@@ -105,7 +105,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
      return 0;
 }
 
-// ~~~~~~~~~~~~~ Z Commands ~~~~~~~~~~~~~~~~~~~
+							// ~~~~~~~~~~~~~ Z Commands ~~~~~~~~~~~~~~~~~~~
 
 CMD:healme(playerid, params[])
 {
@@ -167,7 +167,52 @@ CMD:vspawn(playerid, params[])
 	}
 }
 
-// ~~~~~~~~~~~~~ Z Commands ~~~~~~~~~~~~~~~~~~~
+CMD:gc(playerid, params[])
+{
+	new receiverID, money, message[100];
+	if(isnull(params))
+	{
+	    format(message, sizeof(message), "{FF0000}Usage: {FFFFFF}/gc id amount");
+		return SendClientMessage(playerid, 0xFF0000AA, message);
+	}
+	else
+	{
+	    sscanf(params, "ii", receiverID, money);
+	    if (receiverID == INVALID_PLAYER_ID)
+	    {
+	        format(message, sizeof(message), "{FF0000}Error! {FFFFFF}Invalid player id");
+			return SendClientMessage(playerid, 0xFF0000AA, message);
+		}
+		else
+		if ( money < GetPlayerMoney(playerid) )
+		{
+		    format(message, sizeof(message), "{FF0000}Error! {FFFFFF}You don't have enough money");
+		    return SendClientMessage(playerid, 0xFF0000AA, message);
+		}
+		else
+		{
+    	    new Float:X,Float:Y,Float:Z;
+		    GetPlayerPos(playerid, X, Y, Z);
+		    if (!IsPlayerInRangeOfPoint(receiverID, 100.0, X,Y,Z))
+		    {
+			    format(message, sizeof(message), "{FF0000}Error! {FFFFFF}Receiver is not close enough");
+			    return SendClientMessage(playerid, 0xFF0000AA, message);
+		    }
+		    else
+		    {
+			    GivePlayerMoney(receiverID, money);
+			    GivePlayerMoney(playerid, -money);
+			    format(message, sizeof(message), "{B40404}$%d transfered to ID %d", money, receiverID);
+			    SendClientMessage(playerid, 0x00B40404, message);
+   			    format(message, sizeof(message), "{B40404}ID. %d has transfered you $%d", playerid, money);
+			    SendClientMessage(receiverID, 0x00B40404, message);
+			    return 1;
+		    }
+		}
+	}
+}
+
+										// ~~~~~~~~~~~~~ Z Commands ~~~~~~~~~~~~~~~~~~~
 
 public OnPlayerSpawn(playerid)
 {
