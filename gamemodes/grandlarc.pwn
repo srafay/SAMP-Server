@@ -134,17 +134,22 @@ CMD:vspawn(playerid, params[])
 	else
 	{
 	    new color1=0,color2=1,Float:A,Float:X,Float:Y,Float:Z;
-	    new vehName;
+	    new vehID;
 	    if (isnull(params))
 	    {
 		    return SendClientMessage(playerid,0x00B40404, "Usage : /vspawn VehicleName");
 	    }
 	    else
 	    {
-			sscanf(params, "i", vehName);
+			sscanf(params, "i", vehID);
+            if(vehID < 400 || vehID > 611)
+			{
+			SendClientMessage(playerid, 0xFFFFFFFF, "{FF0000}>> [ERROR]: {FFFFFF}ID vehicle can not be below 400 or over 611!");
+			return 1;
+			}
 	        GetPlayerPos(playerid, X,Y,Z);
 	        GetPlayerFacingAngle(playerid, A);
-		    new carid = CreateVehicle(vehName, X,Y+5,Z,A,color1,color2,0);
+		    new carid = CreateVehicle(vehID, X,Y,Z,A,color1,color2,0);
 		    PutPlayerInVehicle(playerid, carid, 0);
 		    return SendClientMessage(playerid, 0x00B40404, "Vehicle spawned");
 	    }
