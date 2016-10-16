@@ -114,6 +114,13 @@ CMD:armour(playerid, params[])
 	SetPlayerArmour(playerid, 99.00);
 	return 1;
 }
+CMD:fixme(playerid, params[])
+{
+	if(!IsPlayerInAnyVehicle(playerid))
+	return SendClientMessage(playerid, 0x00FF00FF, "Error! not in any vehicle");
+	SetVehicleHealth(GetPlayerVehicleID(playerid),999.00);
+	return SendClientMessage(playerid, 0x00FF00FF, "Vehicle Fixed!");
+}
 
 public OnPlayerSpawn(playerid)
 {
