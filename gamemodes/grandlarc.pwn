@@ -133,25 +133,36 @@ CMD:vspawn(playerid, params[])
 	return SendClientMessage(playerid, 0xFF0000AA, "Invalid command!");
 	else
 	{
-	    new color1=0,color2=1,Float:A,Float:X,Float:Y,Float:Z;
+	    new string[100],color1=0,color2=1,Float:A,Float:X,Float:Y,Float:Z;
 	    new vehID;
 	    if (isnull(params))
 	    {
-		    return SendClientMessage(playerid,0x00B40404, "Usage : /vspawn VehicleName");
+		    return SendClientMessage(playerid,0x00B40404, "Usage : /vspawn VehicleName color1 color2");
 	    }
 	    else
 	    {
-			sscanf(params, "i", vehID);
+			sscanf(params, "iii", vehID, color1, color2);
             if(vehID < 400 || vehID > 611)
 			{
-			SendClientMessage(playerid, 0xFFFFFFFF, "{FF0000}>> [ERROR]: {FFFFFF}ID vehicle can not be below 400 or over 611!");
-			return 1;
+				format(string, sizeof(string),"{FF0000}>> [ERROR]: {FFFFFF}ID vehicle can not be below 400 or over 611!");
+				SendClientMessage(playerid, 0xFFFFFFFF, string);
+				return 1;
 			}
-	        GetPlayerPos(playerid, X,Y,Z);
-	        GetPlayerFacingAngle(playerid, A);
-		    new carid = CreateVehicle(vehID, X,Y,Z,A,color1,color2,0);
-		    PutPlayerInVehicle(playerid, carid, 0);
-		    return SendClientMessage(playerid, 0x00B40404, "Vehicle spawned");
+			else
+			if (color1 < -1 || color1 > 255 || color2 < -2 || color2 > 255)
+			{
+			    format(string, sizeof(string), "{FF0000}Error! {FFFFFF}color id's must be in between 0 and 255");
+			    SendClientMessage(playerid, 0xFFFFFF, string);
+			    return 1;
+			}
+			else
+			{
+		        GetPlayerPos(playerid, X,Y,Z);
+		        GetPlayerFacingAngle(playerid, A);
+			    new carid = CreateVehicle(vehID, X,Y,Z,A,color1,color2,0);
+			    PutPlayerInVehicle(playerid, carid, 0);
+			    return SendClientMessage(playerid, 0x00B40404, "Vehicle spawned");
+		    }
 	    }
 	}
 }
