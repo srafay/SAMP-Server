@@ -1,8 +1,10 @@
 // This is a comment
 // uncomment the line below if you want to write a filterscript
-//#define FILTERSCRIPT
+#define FILTERSCRIPT
 
 #include <a_samp>
+#include <streamer>
+#include <sscanf2>
 
 #if defined FILTERSCRIPT
 

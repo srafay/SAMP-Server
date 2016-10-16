@@ -12,6 +12,7 @@
 #include "../include/gl_spawns.inc"
 #include <streamer>
 #include <zcmd>
+#include <sscanf2>
 
 #pragma tabsize 0
 
@@ -103,6 +104,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
      }
      return 0;
 }
+
+// ~~~~~~~~~~~~~ Z Commands ~~~~~~~~~~~~~~~~~~~
+
 CMD:heal(playerid, params[])
 {
 	SetPlayerHealth(playerid, 100.0);
@@ -114,6 +118,7 @@ CMD:armour(playerid, params[])
 	SetPlayerArmour(playerid, 99.00);
 	return 1;
 }
+
 CMD:fixme(playerid, params[])
 {
 	if(!IsPlayerInAnyVehicle(playerid))
@@ -121,6 +126,33 @@ CMD:fixme(playerid, params[])
 	SetVehicleHealth(GetPlayerVehicleID(playerid),999.00);
 	return SendClientMessage(playerid, 0x00FF00FF, "Vehicle Fixed!");
 }
+
+CMD:vspawn(playerid, params[])
+{
+	if (!IsPlayerAdmin(playerid))
+	return SendClientMessage(playerid, 0x00FF00FF, "Invalid command!");
+	else
+	{
+	    new color1=0,color2=1,Float:A,Float:X,Float:Y,Float:Z;
+	    new vehName;
+	    if (!sscanf(params, "i", vehName))
+	    {
+	        GetPlayerPos(playerid, X,Y,Z);
+	        GetPlayerFacingAngle(playerid, A);
+		    new carid = CreateVehicle(vehName, X,Y+5,Z,A,color1,color2,0);
+		    PutPlayerInVehicle(playerid, carid, 0);
+		    return 1;
+	    }
+	    else
+	    {
+	   	    return SendClientMessage(playerid,0x00B40404, "Usage : /vspawn VehicleName");
+	    }
+	    return 1;
+	}
+	return 1;
+}
+
+// ~~~~~~~~~~~~~ Z Commands ~~~~~~~~~~~~~~~~~~~
 
 public OnPlayerSpawn(playerid)
 {
