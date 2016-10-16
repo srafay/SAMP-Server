@@ -179,7 +179,7 @@ CMD:reset(playerid, params[])
 		{
 		    if ( IsValidObject(id) )
 		    {
-				DestroyObject(id);
+				DestroyVehicle(id);
 				format(message, sizeof(message), "{B40404}You have destroyed vehicle #%d", id);
 				SendClientMessage(playerid, 0x00B40404, message);
 				return 1;
