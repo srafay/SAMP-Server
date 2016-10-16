@@ -110,46 +110,45 @@ public OnPlayerCommandText(playerid, cmdtext[])
 CMD:healme(playerid, params[])
 {
 	SetPlayerHealth(playerid, 100.0);
-	return SendClientMessage(playerid, 0x00FF00AA, "You have been healed");
+	return SendClientMessage(playerid, 0x00B40404, "You have been healed");
 }
 
 CMD:armour(playerid, params[])
 {
 	SetPlayerArmour(playerid, 99.00);
-	return SendClientMessage(playerid, 0x00FF00AA, "You have been given armour");
+	return SendClientMessage(playerid, 0x00B40404, "You have been given armour");
 }
 
 CMD:fixme(playerid, params[])
 {
 	if(!IsPlayerInAnyVehicle(playerid))
-	return SendClientMessage(playerid, 0x00FF00AA, "Error! not in any vehicle");
+	return SendClientMessage(playerid, 0xFF0000AA, "Error! not in any vehicle");
 	SetVehicleHealth(GetPlayerVehicleID(playerid),999.00);
-	return SendClientMessage(playerid, 0x00FF00FF, "Vehicle Fixed!");
+	return SendClientMessage(playerid, 0x00B40404, "Vehicle Fixed!");
 }
 
 CMD:vspawn(playerid, params[])
 {
 	if (!IsPlayerAdmin(playerid))
-	return SendClientMessage(playerid, 0x00FF00AA, "Invalid command!");
+	return SendClientMessage(playerid, 0xFF0000AA, "Invalid command!");
 	else
 	{
 	    new color1=0,color2=1,Float:A,Float:X,Float:Y,Float:Z;
 	    new vehName;
 	    if (isnull(params))
 	    {
-	    
+		    return SendClientMessage(playerid,0x00B40404, "Usage : /vspawn VehicleName");
 	    }
-	    if (!sscanf(params, "i", vehName))
+	    else
 	    {
+			sscanf(params, "i", vehName);
 	        GetPlayerPos(playerid, X,Y,Z);
 	        GetPlayerFacingAngle(playerid, A);
 		    new carid = CreateVehicle(vehName, X,Y+5,Z,A,color1,color2,0);
 		    PutPlayerInVehicle(playerid, carid, 0);
-		    return 1;
+		    return SendClientMessage(playerid, 0x00B40404, "Vehicle spawned");
 	    }
-	    return 1;
 	}
-	return 1;
 }
 
 // ~~~~~~~~~~~~~ Z Commands ~~~~~~~~~~~~~~~~~~~
