@@ -184,7 +184,7 @@ CMD:gc(playerid, params[])
 			return SendClientMessage(playerid, 0xFF0000AA, message);
 		}
 		else
-		if ( money < GetPlayerMoney(playerid) )
+		if ( GetPlayerMoney(playerid) < money )
 		{
 		    format(message, sizeof(message), "{FF0000}Error! {FFFFFF}You don't have enough money");
 		    return SendClientMessage(playerid, 0xFF0000AA, message);
