@@ -177,7 +177,7 @@ CMD:reset(playerid, params[])
 		sscanf(params, "si", command, id);
 	     if(!strcmp(command, "vehicle"))
 		{
-		    if ( IsValidObject(id) )
+		    if ( IsVehicleStreamedIn(id,playerid) )
 		    {
 				DestroyVehicle(id);
 				format(message, sizeof(message), "{B40404}You have destroyed vehicle #%d", id);
