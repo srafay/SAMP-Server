@@ -10,6 +10,7 @@
 #include <float>
 #include "../include/gl_common.inc"
 #include "../include/gl_spawns.inc"
+#include <streamer>
 
 #pragma tabsize 0
 
