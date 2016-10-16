@@ -45,7 +45,7 @@ new Text:txtLasVenturas;
 main()
 {
 	print("\n---------------------------------------");
-	print("Running Grand Larceny - by the SA-MP team\n");
+	print("Script Testing - by the [Lsrcr]Wajeeh\n");
 	print("---------------------------------------\n");
 }
 
@@ -53,7 +53,7 @@ main()
 
 public OnPlayerConnect(playerid)
 {
-	GameTextForPlayer(playerid,"~w~Grand Larceny",3000,4);
+	GameTextForPlayer(playerid,"~w~Script Testing Server",3000,4);
   	SendClientMessage(playerid,COLOR_WHITE,"Welcome to {88AA88}G{FFFFFF}rand {88AA88}L{FFFFFF}arceny");
   	
   	// class selection init vars
