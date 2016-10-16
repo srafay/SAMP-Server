@@ -177,6 +177,11 @@ CMD:reset(playerid, params[])
 		sscanf(params, "si", command, id);
 	     if(!strcmp(command, "vehicle"))
 		{
+		    if ( id == 0)
+		    {
+		        format (message, sizeof(message), "{B40404}Usage: {FFFFFF}/reset vehicle {FF0000}id");
+		        return SendClientMessage(playerid, 0x00B40404, message);
+		    }
 		    if ( IsVehicleStreamedIn(id,playerid) )
 		    {
 				DestroyVehicle(id);
