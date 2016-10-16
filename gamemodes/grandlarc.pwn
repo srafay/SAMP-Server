@@ -137,7 +137,7 @@ CMD:vspawn(playerid, params[])
 	    new vehID;
 	    if (isnull(params))
 	    {
-		    return SendClientMessage(playerid,0x00B40404, "Usage : /vspawn VehicleName color1 color2");
+		    return SendClientMessage(playerid,0x00B40404, "Usage : /vspawn {FF0000}VehicleID{FFFFFF} color1 color2");
 	    }
 	    else
 	    {
