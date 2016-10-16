@@ -11,6 +11,7 @@
 #include "../include/gl_common.inc"
 #include "../include/gl_spawns.inc"
 #include <streamer>
+#include <zcmd>
 
 #pragma tabsize 0
 
