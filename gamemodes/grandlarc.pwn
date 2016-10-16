@@ -79,6 +79,40 @@ public OnPlayerConnect(playerid)
 
 //----------------------------------------------------------
 
+public OnPlayerCommandText(playerid, cmdtext[])
+{
+     if(!strcmp(cmdtext, "/staff"))
+     {
+        new sendername[MAX_PLAYER_NAME];
+		new string[64 + MAX_PLAYER_NAME];
+		for(new i=0; i < MAX_PLAYERS; ++i)
+		{
+		    if(IsPlayerConnected(i))
+		    {
+		        if(IsPlayerAdmin(i))
+		        {
+		            GetPlayerName(i, sendername, sizeof(sendername));
+		            format(string, 100, "Online Admins : %i, %s", IsPlayerAdmin(i), sendername);
+		            SendClientMessage(playerid, 0x00FF00FF, string);
+		        }
+		    }
+		}
+		return 1;
+     }
+     return 0;
+}
+CMD:heal(playerid, params[])
+{
+	SetPlayerHealth(playerid, 100.0);
+	return 1;
+}
+
+CMD:armour(playerid, params[])
+{
+	SetPlayerArmour(playerid, 99.00);
+	return 1;
+}
+
 public OnPlayerSpawn(playerid)
 {
 	if(IsPlayerNPC(playerid)) return 1;
@@ -347,7 +381,7 @@ public OnPlayerRequestClass(playerid, classid)
 
 public OnGameModeInit()
 {
-	SetGameModeText("Grand Larceny");
+	SetGameModeText("SWAT Testing Server");
 	ShowPlayerMarkers(PLAYER_MARKERS_MODE_GLOBAL);
 	ShowNameTags(1);
 	SetNameTagDrawDistance(40.0);
@@ -525,5 +559,7 @@ public OnPlayerUpdate(playerid)
 
 	return 1;
 }
+
+
 
 //----------------------------------------------------------
