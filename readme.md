@@ -2,7 +2,9 @@
 
 - Contains following features with their scripts yet
 
-* healme
-* vspawn
-* fixme
-* armour
+** healme
+** vspawn (vehicle spawn)
+** fixme (fix vehicle)
+** armour 
+** gc (givecash)
+** reset vehicle (destroys vehicle for now)
