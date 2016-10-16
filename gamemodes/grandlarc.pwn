@@ -129,8 +129,8 @@ CMD:fixme(playerid, params[])
 
 CMD:vspawn(playerid, params[])
 {
-	if (!IsPlayerAdmin(playerid))
-	return SendClientMessage(playerid, 0xFF0000AA, "Invalid command!");
+ if (!IsPlayerAdmin(playerid))
+	return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
 	else
 	{
 	    new string[100],color1=0,color2=1,Float:A,Float:X,Float:Y,Float:Z;
@@ -164,6 +164,37 @@ CMD:vspawn(playerid, params[])
 			    return SendClientMessage(playerid, 0x00B40404, "Vehicle spawned");
 		    }
 	    }
+	}
+}
+
+CMD:reset(playerid, params[])
+{
+   	new id, command[20], message[100];
+	if (!IsPlayerAdmin(playerid))
+		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
+	else
+	{
+		sscanf(params, "si", command, id);
+	     if(!strcmp(command, "vehicle"))
+		{
+		    if ( IsValidObject(id) )
+		    {
+				DestroyObject(id);
+				format(message, sizeof(message), "{B40404}You have destroyed vehicle #%d", id);
+				SendClientMessage(playerid, 0x00B40404, message);
+				return 1;
+			}
+			else
+			{
+			    format(message, sizeof(message), "{FF0000}Error!{FFFFFF} Vehicle {FF0000}#%d {FFFFFF} not found", id);
+			    return SendClientMessage(playerid, 0x00B40404, message);
+			}
+		}
+		else
+		{
+		    format(message, sizeof(message), "{FF0000}Error! {FFFFFF}command {B40404}%s {FFFFFF}not found", command);
+		    return SendClientMessage(playerid, 0x00B40404, message);
+		}
 	}
 }
 
