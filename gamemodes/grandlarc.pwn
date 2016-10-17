@@ -250,16 +250,30 @@ CMD:gc(playerid, params[])
 
 CMD:get(playerid, params[])
 {
-	new command[30], Float:X, Float:Y, Float:Z, Float:A, message[100];
+	new command[30], Float:X, Float:Y, Float:Z, Float:A, message[300];
 	if (!IsPlayerAdmin(playerid))
 		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
+	else
+	if (isnull(params))
+	{
+	    format(message, sizeof(message), "Usage: {FFFFFF}/get angle");
+		return SendClientMessage(playerid, 0x00FF0000, message);
+	}
 	else
 	{
 		sscanf(params, "s", command);
 	    if(!strcmp(command, "angle"))
 	    {
-	    	GetPlayerFacingAngle(playerid, A);
-	    	format(message, sizeof(message), "Current Angle : {FF0000}%d", A);
+	    //	GetMyFacingAngle(A);
+	    	format(message, sizeof(message), "Current Angle : {FFFFFF}%f", A);
+	    	return SendClientMessage(playerid, 0x00B40404, message);
+	    }
+	    else
+	    if(!strcmp(command, "vehpos"))
+	    {
+			GetVehicleZAngle(GetPlayerVehicleID(playerid), A);
+		    GetVehiclePos(GetPlayerVehicleID(playerid), X, Y, Z);
+	    	format(message, sizeof(message), "X : %f, Y : %f, Z : %f, A : %f", X,Y,Z,A);
 	    	return SendClientMessage(playerid, 0x00B40404, message);
 	    }
 	    else
