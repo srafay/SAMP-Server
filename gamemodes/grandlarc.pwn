@@ -115,7 +115,7 @@ CMD:healme(playerid, params[])
 
 CMD:set(playerid, params[])
 {
-	new command[30], message[100], id, value;
+	new command[30], message[100], id, Float:value;
     if (!IsPlayerAdmin(playerid))
 		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
 	else
@@ -127,15 +127,9 @@ CMD:set(playerid, params[])
 	    }
 	    else
 		{
-	   		sscanf(params, "sii", command, id, value);
+	   		sscanf(params, "srf", command, id, value);
 			if(!strcmp(command, "armour"))
 			{
-			    if (id == 0)
-			    {
-				    format(message, sizeof(message), "Usage : {B40404}/set {B40404}armour{FF0000} id value");
-				    return SendClientMessage(playerid,0x00B40404, message);
-			    }
-			    else
 			    if (id == INVALID_PLAYER_ID)
 			    {
 			        format(message, sizeof(message), "Error! {FFFFFF}Invalid player id");
@@ -152,7 +146,7 @@ CMD:set(playerid, params[])
 			        SetPlayerArmour(id, value);
 			        new idName[30];
 					GetPlayerName(id, idName, 29);
-			        format(message, sizeof(message),"%d {FFFFFF}Armour given to %s{FF0000}[%d]", value, idName, id);
+			        format(message, sizeof(message),"%f {FFFFFF}Armour given to %s{FF0000}[%d]", value, idName, id);
 			        SendClientMessage(playerid, 0x00FF0000, message);
 			        format(message, sizeof(message),"Your armour is set to {FF0000}%d", value);
 			        return SendClientMessage(id, 0xFFFFFFFF, message);
