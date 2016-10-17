@@ -8,3 +8,5 @@
 * armour 
 * gc (givecash)
 * reset vehicle (destroys vehicle for now)
+* get angle (gives playerfacing angle)
+* get vehpos (gives veh position, XYZ along with its angle A)
