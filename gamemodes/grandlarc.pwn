@@ -248,6 +248,28 @@ CMD:gc(playerid, params[])
 	}
 }
 
+CMD:get(playerid, params[])
+{
+	new command[30], Float:X, Float:Y, Float:Z, Float:A, message[100];
+	if (!IsPlayerAdmin(playerid))
+		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
+	else
+	{
+		sscanf(params, "s", command);
+	    if(!strcmp(command, "angle"))
+	    {
+	    	GetPlayerFacingAngle(playerid, A);
+	    	format(message, sizeof(message), "Current Angle : {FF0000}%d", A);
+	    	return SendClientMessage(playerid, 0x00B40404, message);
+	    }
+	    else
+	    {
+	    format(message, sizeof(message), "%s {FFFFFF}is not defined yet", command);
+	    return SendClientMessage(playerid, 0x00FF0000, message);
+	    }
+	}
+}
+
 										// ~~~~~~~~~~~~~ Z Commands ~~~~~~~~~~~~~~~~~~~
 
 public OnPlayerSpawn(playerid)

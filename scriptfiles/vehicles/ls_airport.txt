@@ -1,2 +1,2 @@
 
-; vehID, X, Y, Z, rotation, color1, color2 ;
+; vehID, X, Y, Z, angle, color1, color2 ;
