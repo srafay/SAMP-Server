@@ -127,7 +127,7 @@ CMD:set(playerid, params[])
 	    }
 	    else
 		{
-	   		sscanf(params, "srd", command, id, value);
+	   		sscanf(params, "srf", command, id, value);
 			if(!strcmp(command, "armour"))
 			{
 			    if (id == INVALID_PLAYER_ID)
@@ -146,9 +146,9 @@ CMD:set(playerid, params[])
 			        SetPlayerArmour(id, value);
 			        new idName[30];
 					GetPlayerName(id, idName, 29);
-			        format(message, sizeof(message),"%d {FFFFFF}Armour given to %s{FF0000}[%d]", value, idName, id);
+			        format(message, sizeof(message),"%.0f {FFFFFF}Armour given to %s{FF0000}[%d]", value, idName, id);
 			        SendClientMessage(playerid, 0x00FF0000, message);
-			        format(message, sizeof(message),"Your armour is set to {FF0000}%d", value);
+			        format(message, sizeof(message),"Your armour is set to {FF0000}%.0f", value);
 			        return SendClientMessage(id, 0xFFFFFFFF, message);
 			    }
 			}
