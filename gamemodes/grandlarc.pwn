@@ -49,7 +49,7 @@ new Text:txtLasVenturas;
 
 public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2);
 
-public CreateVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2);
+public WriteVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2);
 
 // ---------------------------------------------------------
 
@@ -340,7 +340,7 @@ CMD:vspawnd(playerid, params[])
 		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
 	else
 	{
-        new id, Float:x, Float:y, Float:z, Float:a, color1, color2, success;
+        new id, Float:x, Float:y, Float:z, Float:a, color1, color2, returnID;
 		if (isnull(params))
 		{
 			return SendClientMessage(playerid, 0x00FF0000, "Usage : {FFFFFF}vspawnd vehicleid xVal yVal zVal aVal colorid1 colorid2");
@@ -348,17 +348,18 @@ CMD:vspawnd(playerid, params[])
 		else
 		{
 
-			sscanf(params, "iffffiiii", id, x, y, z, a, color1, color2);
-			success = SetVehSpawn(id, x, y, z, a, color1, color2);
-			if (success == 65535)
+			sscanf(params, "iffffii", id, x, y, z, a, color1, color2);
+			returnID = SetVehSpawn(id, x, y, z, a, color1, color2);
+			if (returnID == 65535)
 			{
 				return SendClientMessage(playerid, 0x00FF00AA, "Couldn't create a vehicle");
 			}
 			else
 			{
-			   	PutPlayerInVehicle(playerid, success, 0);
+			   	PutPlayerInVehicle(playerid, returnID, 0);
 				SendClientMessage(playerid, 0x00B40404, "Vehicle created");
-				CreateVehSpawn(id, x, y, z, a, color1, color2);
+						/*WRITE IN CUSTOM.txt*/
+				WriteVehSpawn(id, x, y, z, a, color1, color2);
 				return 1;
 			}
 		}
@@ -389,11 +390,11 @@ CMD:cmds(playerid, params[])
 public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2)
 {
 	new vehID;
-	vehID = CreateVehicle(modelid, x, y, z, angle, color1, color2);
+	vehID = CreateVehicle(modelid, x, y, z, angle, color1, color2, -1, 0);
 	return vehID;
 }
 
-public CreateVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2)
+public WriteVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2)
 {
 
 	new string[100], fileLoc[30];
