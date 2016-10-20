@@ -13,6 +13,7 @@
 #include <streamer>
 #include <zcmd>
 #include <sscanf2>
+#include <string>
 
 #pragma tabsize 0
 
@@ -295,7 +296,7 @@ CMD:get(playerid, params[])
 	else
 	if (isnull(params))
 	{
-	    format(message, sizeof(message), "Usage: {FFFFFF}/get angle");
+	    format(message, sizeof(message), "Usage: {FFFFFF}/get (angle/vehpos)");
 		return SendClientMessage(playerid, 0x00FF0000, message);
 	}
 	else
@@ -303,7 +304,7 @@ CMD:get(playerid, params[])
 		sscanf(params, "s", command);
 	    if(!strcmp(command, "angle"))
 	    {
-	    //	GetMyFacingAngle(A);
+			GetPlayerFacingAngle(playerid, A);
 	    	format(message, sizeof(message), "Current Angle : {FFFFFF}%f", A);
 	    	return SendClientMessage(playerid, 0x00B40404, message);
 	    }
@@ -328,7 +329,7 @@ CMD:cmds(playerid, params[])
 	new message[200];
 	if (IsPlayerAdmin(playerid))
 	{
-	    format(message, sizeof(message), "Commands : {FFFFFF}/staff, /healme, /fixme, /set armour, /vspawn, /reset vehicle, /gc \n/get (angle/vehpos)");
+	    format(message, sizeof(message), "Commands : {FFFFFF}/staff, /healme, /fixme, /set armour, /vspawn, /reset vehicle, /gc get (angle/vehpos)");
 		return SendClientMessage(playerid, 0x00FF0000, message);
 	}
 	else
