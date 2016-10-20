@@ -375,18 +375,33 @@ CMD:tp(playerid, params[])
 	{
 	    if ( isnull(params) )
 	    {
-	    	format(message, sizeof(message), "Usage : {FFFFFF}/tp (tocarid)");
+	    	format(message, sizeof(message), "Usage : {FFFFFF}/tp tocar id");
 	    	return SendClientMessage(playerid,0x00B40404, message);
 	    }
-	    new carID;
-	    sscanf(params, "i", carID);
-	    if (carID < 1 || carID > 65534)
+	    
+	    new command[100], carID;
+	    sscanf(params, "si", command, carID);
+	    if ( !strcmp(command, "tocar") )
 	    {
-	    	format(message, sizeof(message), "Usage : {FFFFFF}Invalid car ID");
-	    	return SendClientMessage(playerid,0x00FF0000, message);
+		    if (carID < 1 || carID > 65534)
+		    {
+		    	format(message, sizeof(message), "Usage : {FFFFFF}Invalid car ID");
+		    	return SendClientMessage(playerid,0x00FF0000, message);
+		    }
+		    else
+		    {
+		        new Float:X, Float:Y, Float:Z;
+		        GetVehiclePos(carID, X, Y, Z);
+				SetPlayerPos(playerid, X, Y, Z);
+		    	format(message, sizeof(message), "Teleported to car ID {FF0000}%d", carID);
+		    	return SendClientMessage(playerid,0x00FF0000, message);
+		    }
 	    }
 	    else
-	    return 1;
+	    {
+	    	format(message, sizeof(message), "No such command exits");
+	    	return SendClientMessage(playerid,-1, message);
+    	}
 	}
 }
 
