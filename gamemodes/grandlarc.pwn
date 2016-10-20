@@ -47,9 +47,9 @@ new Text:txtLasVenturas;
 // ---------------------------------------------------------
 // --------------------/* CUSTOM FUNCTION DECLARATIONS */ --------------
 
-public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, respawn_delay, addsiren);
+public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2);
 
-public CreateVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, respawn_delay, addsiren);
+public CreateVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2);
 
 // ---------------------------------------------------------
 
@@ -334,6 +334,37 @@ CMD:get(playerid, params[])
 	}
 }
 
+CMD:vspawnd(playerid, params[])
+{
+    if (!IsPlayerAdmin(playerid))
+		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
+	else
+	{
+        new id, Float:x, Float:y, Float:z, Float:a, color1, color2, success;
+		if (isnull(params))
+		{
+			return SendClientMessage(playerid, 0x00FF0000, "Usage : {FFFFFF}vspawnd vehicleid xVal yVal zVal aVal colorid1 colorid2");
+		}
+		else
+		{
+
+			sscanf(params, "iffffiiii", id, x, y, z, a, color1, color2);
+			success = SetVehSpawn(id, x, y, z, a, color1, color2);
+			if (success == 65535)
+			{
+				return SendClientMessage(playerid, 0x00FF00AA, "Couldn't create a vehicle");
+			}
+			else
+			{
+			   	PutPlayerInVehicle(playerid, success, 0);
+				SendClientMessage(playerid, 0x00B40404, "Vehicle created");
+				CreateVehSpawn(id, x, y, z, a, color1, color2);
+				return 1;
+			}
+		}
+	}
+}
+
 CMD:cmds(playerid, params[])
 {
  new message[200];
@@ -349,57 +380,26 @@ CMD:cmds(playerid, params[])
 	}
 }
 
-CMD:vspawnd(playerid, params[])
-{
-    if (!IsPlayerAdmin(playerid))
-		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
-	else
-	{
-        new id, Float:x, Float:y, Float:z, Float:a, color1, color2, rdelay, siren, success;
-		if (isnull(params))
-		{
-			return SendClientMessage(playerid, 0x00FF0000, "Usage : {FFFFFF}vspawnd vehicleid xVal yVal zVal aVal colorid1 colorid2 respawnDelay sirenVal");
-		}
-		else
-		{
-
-			sscanf(params, "iffffiiii", id, x, y, z, a, color1, color2, rdelay, siren);
-			success = SetVehSpawn(id, x, y, z, a, color1, color2, rdelay, siren);
-			if (success == 65535)
-			{
-				return SendClientMessage(playerid, 0x00FF00AA, "Couldn't create a vehicle");
-			}
-			else
-			{
-			   	PutPlayerInVehicle(playerid, success, 0);
-				SendClientMessage(playerid, 0x00B40404, "Vehicle created");
-				CreateVehSpawn(id, x, y, z, a, color1, color2, rdelay, siren);
-				return 1;
-			}
-		}
-	}
-}
-
 
 // ------------------------- /* Z COMMANDS */ ------------------------------------------
 										
 										
 // ------------------------- /* CUSTOM FUNCTIONS */ ------------------------------------
 
-public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, respawn_delay, addsiren)
+public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2)
 {
 	new vehID;
-	vehID = CreateVehicle(modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
+	vehID = CreateVehicle(modelid, x, y, z, angle, color1, color2);
 	return vehID;
 }
 
-public CreateVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, respawn_delay, addsiren)
+public CreateVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2)
 {
 
-	new string[300], fileLoc[30];
+	new string[100], fileLoc[30];
 	format(fileLoc, sizeof(fileLoc), "vehicles/custom.txt");
 	new File:pos=fopen(fileLoc, io_append);
-	format(string, sizeof(string), "%i,%f,%f,%f,%f,%i,%i,%i,%i ; \r\n", modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
+	format(string, sizeof(string), "%i,%f,%f,%f,%f,%i,%i ; \r\n", modelid, x, y, z, angle, color1, color2);
 	fwrite(pos, string);
 	fclose(pos);
 	return 1;
@@ -779,6 +779,7 @@ public OnGameModeInit()
 	// SPECIAL
 	total_vehicles_from_files += LoadStaticVehiclesFromFile("vehicles/trains.txt");
 	total_vehicles_from_files += LoadStaticVehiclesFromFile("vehicles/pilots.txt");
+	
     // CUSTOM
 	total_vehicles_from_files += LoadStaticVehiclesFromFile("vehicles/custom.txt");
 
