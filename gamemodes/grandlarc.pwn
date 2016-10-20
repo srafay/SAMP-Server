@@ -371,38 +371,67 @@ CMD:tp(playerid, params[])
 	new message[100];
     if (!IsPlayerAdmin(playerid))
 		return SendClientMessage(playerid, 0xFF0000AA, "You cannot teleport!");
-	else
-	{
 	    if ( isnull(params) )
 	    {
-	    	format(message, sizeof(message), "Usage : {FFFFFF}/tp tocar id");
+	    	format(message, sizeof(message), "Usage : {FFFFFF}/tp (tocar/toplayer) id");
 	    	return SendClientMessage(playerid,0x00B40404, message);
-	    }
-	    
-	    new command[100], carID;
-	    sscanf(params, "s[99]i", command, carID);
-	    if ( !strcmp(command, "tocar") )
-	    {
-		    if (carID < 1 || carID > 65534)
-		    {
-		    	format(message, sizeof(message), "Usage : {FFFFFF}Invalid car ID");
-		    	return SendClientMessage(playerid,0x00FF0000, message);
-		    }
-		    else
-		    {
-		        new Float:X, Float:Y, Float:Z;
-		        GetVehiclePos(carID, X, Y, Z);
-				SetPlayerPos(playerid, X, Y, Z+3);
-		    	format(message, sizeof(message), "Teleported to car ID {FF0000}%d", carID);
-		    	return SendClientMessage(playerid,0x00FF0000, message);
-		    }
 	    }
 	    else
 	    {
-	    	format(message, sizeof(message), "No such command exits");
-	    	return SendClientMessage(playerid,-1, message);
-    	}
-	}
+		    new command[100], ID=-1;
+		    sscanf(params, "s[99]i", command, ID);
+		    if ( !strcmp(command, "tocar") )
+		    {
+				if (ID == -1)
+				{
+			    	format(message, sizeof(message), "Usage : {FFFFFF}/tp tocar id");
+			    	return SendClientMessage(playerid,0x00B40404, message);
+				}
+			    if (ID < 1 || ID > 65534)
+			    {
+			    	format(message, sizeof(message), "Usage : {FFFFFF}Invalid car ID");
+			    	return SendClientMessage(playerid,0x00FF0000, message);
+			    }
+			    else
+			    {
+			        new Float:X, Float:Y, Float:Z;
+			        GetVehiclePos(ID, X, Y, Z);
+					SetPlayerPos(playerid, X, Y, Z+3);
+			    	format(message, sizeof(message), "Teleported to car ID {FF0000}%d", ID);
+			    	return SendClientMessage(playerid,0x00FF0000, message);
+			    }
+		    }
+		    else
+		    if ( !strcmp(command, "toplayer") )
+		    {
+		        if (ID == -1)
+		        {
+			    	format(message, sizeof(message), "Usage : {FFFFFF}/tp toplayer id");
+			    	return SendClientMessage(playerid,0x00B40404, message);
+		        }
+		        else
+		        if (ID != INVALID_PLAYER_ID && IsPlayerConnected(ID) || IsPlayerNPC(ID) )
+		        {
+			        new Float:X, Float:Y, Float:Z, name[27];
+			        GetPlayerPos(ID, X, Y, Z);
+			        SetPlayerPos(playerid, X+3, Y, Z);
+			        GetPlayerName(ID, name, 26);
+			    	format(message, sizeof(message), "Teleported to {FFFFFF}%s[{FF0000}%i{FFFFFF}]", name, ID);
+			    	return SendClientMessage(playerid,0xFFFFFFFF, message);
+		        }
+		        else
+		        {
+			    	format(message, sizeof(message), "Invalid Player ID");
+			    	return SendClientMessage(playerid,0x00FF0000, message);
+		        }
+		    }
+		    else
+		    {
+		    	format(message, sizeof(message), "No such command exits");
+		    	return SendClientMessage(playerid,-1, message);
+	    	}
+      }
+
 }
 
 CMD:cmds(playerid, params[])
@@ -410,7 +439,7 @@ CMD:cmds(playerid, params[])
  new message[200];
 	if (IsPlayerAdmin(playerid))
 	{
-	    format(message, sizeof(message), "Commands : {FFFFFF}/staff, /healme, /fixme, /set armour, /vspawn, /vspawnd, /reset vehicle, /gc get (angle/vehpos)");
+	    format(message, sizeof(message), "Commands : {FFFFFF}/staff, /healme, /fixme, /set armour, /vspawn, /vspawnd, /reset vehicle, /gc get (angle/vehpos) /tp (toplayer/tocar)");
 		return SendClientMessage(playerid, 0x00FF0000, message);
 	}
 	else
