@@ -138,7 +138,7 @@ CMD:set(playerid, params[])
 	    }
 	    else
 		{
-	   		sscanf(params, "srf", command, id, value);
+	   		sscanf(params, "srf", command[29], id, value);
 			if(!strcmp(command, "armour"))
 			{
 			    if (id == INVALID_PLAYER_ID)
@@ -224,7 +224,7 @@ CMD:reset(playerid, params[])
 		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
 	else
 	{
-		sscanf(params, "si", command, id);
+		sscanf(params, "si", command[19], id);
 	     if(!strcmp(command, "vehicle"))
 		{
 		    if ( id == 0)
@@ -311,7 +311,7 @@ CMD:get(playerid, params[])
 	}
 	else
 	{
-		sscanf(params, "s", command);
+		sscanf(params, "s", command[29]);
 	    if(!strcmp(command, "angle"))
 	    {
 			GetPlayerFacingAngle(playerid, A);
@@ -348,7 +348,7 @@ CMD:vspawnd(playerid, params[])
 		else
 		{
 
-			sscanf(params, "iffffiis", id, x, y, z, a, color1, color2, comments);
+			sscanf(params, "iffffiis", id, x, y, z, a, color1, color2, comments[49]);
 			returnID = SetVehSpawn(id, x, y, z, a, color1, color2,comments);
 			if (returnID == 65535)
 			{
@@ -380,7 +380,7 @@ CMD:tp(playerid, params[])
 	    }
 	    
 	    new command[100], carID;
-	    sscanf(params, "si", command, carID);
+	    sscanf(params, "si", command[99], carID);
 	    if ( !strcmp(command, "tocar") )
 	    {
 		    if (carID < 1 || carID > 65534)
@@ -392,7 +392,7 @@ CMD:tp(playerid, params[])
 		    {
 		        new Float:X, Float:Y, Float:Z;
 		        GetVehiclePos(carID, X, Y, Z);
-				SetPlayerPos(playerid, X, Y, Z);
+				SetPlayerPos(playerid, X, Y, Z+3);
 		    	format(message, sizeof(message), "Teleported to car ID {FF0000}%d", carID);
 		    	return SendClientMessage(playerid,0x00FF0000, message);
 		    }
