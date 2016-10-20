@@ -49,6 +49,8 @@ new Text:txtLasVenturas;
 
 public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, respawn_delay, addsiren);
 
+public CreateVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, respawn_delay, addsiren);
+
 // ---------------------------------------------------------
 
 main()
@@ -334,7 +336,7 @@ CMD:get(playerid, params[])
 
 CMD:cmds(playerid, params[])
 {
-	new message[200];
+ new message[200];
 	if (IsPlayerAdmin(playerid))
 	{
 	    format(message, sizeof(message), "Commands : {FFFFFF}/staff, /healme, /fixme, /set armour, /vspawn, /vspawnd, /reset vehicle, /gc get (angle/vehpos)");
@@ -387,6 +389,17 @@ public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, colo
 	new vehID;
 	vehID = CreateVehicle(modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
 	return vehID;
+}
+
+public CreateVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, respawn_delay, addsiren)
+{
+	new string[128], fileLoc[69];
+	format(fileLoc, sizeof(fileLoc), "../scriptfiles/vehicles/custom.txt");
+	new File:pos=fopen(fileLoc, io_append);
+	format(string, sizeof(string), "%i%f%f%f%f%i%i%i%i\n", modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
+	fwrite(pos, string);
+	fclose(pos);
+	return 1;
 }
 
 // ------------------------- /* CUSTOM FUNCTIONS */ ------------------------------------
