@@ -409,8 +409,8 @@ public CreateVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, c
 		new string[128];
 		GetPlayerPos(0, X, Y, Z);
         GetPlayerFacingAngle(0, Rotation);
-        new File:pos=fopen("example/example.txt", io_append);
-        format(string, 256, "doesThatWork(0, %f, %f, %f, %f, 0,0,0,0,0,0);\n", X, Y, Z,Rotation);
+        new File:pos=fopen("vehicles/custom.txt", io_append);
+        format(string, 256, "doesThatWork(0, %f, %f, %f, %f, 0,0,0,0,0,0);\r\n", X, Y, Z,Rotation);
         fwrite(pos, string);
         fclose(pos);
 }
