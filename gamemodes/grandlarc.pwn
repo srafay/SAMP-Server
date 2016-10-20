@@ -337,7 +337,7 @@ CMD:cmds(playerid, params[])
 	new message[200];
 	if (IsPlayerAdmin(playerid))
 	{
-	    format(message, sizeof(message), "Commands : {FFFFFF}/staff, /healme, /fixme, /set armour, /vspawn, /reset vehicle, /gc get (angle/vehpos)");
+	    format(message, sizeof(message), "Commands : {FFFFFF}/staff, /healme, /fixme, /set armour, /vspawn, /vspawnd, /reset vehicle, /gc get (angle/vehpos)");
 		return SendClientMessage(playerid, 0x00FF0000, message);
 	}
 	else
