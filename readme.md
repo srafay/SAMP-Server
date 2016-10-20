@@ -13,4 +13,4 @@
 * /set armour (admin command)
 * /vspawnd (Vehicle Spawn Dynamic - creates and saves spawn position and adds it to custom.txt in vehicles folder - comments also added for readability)
 * /cmds - for checking all the commands implemented on the server
-* /tp (_tocar_/_toplayer_) ID - Teleport command added for administrators and also for debugging
+* /tp (_tocar_/_toplayer_/_playerto_) ID - Teleport command added for administrators and also for debugging
