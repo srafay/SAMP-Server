@@ -372,7 +372,9 @@ CMD:vspawnd(playerid, params[])
 			else
 			{
 			   	PutPlayerInVehicle(playerid, success, 0);
-				return SendClientMessage(playerid, 0x00B40404, "Vehicle created");
+				SendClientMessage(playerid, 0x00B40404, "Vehicle created");
+				CreateVehSpawn(id, x, y, z, a, color1, color2, rdelay, siren);
+				return 1;
 			}
 		}
 	}
@@ -393,10 +395,10 @@ public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, colo
 
 public CreateVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, respawn_delay, addsiren)
 {
-	new string[128], fileLoc[69];
-	format(fileLoc, sizeof(fileLoc), "../scriptfiles/vehicles/custom.txt");
-	new File:pos=fopen(fileLoc, io_append);
-	format(string, sizeof(string), "%i%f%f%f%f%i%i%i%i\n", modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
+	new string[300], fileLoc[69];
+//	format(fileLoc, 256, "../scriptfiles/vehicles/custom.txt");
+	new File:pos=fopen("../scriptfiles/vehicles/custom.txt", io_append);
+	format(string, sizeof(string), "%i,%f,%f,%f,%f,%i,%i,%i,%i", modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
 	fwrite(pos, string);
 	fclose(pos);
 	return 1;
