@@ -5,7 +5,7 @@
 * /healme
 * /vspawn (vehicle spawn)
 * /fixme (fix vehicle)
-* ~~ /armour (removed from client side)
+* ~~/armour (removed from client side)~~
 * /gc (givecash)
 * /reset vehicle (destroys vehicle for now)
 * /get angle (gives playerfacing angle)
