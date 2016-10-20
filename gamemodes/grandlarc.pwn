@@ -26,6 +26,18 @@
 #define CITY_SAN_FIERRO 	1
 #define CITY_LAS_VENTURAS 	2
 
+// COLORS
+#define red "{FF0000}"
+#define purple "{9809B5}"
+#define blue "{3A24FF}"
+#define green "{008000}"
+#define yellow "{FFFF00}"
+#define black "{000000}"
+#define orange "{FFA500}"
+#define darkred "{8B0000}"
+#define cyan "{00FFFF}"
+#define white "{FFFFFF}"
+
 new total_vehicles_from_files=0;
 
 // Class selection globals
@@ -121,7 +133,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 CMD:healme(playerid, params[])
 {
 	SetPlayerHealth(playerid, 100.0);
-	return SendClientMessage(playerid, 0x00B40404, "You have been healed");
+	return SendClientMessage(playerid, 0xFFFFFF, "You have been healed");
 }
 
 CMD:set(playerid, params[])
@@ -368,7 +380,7 @@ CMD:vspawnd(playerid, params[])
 
 CMD:tp(playerid, params[])
 {
-	new message[100];
+	new message[150];
     if (!IsPlayerAdmin(playerid))
 		return SendClientMessage(playerid, 0xFF0000AA, "You cannot teleport!");
 	    if ( isnull(params) )
@@ -378,8 +390,8 @@ CMD:tp(playerid, params[])
 	    }
 	    else
 	    {
-		    new command[100], ID=-1;
-		    sscanf(params, "s[99]i", command, ID);
+		    new command[100], ID=-1, extraID=-1;
+		    sscanf(params, "s[99]ii", command, ID, extraID);
 		    if ( !strcmp(command, "tocar") )
 		    {
 				if (ID == -1)
@@ -426,12 +438,42 @@ CMD:tp(playerid, params[])
 		        }
 		    }
 		    else
+		    if (!strcmp(command, "playerto"))
+		    {
+		        if (( ID != INVALID_PLAYER_ID && IsPlayerConnected(ID) && !IsPlayerNPC(ID) ) && ( extraID != INVALID_PLAYER_ID && IsPlayerConnected(extraID) || IsPlayerNPC(extraID) ) )
+		        {
+			        new Float:X, Float:Y, Float:Z, name[27], adminName[27];
+			        GetPlayerPos(extraID, X, Y, Z);
+			        SetPlayerPos(ID, X+3, Y, Z);
+			        GetPlayerName(extraID, name, 26);
+			        GetPlayerName(playerid, adminName, 26);
+			    	format(message, sizeof(message), "You have been teleported to {FFFFFF}%s[{FF0000}%i{FFFFFFFF}] By {0x00B40404}%s[{FF0000}%i{FFFFFFFF}]", name, extraID, adminName, playerid);
+			    	return SendClientMessage(ID,0xFFFFFFFF, message);
+		        }
+		        else
+		        {
+			    	format(message, sizeof(message), "Usage : {FFFFFF}/tp playerto ID1 ID2");
+			    	SendClientMessage(playerid,0x00B40404, message);
+			    	format(message, sizeof(message), "ID's of both player to be teleported ({FF0000}ID1{FFFFFF}) and player to be teleported to ({FF0000}ID2{FFFFFF}) must be valid");
+			    	return SendClientMessage(playerid,0xFFFFFFFF, message);
+		        }
+		    }
+		    else
 		    {
 		    	format(message, sizeof(message), "No such command exits");
 		    	return SendClientMessage(playerid,-1, message);
 	    	}
       }
 
+}
+
+CMD:colortest(playerid, params[])
+{
+new string[300];
+format(string, 200, "%sred %sblue %sgreen %scyan %sdarkred %sorange %sblack", red, blue, green, cyan, darkred, orange, black);
+SendClientMessage(playerid, 0xFFFFFFFF, string);
+format(string, 200, "%swhite %syellow %sblue %spurple", white, yellow, blue, purple);
+return SendClientMessage(playerid, 0xFFFFFFFF, string);
 }
 
 CMD:cmds(playerid, params[])
@@ -472,7 +514,6 @@ public WriteVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, co
 	fwrite(pos, string);
 	fclose(pos);
 	return 1;
-	
 }
 
 // ------------------------- /* CUSTOM FUNCTIONS */ ------------------------------------
