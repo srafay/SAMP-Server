@@ -395,13 +395,24 @@ public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, colo
 
 public CreateVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, respawn_delay, addsiren)
 {
+/*   	SendClientMessageToAll(0x00B40404, "In function CreateVehSpawn, gl man!");
 	new string[300], fileLoc[69];
 //	format(fileLoc, 256, "../scriptfiles/vehicles/custom.txt");
 	new File:pos=fopen("../scriptfiles/vehicles/custom.txt", io_append);
 	format(string, sizeof(string), "%i,%f,%f,%f,%f,%i,%i,%i,%i", modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
+	SendClientMessageToAll(0x00B40404, string);
 	fwrite(pos, string);
 	fclose(pos);
 	return 1;
+*/
+		new Float:X,Float:Y,Float:Z,Float:Rotation;
+		new string[128];
+		GetPlayerPos(0, X, Y, Z);
+        GetPlayerFacingAngle(0, Rotation);
+        new File:pos=fopen("example/example.txt", io_append);
+        format(string, 256, "doesThatWork(0, %f, %f, %f, %f, 0,0,0,0,0,0);\n", X, Y, Z,Rotation);
+        fwrite(pos, string);
+        fclose(pos);
 }
 
 // ------------------------- /* CUSTOM FUNCTIONS */ ------------------------------------
