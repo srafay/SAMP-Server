@@ -30,13 +30,15 @@
 #define red "{FF0000}"
 #define purple "{9809B5}"
 #define blue "{3A24FF}"
-#define green "{008000}"
+#define darkgreen "{008000}"
+#define green "{1AF70F}"
 #define yellow "{FFFF00}"
 #define black "{000000}"
 #define orange "{FFA500}"
 #define darkred "{8B0000}"
 #define cyan "{00FFFF}"
 #define white "{FFFFFF}"
+#define gray "{D4D4D4}"
 
 new total_vehicles_from_files=0;
 
@@ -138,14 +140,17 @@ CMD:healme(playerid, params[])
 
 CMD:set(playerid, params[])
 {
-	new command[30], message[100], id, Float:value;
+	new command[30], message[100], id=-1, Float:value;
     if (!IsPlayerAdmin(playerid))
-		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
+    {
+        format(message, sizeof(message), "%sPermission Denied", red);
+		return SendClientMessage(playerid, 0xFFFFFFFF, message);
+	}
 	else
 	{
 	    if (isnull(params))
 	    {
-	        format(message, sizeof(message), "Usage : {B40404}/set {FF0000}(armour)");
+	        format(message, sizeof(message), "Usage : %s/set armour");
 		    return SendClientMessage(playerid,0xFFFFFFFF, message);
 	    }
 	    else
@@ -153,60 +158,79 @@ CMD:set(playerid, params[])
 	   		sscanf(params, "s[29]rf", command, id, value);
 			if(!strcmp(command, "armour"))
 			{
+			    if (id == -1)
+			    {
+			    	format(message, sizeof(message), "%sUsage : %s/set armour %sid", green, white, red);
+			    	return SendClientMessage(playerid,0xFFFFFFFF, message);
+			    }
+			    else
 			    if (id == INVALID_PLAYER_ID)
 			    {
-			        format(message, sizeof(message), "Error! {FFFFFF}Invalid player id");
-					return SendClientMessage(playerid, 0x00FF0000, message);
+			        format(message, sizeof(message), "%sError! %sInvalid player id", red, white);
+					return SendClientMessage(playerid, 0xFFFFFFFF, message);
 			    }
 			    else
 			    if (value<0 || value>100)
 			    {
-			        format(message, sizeof(message), "Armour value should be between {FF0000}0 {FFFFFF}and {FF0000}100");
-					return SendClientMessage(playerid, 0x00B40404, message);
+			        format(message, sizeof(message), "%sError! %sArmour value should be between %s0 %sand %s100", red, white, red, white, red);
+					return SendClientMessage(playerid, 0xFFFFFFFF, message);
 			    }
 			    else
 			    {
 			        SetPlayerArmour(id, value);
 			        new idName[30];
 					GetPlayerName(id, idName, 29);
-			        format(message, sizeof(message),"%.0f {FFFFFF}Armour given to %s{FF0000}[%d]", value, idName, id);
-			        SendClientMessage(playerid, 0x00FF0000, message);
-			        format(message, sizeof(message),"Your armour is set to {FF0000}%.0f", value);
+			        format(message, sizeof(message),"%s%.0f %sArmour given to %s[%s%d%s]", red, value, white, idName, red, id, white);
+			        SendClientMessage(playerid, 0xFFFFFFFF, message);
+			        format(message, sizeof(message),"Your armour is set to %s%.0f", red, value);
 			        return SendClientMessage(id, 0xFFFFFFFF, message);
 			    }
 			}
 			else
-			    return SendClientMessage(playerid, 0xFFFFFFFF, "command not set yet");
+			    return SendClientMessage(playerid, 0xFFFFFFFF, "Command not set yet");
 		}
 	}
 }
 
 CMD:fixme(playerid, params[])
 {
+	new message[100];
 	if(!IsPlayerInAnyVehicle(playerid))
-	return SendClientMessage(playerid, 0xFF0000AA, "Error! not in any vehicle");
-	SetVehicleHealth(GetPlayerVehicleID(playerid),999.00);
-	return SendClientMessage(playerid, 0x00B40404, "Vehicle Fixed!");
+	{
+	    format(message, sizeof(message), "%sError! %snot in any vehicle", red, white);
+		return SendClientMessage(playerid, 0xFFFFFFFF, message);
+	}
+	else
+	{
+		SetVehicleHealth(GetPlayerVehicleID(playerid),999.00);
+	    format(message, sizeof(message), "%sVehicle Fixed!", green);
+		return SendClientMessage(playerid, 0xFFFFFFFF, message);
+	}
 }
 
 CMD:vspawn(playerid, params[])
 {
  if (!IsPlayerAdmin(playerid))
-	return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
+	{
+	    new message[100];
+        format(message, sizeof(message), "%sPermission Denied", red);
+		return SendClientMessage(playerid, 0xFFFFFFFF, message);
+	}
 	else
 	{
 	    new string[100],color1=0,color2=1,Float:A,Float:X,Float:Y,Float:Z;
 	    new vehID;
 	    if (isnull(params))
 	    {
-		    return SendClientMessage(playerid,0xFFFFFFFF, "Usage : {B40404}/vspawn {FF0000}VehicleID{FFFFFF} color1 color2");
+	        format(string, sizeof(string), "%sUsage : %s/vspawn VehicleID color1 color2", green, white);
+		    return SendClientMessage(playerid,0xFFFFFFFF, string);
 	    }
 	    else
 	    {
 			sscanf(params, "iii", vehID, color1, color2);
             if(vehID < 400 || vehID > 611)
 			{
-				format(string, sizeof(string),"{FF0000}>> [ERROR]: {FFFFFF}ID vehicle can not be below 400 or over 611!");
+				format(string, sizeof(string),"%s[ERROR]: %sID vehicle can not be below 400 or over 611!", red, white);
 				SendClientMessage(playerid, 0xFFFFFFFF, string);
 				return 1;
 			}
@@ -214,7 +238,7 @@ CMD:vspawn(playerid, params[])
 			if (color1 < -1 || color1 > 255 || color2 < -2 || color2 > 255)
 			{
 			    format(string, sizeof(string), "{FF0000}Error! {FFFFFF}color id's must be in between 0 and 255");
-			    SendClientMessage(playerid, 0xFFFFFF, string);
+			    SendClientMessage(playerid, 0xFF000000, string);
 			    return 1;
 			}
 			else
@@ -233,7 +257,10 @@ CMD:reset(playerid, params[])
 {
    	new id, command[20], message[100];
 	if (!IsPlayerAdmin(playerid))
-		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
+	{
+        format(message, sizeof(message), "%sPermission Denied", red);
+		return SendClientMessage(playerid, 0xFFFFFFFF, message);
+	}
 	else
 	{
 		sscanf(params, "s[19]i", command, id);
@@ -314,7 +341,10 @@ CMD:get(playerid, params[])
 {
 	new command[30], Float:X, Float:Y, Float:Z, Float:A, message[300];
 	if (!IsPlayerAdmin(playerid))
-		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
+	{
+        format(message, sizeof(message), "%sPermission Denied", red);
+		return SendClientMessage(playerid, 0xFFFFFFFF, message);
+	}
 	else
 	if (isnull(params))
 	{
@@ -349,7 +379,11 @@ CMD:get(playerid, params[])
 CMD:vspawnd(playerid, params[])
 {
     if (!IsPlayerAdmin(playerid))
-		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
+    {
+	    new message[100];
+        format(message, sizeof(message), "%sPermission Denied", red);
+		return SendClientMessage(playerid, 0xFFFFFFFF, message);
+	}
 	else
 	{
         new id, Float:x, Float:y, Float:z, Float:a, color1, color2, comments[50], returnID;
@@ -382,10 +416,14 @@ CMD:tp(playerid, params[])
 {
 	new message[150];
     if (!IsPlayerAdmin(playerid))
+    {
+        format(message, sizeof(message), "%sPermission Denied", red);
+		SendClientMessage(playerid, 0xFFFFFFFF, message);
 		return SendClientMessage(playerid, 0xFF0000AA, "You cannot teleport!");
+	}
 	    if ( isnull(params) )
 	    {
-	    	format(message, sizeof(message), "Usage : {FFFFFF}/tp (tocar/toplayer) id");
+	    	format(message, sizeof(message), "Usage : {FFFFFF}/tp (tocar/toplayer/playerto) id");
 	    	return SendClientMessage(playerid,0x00B40404, message);
 	    }
 	    else
@@ -396,21 +434,21 @@ CMD:tp(playerid, params[])
 		    {
 				if (ID == -1)
 				{
-			    	format(message, sizeof(message), "Usage : {FFFFFF}/tp tocar id");
-			    	return SendClientMessage(playerid,0x00B40404, message);
+			    	format(message, sizeof(message), "%sUsage : %s/tp tocar %sid", green, white, red);
+			    	return SendClientMessage(playerid,0xFFFFFFFF, message);
 				}
 			    if (ID < 1 || ID > 65534)
 			    {
-			    	format(message, sizeof(message), "Usage : {FFFFFF}Invalid car ID");
-			    	return SendClientMessage(playerid,0x00FF0000, message);
+			    	format(message, sizeof(message), "%sError! %sInvalid car ID", red, white);
+			    	return SendClientMessage(playerid,0xFFFFFFFF, message);
 			    }
 			    else
 			    {
 			        new Float:X, Float:Y, Float:Z;
 			        GetVehiclePos(ID, X, Y, Z);
 					SetPlayerPos(playerid, X, Y, Z+3);
-			    	format(message, sizeof(message), "Teleported to car ID {FF0000}%d", ID);
-			    	return SendClientMessage(playerid,0x00FF0000, message);
+			    	format(message, sizeof(message), "%sTeleported to car ID %s%d", green, red, ID);
+			    	return SendClientMessage(playerid,0xFFFFFFFF, message);
 			    }
 		    }
 		    else
@@ -418,8 +456,8 @@ CMD:tp(playerid, params[])
 		    {
 		        if (ID == -1)
 		        {
-			    	format(message, sizeof(message), "Usage : {FFFFFF}/tp toplayer id");
-			    	return SendClientMessage(playerid,0x00B40404, message);
+			    	format(message, sizeof(message), "%sUsage : %s/tp toplayer %sid", green, white, red);
+			    	return SendClientMessage(playerid,0xFFFFFFFF, message);
 		        }
 		        else
 		        if (ID != INVALID_PLAYER_ID && IsPlayerConnected(ID) || IsPlayerNPC(ID) )
@@ -447,21 +485,21 @@ CMD:tp(playerid, params[])
 			        SetPlayerPos(ID, X+3, Y, Z);
 			        GetPlayerName(extraID, name, 26);
 			        GetPlayerName(playerid, adminName, 26);
-			    	format(message, sizeof(message), "You have been teleported to {FFFFFF}%s[{FF0000}%i{FFFFFFFF}] By {0x00B40404}%s[{FF0000}%i{FFFFFFFF}]", name, extraID, adminName, playerid);
+			    	format(message, sizeof(message), "%sYou have been teleported to %s[%i] By %s%s[%i]", gray, name, extraID, green, adminName, playerid);
 			    	return SendClientMessage(ID,0xFFFFFFFF, message);
 		        }
 		        else
 		        {
-			    	format(message, sizeof(message), "Usage : {FFFFFF}/tp playerto ID1 ID2");
-			    	SendClientMessage(playerid,0x00B40404, message);
-			    	format(message, sizeof(message), "ID's of both player to be teleported ({FF0000}ID1{FFFFFF}) and player to be teleported to ({FF0000}ID2{FFFFFF}) must be valid");
-			    	return SendClientMessage(playerid,0xFFFFFFFF, message);
+			    	format(message, sizeof(message), "%sUsage : %s/tp playerto %sID1 ID2", green, white, red);
+			    	SendClientMessage(playerid, 0xFFFFFFFF, message);
+			    	format(message, sizeof(message), "%sID's of both player to be teleported (%sID1%s) and player to be teleported to (%sID2%s) must be valid", white, red, white, red, white);
+			    	return SendClientMessage(playerid,0x00FF0000, message);
 		        }
 		    }
 		    else
 		    {
-		    	format(message, sizeof(message), "No such command exits");
-		    	return SendClientMessage(playerid,-1, message);
+		    	format(message, sizeof(message), "%sError! %sNo such command exits", red, white);
+		    	return SendClientMessage(playerid, 0xFFFFFFFF, message);
 	    	}
       }
 
