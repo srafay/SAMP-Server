@@ -338,11 +338,42 @@ CMD:cmds(playerid, params[])
 		return SendClientMessage(playerid, 0x00FF0000, message);
 	}
 }
+forward public SetVehSpawn(modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
+public SetVehSpawn(modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren)
+{
+	new vehID;
+	vehID = CreateVehicle(modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
+	return vehID;
+}
 
+CMD:vspawnd(playerid, params[])
+{
+        new id, Float:x, Float:y, Float:z, Float:a, color1, color2, rdelay, siren, success;
+		if (isnull(params))
+		{
+			return SendClientMessage(playerid, 0x00FF0000, "Usage : {FFFFFF}vspawnd vehicleid xVal yVal zVal aVal colorid1 colorid2 respawnDelay sirenVal");
+		}
+		else
+		{
+
+			sscanf(params, "iffffiiii", id, x, y, z, a, color1, color2, rdelay, siren);
+			success = CreateVehicle(id, x, y, z, a, color1, color2, rdelay, siren);
+			if (success == 65535)
+			{
+				return SendClientMessage(playerid, 0x00FF0000, "Couldn't create a vehicle");
+			}
+			else
+			{
+			   	PutPlayerInVehicle(playerid, success, 0);
+				return SendClientMessage(playerid, 0x00B40404, "Vehicle created");
+			}
+		}
+}
 
 
 										// ~~~~~~~~~~~~~ Z Commands ~~~~~~~~~~~~~~~~~~~
 										
+
 
 										
 
