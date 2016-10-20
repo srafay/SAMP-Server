@@ -366,6 +366,30 @@ CMD:vspawnd(playerid, params[])
 	}
 }
 
+CMD:tp(playerid, params[])
+{
+	new message[100];
+    if (!IsPlayerAdmin(playerid))
+		return SendClientMessage(playerid, 0xFF0000AA, "You cannot teleport!");
+	else
+	{
+	    if ( isnull(params) )
+	    {
+	    	format(message, sizeof(message), "Usage : {FFFFFF}/tp (tocarid)");
+	    	return SendClientMessage(playerid,0x00B40404, message);
+	    }
+	    new carID;
+	    sscanf(params, "i", carID);
+	    if (carID < 1 || carID > 65534)
+	    {
+	    	format(message, sizeof(message), "Usage : {FFFFFF}Invalid car ID");
+	    	return SendClientMessage(playerid,0x00FF0000, message);
+	    }
+	    else
+	    return 1;
+	}
+}
+
 CMD:cmds(playerid, params[])
 {
  new message[200];
