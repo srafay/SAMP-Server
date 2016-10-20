@@ -399,7 +399,7 @@ public CreateVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, c
 	new string[300], fileLoc[30];
 	format(fileLoc, sizeof(fileLoc), "vehicles/custom.txt");
 	new File:pos=fopen(fileLoc, io_append);
-	format(string, sizeof(string), "%i,%f,%f,%f,%f,%i,%i,%i,%i\r\n;", modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
+	format(string, sizeof(string), "%i,%f,%f,%f,%f,%i,%i,%i,%i;\r\n", modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
 	fwrite(pos, string);
 	fclose(pos);
 	return 1;
