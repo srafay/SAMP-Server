@@ -349,6 +349,10 @@ CMD:cmds(playerid, params[])
 
 CMD:vspawnd(playerid, params[])
 {
+    if (!IsPlayerAdmin(playerid))
+		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
+	else
+	{
         new id, Float:x, Float:y, Float:z, Float:a, color1, color2, rdelay, siren, success;
 		if (isnull(params))
 		{
@@ -361,7 +365,7 @@ CMD:vspawnd(playerid, params[])
 			success = SetVehSpawn(id, x, y, z, a, color1, color2, rdelay, siren);
 			if (success == 65535)
 			{
-				return SendClientMessage(playerid, 0x00FF0000, "Couldn't create a vehicle");
+				return SendClientMessage(playerid, 0x00FF00AA, "Couldn't create a vehicle");
 			}
 			else
 			{
@@ -369,6 +373,7 @@ CMD:vspawnd(playerid, params[])
 				return SendClientMessage(playerid, 0x00B40404, "Vehicle created");
 			}
 		}
+	}
 }
 
 
