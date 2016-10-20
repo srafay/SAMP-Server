@@ -43,6 +43,14 @@ new Text:txtLasVenturas;
 
 //----------------------------------------------------------
 
+
+// ---------------------------------------------------------
+// --------------------/* CUSTOM FUNCTION DECLARATIONS */ --------------
+
+public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, respawn_delay, addsiren);
+
+// ---------------------------------------------------------
+
 main()
 {
 	print("\n---------------------------------------");
@@ -106,7 +114,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
      return 0;
 }
 
-							// ~~~~~~~~~~~~~ Z Commands ~~~~~~~~~~~~~~~~~~~
+// ------------------------- /* Z COMMANDS */ ------------------------------------------
 
 CMD:healme(playerid, params[])
 {
@@ -338,13 +346,6 @@ CMD:cmds(playerid, params[])
 		return SendClientMessage(playerid, 0x00FF0000, message);
 	}
 }
-forward public SetVehSpawn(modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
-public SetVehSpawn(modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren)
-{
-	new vehID;
-	vehID = CreateVehicle(modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
-	return vehID;
-}
 
 CMD:vspawnd(playerid, params[])
 {
@@ -357,7 +358,7 @@ CMD:vspawnd(playerid, params[])
 		{
 
 			sscanf(params, "iffffiiii", id, x, y, z, a, color1, color2, rdelay, siren);
-			success = CreateVehicle(id, x, y, z, a, color1, color2, rdelay, siren);
+			success = SetVehSpawn(id, x, y, z, a, color1, color2, rdelay, siren);
 			if (success == 65535)
 			{
 				return SendClientMessage(playerid, 0x00FF0000, "Couldn't create a vehicle");
@@ -371,11 +372,21 @@ CMD:vspawnd(playerid, params[])
 }
 
 
-										// ~~~~~~~~~~~~~ Z Commands ~~~~~~~~~~~~~~~~~~~
+// ------------------------- /* Z COMMANDS */ ------------------------------------------
+										
+										
+// ------------------------- /* CUSTOM FUNCTIONS */ ------------------------------------
+
+public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, respawn_delay, addsiren)
+{
+	new vehID;
+	vehID = CreateVehicle(modelid, x, y, z, angle, color1, color2, respawn_delay, addsiren);
+	return vehID;
+}
+
+// ------------------------- /* CUSTOM FUNCTIONS */ ------------------------------------
 										
 
-
-										
 
 public OnPlayerSpawn(playerid)
 {
