@@ -11,3 +11,5 @@
 * /get angle (gives playerfacing angle)
 * /get vehpos (returns veh position, XYZ along with its angle A)
 * /set armour (admin command)
+* /vspawnd (Vehicle Spawn Dynamic - creates and saves spawn position and adds it to custom.txt in vehicles folder - comments also added for readability)
+* /cmds - for checking all the commands implemented on the server
