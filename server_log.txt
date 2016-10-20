@@ -5616,3 +5616,130 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [01:40:25] sscanf warning: Strings without a length are deprecated, please add a destination size.
 [01:40:35] sscanf warning: Strings without a length are deprecated, please add a destination size.
 [01:40:38] sscanf warning: Strings without a length are deprecated, please add a destination size.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[08:59:39] 
+[08:59:39] Server Plugins
+[08:59:39] --------------
+[08:59:39]  Loading plugin: Whirlpool
+[08:59:39]  
+[08:59:39]  ==================
+[08:59:39]  
+[08:59:39]   Whirlpool loaded
+[08:59:39]  
+[08:59:39]  ==================
+[08:59:39]  
+[08:59:39]   Loaded.
+[08:59:39]  Loading plugin: streamer
+[08:59:39] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[08:59:39]   Loaded.
+[08:59:39]  Loading plugin: sscanf
+[08:59:39] 
+
+[08:59:39]  ===============================
+
+[08:59:39]       sscanf plugin loaded.     
+
+[08:59:39]    (c) 2009 Alex "Y_Less" Cole
+
+[08:59:39]    0.3d-R2 500 Players "dnee"
+
+[08:59:39]  ===============================
+
+[08:59:39]   Loaded.
+[08:59:39]  Loaded 3 plugins.
+
+[08:59:39] 
+[08:59:39] Filterscripts
+[08:59:39] ---------------
+[08:59:39]   Loading filterscript 'gl_actions.amx'...
+[08:59:39]   Loading filterscript 'gl_realtime.amx'...
+[08:59:39]   Loading filterscript 'gl_property.amx'...
+[08:59:39] 
+-----------------------------------
+[08:59:39] Grand Larceny Property Filterscript		
+[08:59:39] -----------------------------------
+
+[08:59:39]   Loading filterscript 'gl_mapicon.amx'...
+[08:59:39]   Loading filterscript 'ls_elevator.amx'...
+[08:59:39]   Loading filterscript 'attachments.amx'...
+[08:59:39]   Loading filterscript 'skinchanger.amx'...
+[08:59:39] 
+--Admin Player Skin Changer Loaded
+
+[08:59:39]   Loading filterscript 'vspawner.amx'...
+[08:59:39] 
+--Admin Vehicle Spawner Loaded
+
+[08:59:39]   Loading filterscript 'ls_mall.amx'...
+[08:59:39]   Loading filterscript 'ls_beachside.amx'...
+[08:59:39] 
+
+[08:59:39]   |---------------------------------------------------
+[08:59:39]   |--- LS BeachSide Filterscript
+[08:59:39]   |--  Script v1.03
+[08:59:39]   |--  19th April 2015
+[08:59:39]   |---------------------------------------------------
+[08:59:39]   |--  LS BeachSide Building Elevator created
+[08:59:39]   |---------------------------------------------------
+[08:59:39]   Loaded 10 filterscripts.
+
+[08:59:39] Loaded 3 vehicles from: vehicles/trains.txt
+[08:59:39] Loaded 3 vehicles from: vehicles/pilots.txt
+[08:59:39] Loaded 15 vehicles from: vehicles/lv_law.txt
+[08:59:39] Loaded 39 vehicles from: vehicles/lv_airport.txt
+[08:59:39] Loaded 255 vehicles from: vehicles/lv_gen.txt
+[08:59:39] Loaded 38 vehicles from: vehicles/sf_law.txt
+[08:59:39] Loaded 35 vehicles from: vehicles/sf_airport.txt
+[08:59:39] Loaded 353 vehicles from: vehicles/sf_gen.txt
+[08:59:39] Loaded 24 vehicles from: vehicles/ls_law.txt
+[08:59:39] Loaded 0 vehicles from: vehicles/ls_airport.txt
+[08:59:39] Loaded 98 vehicles from: vehicles/ls_gen_inner.txt
+[08:59:39] Loaded 389 vehicles from: vehicles/ls_gen_outer.txt
+[08:59:39] Loaded 71 vehicles from: vehicles/whetstone.txt
+[08:59:39] Loaded 5 vehicles from: vehicles/bone.txt
+[08:59:39] Loaded 61 vehicles from: vehicles/flint.txt
+[08:59:39] Loaded 96 vehicles from: vehicles/tierra.txt
+[08:59:39] Loaded 96 vehicles from: vehicles/red_county.txt
+[08:59:39] Total vehicles from files: 1581
+[08:59:39] Reading File: blank
+[08:59:39] Reading File: properties/houses.txt
+[08:59:39] Reading File: properties/businesses.txt
+[08:59:39] Reading File: properties/banks.txt
+[08:59:39] Reading File: properties/police.txt
+[08:59:39] 
+---------------------------------------
+[08:59:39] Script Testing - by the [Lsrcr]Wajeeh
+
+[08:59:39] ---------------------------------------
+
+[08:59:39] Number of vehicle models: 169
+[09:00:00] [connection] 192.168.0.100:51070 requests connection cookie.
+[09:00:01] [connection] incoming connection: 192.168.0.100:51070 id: 0
+[09:00:01] [join] [Lsrcr]Wajeeh has joined the server (0:192.168.0.100)
+[09:00:42] RCON (In-Game): Player #0 ([Lsrcr]Wajeeh) has logged in.
+[09:00:56] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:01:05] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:01:07] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:01:08] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:01:12] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:01:15] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:02:56] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:02:58] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:03:01] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:03:08] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:03:13] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:03:15] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:03:40] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:03:48] sscanf warning: Strings without a length are deprecated, please add a destination size.
+[09:04:05] sscanf warning: Strings without a length are deprecated, please add a destination size.
