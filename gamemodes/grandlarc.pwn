@@ -47,9 +47,9 @@ new Text:txtLasVenturas;
 // ---------------------------------------------------------
 // --------------------/* CUSTOM FUNCTION DECLARATIONS */ --------------
 
-public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2);
+public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, comments[]);
 
-public WriteVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2);
+public WriteVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, comments[]);
 
 // ---------------------------------------------------------
 
@@ -340,16 +340,16 @@ CMD:vspawnd(playerid, params[])
 		return SendClientMessage(playerid, 0xFF0000AA, "Permission Denied!");
 	else
 	{
-        new id, Float:x, Float:y, Float:z, Float:a, color1, color2, returnID;
+        new id, Float:x, Float:y, Float:z, Float:a, color1, color2, comments[50], returnID;
 		if (isnull(params))
 		{
-			return SendClientMessage(playerid, 0x00FF0000, "Usage : {FFFFFF}vspawnd vehicleid xVal yVal zVal aVal colorid1 colorid2");
+			return SendClientMessage(playerid, 0x00FF0000, "Usage : {FFFFFF}vspawnd vehicleid xVal yVal zVal aVal colorid1 colorid2 comments");
 		}
 		else
 		{
 
-			sscanf(params, "iffffii", id, x, y, z, a, color1, color2);
-			returnID = SetVehSpawn(id, x, y, z, a, color1, color2);
+			sscanf(params, "iffffiis", id, x, y, z, a, color1, color2, comments);
+			returnID = SetVehSpawn(id, x, y, z, a, color1, color2,comments);
 			if (returnID == 65535)
 			{
 				return SendClientMessage(playerid, 0x00FF00AA, "Couldn't create a vehicle");
@@ -359,7 +359,7 @@ CMD:vspawnd(playerid, params[])
 			   	PutPlayerInVehicle(playerid, returnID, 0);
 				SendClientMessage(playerid, 0x00B40404, "Vehicle created");
 						/*WRITE IN CUSTOM.txt*/
-				WriteVehSpawn(id, x, y, z, a, color1, color2);
+				WriteVehSpawn(id, x, y, z, a, color1, color2, comments);
 				return 1;
 			}
 		}
@@ -387,20 +387,20 @@ CMD:cmds(playerid, params[])
 										
 // ------------------------- /* CUSTOM FUNCTIONS */ ------------------------------------
 
-public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2)
+public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, comments[])
 {
 	new vehID;
 	vehID = CreateVehicle(modelid, x, y, z, angle, color1, color2, -1, 0);
 	return vehID;
 }
 
-public WriteVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2)
+public WriteVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, comments[])
 {
 
 	new string[100], fileLoc[30];
 	format(fileLoc, sizeof(fileLoc), "vehicles/custom.txt");
 	new File:pos=fopen(fileLoc, io_append);
-	format(string, sizeof(string), "%i,%f,%f,%f,%f,%i,%i ; \r\n", modelid, x, y, z, angle, color1, color2);
+	format(string, sizeof(string), "%i,%f,%f,%f,%f,%i,%i ; %s\r\n", modelid, x, y, z, angle, color1, color2, comments);
 	fwrite(pos, string);
 	fclose(pos);
 	return 1;
