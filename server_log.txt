@@ -13103,3 +13103,2163 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [20:32:59] [connection] incoming connection: 192.168.0.100:61523 id: 0
 [20:32:59] [join] [Lsrcr]Wajeeh has joined the server (0:192.168.0.100)
 [20:33:04] RCON (In-Game): Player #0 ([Lsrcr]Wajeeh) has logged in.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:04:34] 
+[20:04:34] Server Plugins
+[20:04:34] --------------
+[20:04:34]  Loading plugin: Whirlpool
+[20:04:34]  
+[20:04:34]  ==================
+[20:04:34]  
+[20:04:34]   Whirlpool loaded
+[20:04:34]  
+[20:04:34]  ==================
+[20:04:34]  
+[20:04:34]   Loaded.
+[20:04:34]  Loading plugin: streamer
+[20:04:34] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:04:34]   Loaded.
+[20:04:34]  Loading plugin: sscanf
+[20:04:34] 
+
+[20:04:34]  ===============================
+
+[20:04:34]       sscanf plugin loaded.     
+
+[20:04:34]    (c) 2009 Alex "Y_Less" Cole
+
+[20:04:34]    0.3d-R2 500 Players "dnee"
+
+[20:04:34]  ===============================
+
+[20:04:34]   Loaded.
+[20:04:34]  Loaded 3 plugins.
+
+[20:04:34] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:04:34] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:04:37] 
+[20:04:37] Server Plugins
+[20:04:37] --------------
+[20:04:37]  Loading plugin: Whirlpool
+[20:04:37]  
+[20:04:37]  ==================
+[20:04:37]  
+[20:04:37]   Whirlpool loaded
+[20:04:37]  
+[20:04:37]  ==================
+[20:04:37]  
+[20:04:37]   Loaded.
+[20:04:37]  Loading plugin: streamer
+[20:04:37] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:04:37]   Loaded.
+[20:04:37]  Loading plugin: sscanf
+[20:04:37] 
+
+[20:04:37]  ===============================
+
+[20:04:37]       sscanf plugin loaded.     
+
+[20:04:37]    (c) 2009 Alex "Y_Less" Cole
+
+[20:04:37]    0.3d-R2 500 Players "dnee"
+
+[20:04:37]  ===============================
+
+[20:04:37]   Loaded.
+[20:04:37]  Loaded 3 plugins.
+
+[20:04:37] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:04:37] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:04:38] 
+[20:04:38] Server Plugins
+[20:04:38] --------------
+[20:04:38]  Loading plugin: Whirlpool
+[20:04:38]  
+[20:04:38]  ==================
+[20:04:38]  
+[20:04:38]   Whirlpool loaded
+[20:04:38]  
+[20:04:38]  ==================
+[20:04:38]  
+[20:04:38]   Loaded.
+[20:04:38]  Loading plugin: streamer
+[20:04:38] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:04:38]   Loaded.
+[20:04:38]  Loading plugin: sscanf
+[20:04:38] 
+
+[20:04:38]  ===============================
+
+[20:04:38]       sscanf plugin loaded.     
+
+[20:04:38]    (c) 2009 Alex "Y_Less" Cole
+
+[20:04:38]    0.3d-R2 500 Players "dnee"
+
+[20:04:38]  ===============================
+
+[20:04:38]   Loaded.
+[20:04:38]  Loaded 3 plugins.
+
+[20:04:38] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:04:38] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:04:38] 
+[20:04:38] Server Plugins
+[20:04:38] --------------
+[20:04:38]  Loading plugin: Whirlpool
+[20:04:38]  
+[20:04:38]  ==================
+[20:04:38]  
+[20:04:38]   Whirlpool loaded
+[20:04:38]  
+[20:04:38]  ==================
+[20:04:38]  
+[20:04:38]   Loaded.
+[20:04:38]  Loading plugin: streamer
+[20:04:38] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:04:38]   Loaded.
+[20:04:38]  Loading plugin: sscanf
+[20:04:38] 
+
+[20:04:38]  ===============================
+
+[20:04:38]       sscanf plugin loaded.     
+
+[20:04:38]    (c) 2009 Alex "Y_Less" Cole
+
+[20:04:38]    0.3d-R2 500 Players "dnee"
+
+[20:04:38]  ===============================
+
+[20:04:38]   Loaded.
+[20:04:38]  Loaded 3 plugins.
+
+[20:04:38] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:04:38] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:04:39] 
+[20:04:39] Server Plugins
+[20:04:39] --------------
+[20:04:39]  Loading plugin: Whirlpool
+[20:04:39]  
+[20:04:39]  ==================
+[20:04:39]  
+[20:04:39]   Whirlpool loaded
+[20:04:39]  
+[20:04:39]  ==================
+[20:04:39]  
+[20:04:39]   Loaded.
+[20:04:39]  Loading plugin: streamer
+[20:04:39] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:04:39]   Loaded.
+[20:04:39]  Loading plugin: sscanf
+[20:04:39] 
+
+[20:04:39]  ===============================
+
+[20:04:39]       sscanf plugin loaded.     
+
+[20:04:39]    (c) 2009 Alex "Y_Less" Cole
+
+[20:04:39]    0.3d-R2 500 Players "dnee"
+
+[20:04:39]  ===============================
+
+[20:04:39]   Loaded.
+[20:04:39]  Loaded 3 plugins.
+
+[20:04:39] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:04:39] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:04:40] 
+[20:04:40] Server Plugins
+[20:04:40] --------------
+[20:04:40]  Loading plugin: Whirlpool
+[20:04:40]  
+[20:04:40]  ==================
+[20:04:40]  
+[20:04:40]   Whirlpool loaded
+[20:04:40]  
+[20:04:40]  ==================
+[20:04:40]  
+[20:04:40]   Loaded.
+[20:04:40]  Loading plugin: streamer
+[20:04:40] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:04:40]   Loaded.
+[20:04:40]  Loading plugin: sscanf
+[20:04:40] 
+
+[20:04:40]  ===============================
+
+[20:04:40]       sscanf plugin loaded.     
+
+[20:04:40]    (c) 2009 Alex "Y_Less" Cole
+
+[20:04:40]    0.3d-R2 500 Players "dnee"
+
+[20:04:40]  ===============================
+
+[20:04:40]   Loaded.
+[20:04:40]  Loaded 3 plugins.
+
+[20:04:40] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:04:40] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:29] 
+[20:21:29] Server Plugins
+[20:21:29] --------------
+[20:21:29]  Loading plugin: Whirlpool
+[20:21:29]  
+[20:21:29]  ==================
+[20:21:29]  
+[20:21:29]   Whirlpool loaded
+[20:21:29]  
+[20:21:29]  ==================
+[20:21:29]  
+[20:21:29]   Loaded.
+[20:21:29]  Loading plugin: streamer
+[20:21:29] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:29]   Loaded.
+[20:21:29]  Loading plugin: sscanf
+[20:21:29] 
+
+[20:21:29]  ===============================
+
+[20:21:29]       sscanf plugin loaded.     
+
+[20:21:29]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:29]    0.3d-R2 500 Players "dnee"
+
+[20:21:29]  ===============================
+
+[20:21:29]   Loaded.
+[20:21:29]  Loaded 3 plugins.
+
+[20:21:29] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:29] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:43] 
+[20:21:43] Server Plugins
+[20:21:43] --------------
+[20:21:43]  Loading plugin: Whirlpool
+[20:21:43]  
+[20:21:43]  ==================
+[20:21:43]  
+[20:21:43]   Whirlpool loaded
+[20:21:43]  
+[20:21:43]  ==================
+[20:21:43]  
+[20:21:43]   Loaded.
+[20:21:43]  Loading plugin: streamer
+[20:21:43] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:43]   Loaded.
+[20:21:43]  Loading plugin: sscanf
+[20:21:43] 
+
+[20:21:43]  ===============================
+
+[20:21:43]       sscanf plugin loaded.     
+
+[20:21:43]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:43]    0.3d-R2 500 Players "dnee"
+
+[20:21:43]  ===============================
+
+[20:21:43]   Loaded.
+[20:21:43]  Loaded 3 plugins.
+
+[20:21:43] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:43] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:44] 
+[20:21:44] Server Plugins
+[20:21:44] --------------
+[20:21:44]  Loading plugin: Whirlpool
+[20:21:44]  
+[20:21:44]  ==================
+[20:21:44]  
+[20:21:44]   Whirlpool loaded
+[20:21:44]  
+[20:21:44]  ==================
+[20:21:44]  
+[20:21:44]   Loaded.
+[20:21:44]  Loading plugin: streamer
+[20:21:44] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:44]   Loaded.
+[20:21:44]  Loading plugin: sscanf
+[20:21:44] 
+
+[20:21:44]  ===============================
+
+[20:21:44]       sscanf plugin loaded.     
+
+[20:21:44]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:44]    0.3d-R2 500 Players "dnee"
+
+[20:21:44]  ===============================
+
+[20:21:44]   Loaded.
+[20:21:44]  Loaded 3 plugins.
+
+[20:21:44] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:44] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:44] 
+[20:21:44] Server Plugins
+[20:21:44] --------------
+[20:21:44]  Loading plugin: Whirlpool
+[20:21:44]  
+[20:21:44]  ==================
+[20:21:44]  
+[20:21:44]   Whirlpool loaded
+[20:21:44]  
+[20:21:44]  ==================
+[20:21:44]  
+[20:21:44]   Loaded.
+[20:21:44]  Loading plugin: streamer
+[20:21:44] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:44]   Loaded.
+[20:21:44]  Loading plugin: sscanf
+[20:21:44] 
+
+[20:21:44]  ===============================
+
+[20:21:44]       sscanf plugin loaded.     
+
+[20:21:44]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:44]    0.3d-R2 500 Players "dnee"
+
+[20:21:44]  ===============================
+
+[20:21:44]   Loaded.
+[20:21:45]  Loaded 3 plugins.
+
+[20:21:45] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:45] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:45] 
+[20:21:45] Server Plugins
+[20:21:45] --------------
+[20:21:45]  Loading plugin: Whirlpool
+[20:21:45]  
+[20:21:45]  ==================
+[20:21:45]  
+[20:21:45]   Whirlpool loaded
+[20:21:45]  
+[20:21:45]  ==================
+[20:21:45]  
+[20:21:45]   Loaded.
+[20:21:45]  Loading plugin: streamer
+[20:21:45] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:45]   Loaded.
+[20:21:45]  Loading plugin: sscanf
+[20:21:45] 
+
+[20:21:45]  ===============================
+
+[20:21:45]       sscanf plugin loaded.     
+
+[20:21:45]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:45]    0.3d-R2 500 Players "dnee"
+
+[20:21:45]  ===============================
+
+[20:21:45]   Loaded.
+[20:21:45]  Loaded 3 plugins.
+
+[20:21:45] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:45] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:45] 
+[20:21:45] Server Plugins
+[20:21:45] --------------
+[20:21:45]  Loading plugin: Whirlpool
+[20:21:45]  
+[20:21:45]  ==================
+[20:21:45]  
+[20:21:45]   Whirlpool loaded
+[20:21:45]  
+[20:21:45]  ==================
+[20:21:45]  
+[20:21:45]   Loaded.
+[20:21:45]  Loading plugin: streamer
+[20:21:45] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:45]   Loaded.
+[20:21:45]  Loading plugin: sscanf
+[20:21:45] 
+
+[20:21:45]  ===============================
+
+[20:21:45]       sscanf plugin loaded.     
+
+[20:21:45]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:45]    0.3d-R2 500 Players "dnee"
+
+[20:21:45]  ===============================
+
+[20:21:45]   Loaded.
+[20:21:45]  Loaded 3 plugins.
+
+[20:21:45] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:45] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:45] 
+[20:21:45] Server Plugins
+[20:21:45] --------------
+[20:21:45]  Loading plugin: Whirlpool
+[20:21:45]  
+[20:21:45]  ==================
+[20:21:45]  
+[20:21:45]   Whirlpool loaded
+[20:21:45]  
+[20:21:45]  ==================
+[20:21:45]  
+[20:21:45]   Loaded.
+[20:21:45]  Loading plugin: streamer
+[20:21:45] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:45]   Loaded.
+[20:21:45]  Loading plugin: sscanf
+[20:21:46] 
+
+[20:21:46]  ===============================
+
+[20:21:46]       sscanf plugin loaded.     
+
+[20:21:46]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:46]    0.3d-R2 500 Players "dnee"
+
+[20:21:46]  ===============================
+
+[20:21:46]   Loaded.
+[20:21:46]  Loaded 3 plugins.
+
+[20:21:46] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:46] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:46] 
+[20:21:46] Server Plugins
+[20:21:46] --------------
+[20:21:46]  Loading plugin: Whirlpool
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Whirlpool loaded
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: streamer
+[20:21:46] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: sscanf
+[20:21:46] 
+
+[20:21:46]  ===============================
+
+[20:21:46]       sscanf plugin loaded.     
+
+[20:21:46]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:46]    0.3d-R2 500 Players "dnee"
+
+[20:21:46]  ===============================
+
+[20:21:46]   Loaded.
+[20:21:46]  Loaded 3 plugins.
+
+[20:21:46] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:46] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:46] 
+[20:21:46] Server Plugins
+[20:21:46] --------------
+[20:21:46]  Loading plugin: Whirlpool
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Whirlpool loaded
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: streamer
+[20:21:46] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: sscanf
+[20:21:46] 
+
+[20:21:46]  ===============================
+
+[20:21:46]       sscanf plugin loaded.     
+
+[20:21:46]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:46]    0.3d-R2 500 Players "dnee"
+
+[20:21:46]  ===============================
+
+[20:21:46]   Loaded.
+[20:21:46]  Loaded 3 plugins.
+
+[20:21:46] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:46] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:46] 
+[20:21:46] Server Plugins
+[20:21:46] --------------
+[20:21:46]  Loading plugin: Whirlpool
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Whirlpool loaded
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: streamer
+[20:21:46] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: sscanf
+[20:21:46] 
+
+[20:21:46]  ===============================
+
+[20:21:46]       sscanf plugin loaded.     
+
+[20:21:46]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:46]    0.3d-R2 500 Players "dnee"
+
+[20:21:46]  ===============================
+
+[20:21:46]   Loaded.
+[20:21:46]  Loaded 3 plugins.
+
+[20:21:46] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:46] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:46] 
+[20:21:46] Server Plugins
+[20:21:46] --------------
+[20:21:46]  Loading plugin: Whirlpool
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Whirlpool loaded
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: streamer
+[20:21:46] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: sscanf
+[20:21:46] 
+
+[20:21:46]  ===============================
+
+[20:21:46]       sscanf plugin loaded.     
+
+[20:21:46]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:46]    0.3d-R2 500 Players "dnee"
+
+[20:21:46]  ===============================
+
+[20:21:46]   Loaded.
+[20:21:46]  Loaded 3 plugins.
+
+[20:21:46] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:46] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:46] 
+[20:21:46] Server Plugins
+[20:21:46] --------------
+[20:21:46]  Loading plugin: Whirlpool
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Whirlpool loaded
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: streamer
+[20:21:46] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: sscanf
+[20:21:46] 
+
+[20:21:46]  ===============================
+
+[20:21:46]       sscanf plugin loaded.     
+
+[20:21:46]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:46]    0.3d-R2 500 Players "dnee"
+
+[20:21:46]  ===============================
+
+[20:21:46]   Loaded.
+[20:21:46]  Loaded 3 plugins.
+
+[20:21:46] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:46] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:46] 
+[20:21:46] Server Plugins
+[20:21:46] --------------
+[20:21:46]  Loading plugin: Whirlpool
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Whirlpool loaded
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: streamer
+[20:21:46] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: sscanf
+[20:21:46] 
+
+[20:21:46]  ===============================
+
+[20:21:46]       sscanf plugin loaded.     
+
+[20:21:46]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:46]    0.3d-R2 500 Players "dnee"
+
+[20:21:46]  ===============================
+
+[20:21:46]   Loaded.
+[20:21:46]  Loaded 3 plugins.
+
+[20:21:46] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:46] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:46] 
+[20:21:46] Server Plugins
+[20:21:46] --------------
+[20:21:46]  Loading plugin: Whirlpool
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Whirlpool loaded
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: streamer
+[20:21:46] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: sscanf
+[20:21:46] 
+
+[20:21:46]  ===============================
+
+[20:21:46]       sscanf plugin loaded.     
+
+[20:21:46]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:46]    0.3d-R2 500 Players "dnee"
+
+[20:21:46]  ===============================
+
+[20:21:46]   Loaded.
+[20:21:46]  Loaded 3 plugins.
+
+[20:21:46] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:46] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:46] 
+[20:21:46] Server Plugins
+[20:21:46] --------------
+[20:21:46]  Loading plugin: Whirlpool
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Whirlpool loaded
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: streamer
+[20:21:46] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: sscanf
+[20:21:46] 
+
+[20:21:46]  ===============================
+
+[20:21:46]       sscanf plugin loaded.     
+
+[20:21:46]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:46]    0.3d-R2 500 Players "dnee"
+
+[20:21:46]  ===============================
+
+[20:21:46]   Loaded.
+[20:21:46]  Loaded 3 plugins.
+
+[20:21:46] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:46] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:46] 
+[20:21:46] Server Plugins
+[20:21:46] --------------
+[20:21:46]  Loading plugin: Whirlpool
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Whirlpool loaded
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: streamer
+[20:21:46] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: sscanf
+[20:21:46] 
+
+[20:21:46]  ===============================
+
+[20:21:46]       sscanf plugin loaded.     
+
+[20:21:46]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:46]    0.3d-R2 500 Players "dnee"
+
+[20:21:46]  ===============================
+
+[20:21:46]   Loaded.
+[20:21:46]  Loaded 3 plugins.
+
+[20:21:46] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:46] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:46] 
+[20:21:46] Server Plugins
+[20:21:46] --------------
+[20:21:46]  Loading plugin: Whirlpool
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Whirlpool loaded
+[20:21:46]  
+[20:21:46]  ==================
+[20:21:46]  
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: streamer
+[20:21:46] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:46]   Loaded.
+[20:21:46]  Loading plugin: sscanf
+[20:21:46] 
+
+[20:21:46]  ===============================
+
+[20:21:46]       sscanf plugin loaded.     
+
+[20:21:46]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:46]    0.3d-R2 500 Players "dnee"
+
+[20:21:46]  ===============================
+
+[20:21:46]   Loaded.
+[20:21:46]  Loaded 3 plugins.
+
+[20:21:47] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:47] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:47] 
+[20:21:47] Server Plugins
+[20:21:47] --------------
+[20:21:47]  Loading plugin: Whirlpool
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Whirlpool loaded
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: streamer
+[20:21:47] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: sscanf
+[20:21:47] 
+
+[20:21:47]  ===============================
+
+[20:21:47]       sscanf plugin loaded.     
+
+[20:21:47]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:47]    0.3d-R2 500 Players "dnee"
+
+[20:21:47]  ===============================
+
+[20:21:47]   Loaded.
+[20:21:47]  Loaded 3 plugins.
+
+[20:21:47] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:47] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:47] 
+[20:21:47] Server Plugins
+[20:21:47] --------------
+[20:21:47]  Loading plugin: Whirlpool
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Whirlpool loaded
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: streamer
+[20:21:47] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: sscanf
+[20:21:47] 
+
+[20:21:47]  ===============================
+
+[20:21:47]       sscanf plugin loaded.     
+
+[20:21:47]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:47]    0.3d-R2 500 Players "dnee"
+
+[20:21:47]  ===============================
+
+[20:21:47]   Loaded.
+[20:21:47]  Loaded 3 plugins.
+
+[20:21:47] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:47] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:47] 
+[20:21:47] Server Plugins
+[20:21:47] --------------
+[20:21:47]  Loading plugin: Whirlpool
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Whirlpool loaded
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: streamer
+[20:21:47] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: sscanf
+[20:21:47] 
+
+[20:21:47]  ===============================
+
+[20:21:47]       sscanf plugin loaded.     
+
+[20:21:47]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:47]    0.3d-R2 500 Players "dnee"
+
+[20:21:47]  ===============================
+
+[20:21:47]   Loaded.
+[20:21:47]  Loaded 3 plugins.
+
+[20:21:47] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:47] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:47] 
+[20:21:47] Server Plugins
+[20:21:47] --------------
+[20:21:47]  Loading plugin: Whirlpool
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Whirlpool loaded
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: streamer
+[20:21:47] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: sscanf
+[20:21:47] 
+
+[20:21:47]  ===============================
+
+[20:21:47]       sscanf plugin loaded.     
+
+[20:21:47]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:47]    0.3d-R2 500 Players "dnee"
+
+[20:21:47]  ===============================
+
+[20:21:47]   Loaded.
+[20:21:47]  Loaded 3 plugins.
+
+[20:21:47] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:47] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:47] 
+[20:21:47] Server Plugins
+[20:21:47] --------------
+[20:21:47]  Loading plugin: Whirlpool
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Whirlpool loaded
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: streamer
+[20:21:47] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: sscanf
+[20:21:47] 
+
+[20:21:47]  ===============================
+
+[20:21:47]       sscanf plugin loaded.     
+
+[20:21:47]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:47]    0.3d-R2 500 Players "dnee"
+
+[20:21:47]  ===============================
+
+[20:21:47]   Loaded.
+[20:21:47]  Loaded 3 plugins.
+
+[20:21:47] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:47] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:47] 
+[20:21:47] Server Plugins
+[20:21:47] --------------
+[20:21:47]  Loading plugin: Whirlpool
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Whirlpool loaded
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: streamer
+[20:21:47] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: sscanf
+[20:21:47] 
+
+[20:21:47]  ===============================
+
+[20:21:47]       sscanf plugin loaded.     
+
+[20:21:47]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:47]    0.3d-R2 500 Players "dnee"
+
+[20:21:47]  ===============================
+
+[20:21:47]   Loaded.
+[20:21:47]  Loaded 3 plugins.
+
+[20:21:47] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:47] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:47] 
+[20:21:47] Server Plugins
+[20:21:47] --------------
+[20:21:47]  Loading plugin: Whirlpool
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Whirlpool loaded
+[20:21:47]  
+[20:21:47]  ==================
+[20:21:47]  
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: streamer
+[20:21:47] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:47]   Loaded.
+[20:21:47]  Loading plugin: sscanf
+[20:21:47] 
+
+[20:21:47]  ===============================
+
+[20:21:47]       sscanf plugin loaded.     
+
+[20:21:47]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:47]    0.3d-R2 500 Players "dnee"
+
+[20:21:47]  ===============================
+
+[20:21:47]   Loaded.
+[20:21:47]  Loaded 3 plugins.
+
+[20:21:47] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:47] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:48] 
+[20:21:48] Server Plugins
+[20:21:48] --------------
+[20:21:48]  Loading plugin: Whirlpool
+[20:21:48]  
+[20:21:48]  ==================
+[20:21:48]  
+[20:21:48]   Whirlpool loaded
+[20:21:48]  
+[20:21:48]  ==================
+[20:21:48]  
+[20:21:48]   Loaded.
+[20:21:48]  Loading plugin: streamer
+[20:21:48] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:48]   Loaded.
+[20:21:48]  Loading plugin: sscanf
+[20:21:48] 
+
+[20:21:48]  ===============================
+
+[20:21:48]       sscanf plugin loaded.     
+
+[20:21:48]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:48]    0.3d-R2 500 Players "dnee"
+
+[20:21:48]  ===============================
+
+[20:21:48]   Loaded.
+[20:21:48]  Loaded 3 plugins.
+
+[20:21:48] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:48] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:21:57] 
+[20:21:57] Server Plugins
+[20:21:57] --------------
+[20:21:57]  Loading plugin: Whirlpool
+[20:21:57]  
+[20:21:57]  ==================
+[20:21:57]  
+[20:21:57]   Whirlpool loaded
+[20:21:57]  
+[20:21:57]  ==================
+[20:21:57]  
+[20:21:57]   Loaded.
+[20:21:57]  Loading plugin: streamer
+[20:21:57] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:21:57]   Loaded.
+[20:21:57]  Loading plugin: sscanf
+[20:21:57] 
+
+[20:21:57]  ===============================
+
+[20:21:57]       sscanf plugin loaded.     
+
+[20:21:57]    (c) 2009 Alex "Y_Less" Cole
+
+[20:21:57]    0.3d-R2 500 Players "dnee"
+
+[20:21:57]  ===============================
+
+[20:21:57]   Loaded.
+[20:21:57]  Loaded 3 plugins.
+
+[20:21:57] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:21:57] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:22:08] 
+[20:22:08] Server Plugins
+[20:22:08] --------------
+[20:22:08]  Loading plugin: Whirlpool
+[20:22:08]  
+[20:22:08]  ==================
+[20:22:08]  
+[20:22:08]   Whirlpool loaded
+[20:22:08]  
+[20:22:08]  ==================
+[20:22:08]  
+[20:22:08]   Loaded.
+[20:22:08]  Loading plugin: streamer
+[20:22:08] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:22:08]   Loaded.
+[20:22:08]  Loading plugin: sscanf
+[20:22:08] 
+
+[20:22:08]  ===============================
+
+[20:22:08]       sscanf plugin loaded.     
+
+[20:22:08]    (c) 2009 Alex "Y_Less" Cole
+
+[20:22:08]    0.3d-R2 500 Players "dnee"
+
+[20:22:08]  ===============================
+
+[20:22:08]   Loaded.
+[20:22:08]  Loaded 3 plugins.
+
+[20:22:08] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:22:08] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:04] 
+[20:25:04] Server Plugins
+[20:25:04] --------------
+[20:25:04]  Loading plugin: Whirlpool
+[20:25:04]  
+[20:25:04]  ==================
+[20:25:04]  
+[20:25:04]   Whirlpool loaded
+[20:25:04]  
+[20:25:04]  ==================
+[20:25:04]  
+[20:25:04]   Loaded.
+[20:25:04]  Loading plugin: streamer
+[20:25:04] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:04]   Loaded.
+[20:25:04]  Loading plugin: sscanf
+[20:25:04] 
+
+[20:25:04]  ===============================
+
+[20:25:04]       sscanf plugin loaded.     
+
+[20:25:04]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:04]    0.3d-R2 500 Players "dnee"
+
+[20:25:04]  ===============================
+
+[20:25:04]   Loaded.
+[20:25:04]  Loaded 3 plugins.
+
+[20:25:04] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:04] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:05] 
+[20:25:05] Server Plugins
+[20:25:05] --------------
+[20:25:05]  Loading plugin: Whirlpool
+[20:25:05]  
+[20:25:05]  ==================
+[20:25:05]  
+[20:25:05]   Whirlpool loaded
+[20:25:05]  
+[20:25:05]  ==================
+[20:25:05]  
+[20:25:05]   Loaded.
+[20:25:05]  Loading plugin: streamer
+[20:25:05] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:05]   Loaded.
+[20:25:05]  Loading plugin: sscanf
+[20:25:05] 
+
+[20:25:05]  ===============================
+
+[20:25:05]       sscanf plugin loaded.     
+
+[20:25:05]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:05]    0.3d-R2 500 Players "dnee"
+
+[20:25:05]  ===============================
+
+[20:25:05]   Loaded.
+[20:25:05]  Loaded 3 plugins.
+
+[20:25:05] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:05] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:09] 
+[20:25:09] Server Plugins
+[20:25:09] --------------
+[20:25:09]  Loading plugin: Whirlpool
+[20:25:09]  
+[20:25:09]  ==================
+[20:25:09]  
+[20:25:09]   Whirlpool loaded
+[20:25:09]  
+[20:25:09]  ==================
+[20:25:09]  
+[20:25:09]   Loaded.
+[20:25:09]  Loading plugin: streamer
+[20:25:09] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:09]   Loaded.
+[20:25:09]  Loading plugin: sscanf
+[20:25:09] 
+
+[20:25:09]  ===============================
+
+[20:25:09]       sscanf plugin loaded.     
+
+[20:25:09]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:09]    0.3d-R2 500 Players "dnee"
+
+[20:25:09]  ===============================
+
+[20:25:09]   Loaded.
+[20:25:09]  Loaded 3 plugins.
+
+[20:25:09] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:09] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:09] 
+[20:25:09] Server Plugins
+[20:25:09] --------------
+[20:25:09]  Loading plugin: Whirlpool
+[20:25:09]  
+[20:25:09]  ==================
+[20:25:09]  
+[20:25:09]   Whirlpool loaded
+[20:25:09]  
+[20:25:09]  ==================
+[20:25:09]  
+[20:25:09]   Loaded.
+[20:25:09]  Loading plugin: streamer
+[20:25:09] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:09]   Loaded.
+[20:25:09]  Loading plugin: sscanf
+[20:25:09] 
+
+[20:25:09]  ===============================
+
+[20:25:09]       sscanf plugin loaded.     
+
+[20:25:09]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:09]    0.3d-R2 500 Players "dnee"
+
+[20:25:09]  ===============================
+
+[20:25:09]   Loaded.
+[20:25:09]  Loaded 3 plugins.
+
+[20:25:09] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:09] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:13] 
+[20:25:13] Server Plugins
+[20:25:13] --------------
+[20:25:13]  Loading plugin: Whirlpool
+[20:25:13]  
+[20:25:13]  ==================
+[20:25:13]  
+[20:25:13]   Whirlpool loaded
+[20:25:13]  
+[20:25:13]  ==================
+[20:25:13]  
+[20:25:13]   Loaded.
+[20:25:13]  Loading plugin: streamer
+[20:25:13] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:13]   Loaded.
+[20:25:13]  Loading plugin: sscanf
+[20:25:13] 
+
+[20:25:13]  ===============================
+
+[20:25:13]       sscanf plugin loaded.     
+
+[20:25:13]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:13]    0.3d-R2 500 Players "dnee"
+
+[20:25:13]  ===============================
+
+[20:25:13]   Loaded.
+[20:25:13]  Loaded 3 plugins.
+
+[20:25:13] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:13] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:16] 
+[20:25:16] Server Plugins
+[20:25:16] --------------
+[20:25:16]  Loading plugin: Whirlpool
+[20:25:16]  
+[20:25:16]  ==================
+[20:25:16]  
+[20:25:16]   Whirlpool loaded
+[20:25:16]  
+[20:25:16]  ==================
+[20:25:16]  
+[20:25:16]   Loaded.
+[20:25:16]  Loading plugin: streamer
+[20:25:16] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:16]   Loaded.
+[20:25:16]  Loading plugin: sscanf
+[20:25:16] 
+
+[20:25:16]  ===============================
+
+[20:25:16]       sscanf plugin loaded.     
+
+[20:25:16]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:16]    0.3d-R2 500 Players "dnee"
+
+[20:25:16]  ===============================
+
+[20:25:16]   Loaded.
+[20:25:16]  Loaded 3 plugins.
+
+[20:25:16] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:16] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:20] 
+[20:25:20] Server Plugins
+[20:25:20] --------------
+[20:25:20]  Loading plugin: Whirlpool
+[20:25:20]  
+[20:25:20]  ==================
+[20:25:20]  
+[20:25:20]   Whirlpool loaded
+[20:25:20]  
+[20:25:20]  ==================
+[20:25:20]  
+[20:25:20]   Loaded.
+[20:25:20]  Loading plugin: streamer
+[20:25:20] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:20]   Loaded.
+[20:25:20]  Loading plugin: sscanf
+[20:25:20] 
+
+[20:25:20]  ===============================
+
+[20:25:20]       sscanf plugin loaded.     
+
+[20:25:20]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:20]    0.3d-R2 500 Players "dnee"
+
+[20:25:20]  ===============================
+
+[20:25:20]   Loaded.
+[20:25:20]  Loaded 3 plugins.
+
+[20:25:20] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:20] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:21] 
+[20:25:21] Server Plugins
+[20:25:21] --------------
+[20:25:21]  Loading plugin: Whirlpool
+[20:25:21]  
+[20:25:21]  ==================
+[20:25:21]  
+[20:25:21]   Whirlpool loaded
+[20:25:21]  
+[20:25:21]  ==================
+[20:25:21]  
+[20:25:21]   Loaded.
+[20:25:21]  Loading plugin: streamer
+[20:25:21] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:21]   Loaded.
+[20:25:21]  Loading plugin: sscanf
+[20:25:21] 
+
+[20:25:21]  ===============================
+
+[20:25:21]       sscanf plugin loaded.     
+
+[20:25:21]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:21]    0.3d-R2 500 Players "dnee"
+
+[20:25:21]  ===============================
+
+[20:25:21]   Loaded.
+[20:25:21]  Loaded 3 plugins.
+
+[20:25:21] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:21] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:31] 
+[20:25:31] Server Plugins
+[20:25:31] --------------
+[20:25:31]  Loading plugin: Whirlpool
+[20:25:31]  
+[20:25:31]  ==================
+[20:25:31]  
+[20:25:31]   Whirlpool loaded
+[20:25:31]  
+[20:25:31]  ==================
+[20:25:31]  
+[20:25:31]   Loaded.
+[20:25:31]  Loading plugin: streamer
+[20:25:31] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:31]   Loaded.
+[20:25:31]  Loading plugin: sscanf
+[20:25:31] 
+
+[20:25:31]  ===============================
+
+[20:25:31]       sscanf plugin loaded.     
+
+[20:25:31]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:31]    0.3d-R2 500 Players "dnee"
+
+[20:25:31]  ===============================
+
+[20:25:31]   Loaded.
+[20:25:31]  Loaded 3 plugins.
+
+[20:25:31] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:31] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:32] 
+[20:25:32] Server Plugins
+[20:25:32] --------------
+[20:25:32]  Loading plugin: Whirlpool
+[20:25:32]  
+[20:25:32]  ==================
+[20:25:32]  
+[20:25:32]   Whirlpool loaded
+[20:25:32]  
+[20:25:32]  ==================
+[20:25:32]  
+[20:25:32]   Loaded.
+[20:25:32]  Loading plugin: streamer
+[20:25:32] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:32]   Loaded.
+[20:25:32]  Loading plugin: sscanf
+[20:25:32] 
+
+[20:25:32]  ===============================
+
+[20:25:32]       sscanf plugin loaded.     
+
+[20:25:32]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:32]    0.3d-R2 500 Players "dnee"
+
+[20:25:32]  ===============================
+
+[20:25:32]   Loaded.
+[20:25:32]  Loaded 3 plugins.
+
+[20:25:32] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:32] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:33] 
+[20:25:33] Server Plugins
+[20:25:33] --------------
+[20:25:33]  Loading plugin: Whirlpool
+[20:25:33]  
+[20:25:33]  ==================
+[20:25:33]  
+[20:25:33]   Whirlpool loaded
+[20:25:33]  
+[20:25:33]  ==================
+[20:25:33]  
+[20:25:33]   Loaded.
+[20:25:33]  Loading plugin: streamer
+[20:25:33] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:33]   Loaded.
+[20:25:33]  Loading plugin: sscanf
+[20:25:33] 
+
+[20:25:33]  ===============================
+
+[20:25:33]       sscanf plugin loaded.     
+
+[20:25:33]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:33]    0.3d-R2 500 Players "dnee"
+
+[20:25:33]  ===============================
+
+[20:25:33]   Loaded.
+[20:25:33]  Loaded 3 plugins.
+
+[20:25:33] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:33] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:34] 
+[20:25:34] Server Plugins
+[20:25:34] --------------
+[20:25:34]  Loading plugin: Whirlpool
+[20:25:34]  
+[20:25:34]  ==================
+[20:25:34]  
+[20:25:34]   Whirlpool loaded
+[20:25:34]  
+[20:25:34]  ==================
+[20:25:34]  
+[20:25:34]   Loaded.
+[20:25:34]  Loading plugin: streamer
+[20:25:34] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:34]   Loaded.
+[20:25:34]  Loading plugin: sscanf
+[20:25:34] 
+
+[20:25:34]  ===============================
+
+[20:25:34]       sscanf plugin loaded.     
+
+[20:25:34]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:34]    0.3d-R2 500 Players "dnee"
+
+[20:25:34]  ===============================
+
+[20:25:34]   Loaded.
+[20:25:34]  Loaded 3 plugins.
+
+[20:25:34] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:34] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:38] 
+[20:25:38] Server Plugins
+[20:25:38] --------------
+[20:25:38]  Loading plugin: Whirlpool
+[20:25:38]  
+[20:25:38]  ==================
+[20:25:38]  
+[20:25:38]   Whirlpool loaded
+[20:25:38]  
+[20:25:38]  ==================
+[20:25:38]  
+[20:25:38]   Loaded.
+[20:25:38]  Loading plugin: streamer
+[20:25:38] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:38]   Loaded.
+[20:25:38]  Loading plugin: sscanf
+[20:25:38] 
+
+[20:25:38]  ===============================
+
+[20:25:38]       sscanf plugin loaded.     
+
+[20:25:38]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:38]    0.3d-R2 500 Players "dnee"
+
+[20:25:38]  ===============================
+
+[20:25:38]   Loaded.
+[20:25:38]  Loaded 3 plugins.
+
+[20:25:38] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:38] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:25:41] 
+[20:25:41] Server Plugins
+[20:25:41] --------------
+[20:25:41]  Loading plugin: Whirlpool
+[20:25:41]  
+[20:25:41]  ==================
+[20:25:41]  
+[20:25:41]   Whirlpool loaded
+[20:25:41]  
+[20:25:41]  ==================
+[20:25:41]  
+[20:25:41]   Loaded.
+[20:25:41]  Loading plugin: streamer
+[20:25:41] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:25:41]   Loaded.
+[20:25:41]  Loading plugin: sscanf
+[20:25:41] 
+
+[20:25:41]  ===============================
+
+[20:25:41]       sscanf plugin loaded.     
+
+[20:25:41]    (c) 2009 Alex "Y_Less" Cole
+
+[20:25:41]    0.3d-R2 500 Players "dnee"
+
+[20:25:41]  ===============================
+
+[20:25:41]   Loaded.
+[20:25:41]  Loaded 3 plugins.
+
+[20:25:41] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:25:41] It needs a gamemode0 line at the very least.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[20:36:19] 
+[20:36:19] Server Plugins
+[20:36:19] --------------
+[20:36:19]  Loading plugin: Whirlpool
+[20:36:19]  
+[20:36:19]  ==================
+[20:36:19]  
+[20:36:19]   Whirlpool loaded
+[20:36:19]  
+[20:36:19]  ==================
+[20:36:19]  
+[20:36:19]   Loaded.
+[20:36:19]  Loading plugin: streamer
+[20:36:19] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[20:36:19]   Loaded.
+[20:36:19]  Loading plugin: sscanf
+[20:36:19] 
+
+[20:36:19]  ===============================
+
+[20:36:19]       sscanf plugin loaded.     
+
+[20:36:19]    (c) 2009 Alex "Y_Less" Cole
+
+[20:36:19]    0.3d-R2 500 Players "dnee"
+
+[20:36:19]  ===============================
+
+[20:36:19]   Loaded.
+[20:36:19]  Loaded 3 plugins.
+
+[20:36:19] I couldn't load any gamemode scripts. Please verify your server.cfg
+[20:36:19] It needs a gamemode0 line at the very least.
