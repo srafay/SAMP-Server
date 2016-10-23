@@ -3,12 +3,11 @@
 
 #include <a_npc>
 main(){}
-public OnRecordingPlaybackEnd()
-{
-	StartRecordingPlayback(2, "npcbank");
-}
+public OnRecordingPlaybackEnd() StartRecordingPlayback(RECORDING_TYPE, RECORDING);
 
-  public OnNPCSpawn()
-  {
-  	StartRecordingPlayback(2, "npcbank.rec");
-  }
+#if RECORDING_TYPE == 1
+  public OnNPCEnterVehicle(vehicleid, seatid) StartRecordingPlayback(RECORDING_TYPE, RECORDING);
+  public OnNPCExitVehicle() StopRecordingPlayback();
+#else
+  public OnNPCSpawn() StartRecordingPlayback(RECORDING_TYPE, RECORDING);
+#endif
