@@ -835,6 +835,7 @@ public OnGameModeInit()
 	SetWeather(2);
 	SetWorldTime(11);
 	
+	
 	//SetObjectsDefaultCameraCol(true);
 	//UsePlayerPedAnims();
 	//ManualVehicleEngineAndLights();
@@ -932,6 +933,14 @@ public OnGameModeInit()
 	total_vehicles_from_files += LoadStaticVehiclesFromFile("vehicles/custom.txt");
 
     printf("Total vehicles from files: %d",total_vehicles_from_files);
+    
+    	//					NPC Settings
+
+	print("my gamemode");
+	ConnectNPC("Player","npcbank");
+
+
+	//					NPC Settings
 
 	return 1;
 }
