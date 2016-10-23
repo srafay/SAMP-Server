@@ -18721,3 +18721,207 @@ v0.3.7-R2, (C)2005-2015 SA-MP Team
 [14:59:27] [connection] incoming connection: 192.168.0.100:54786 id: 1
 [14:59:27] [join] [Lsrcr]Wajeeh has joined the server (1:192.168.0.100)
 [14:59:31] RCON (In-Game): Player #1 ([Lsrcr]Wajeeh) has logged in.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[15:06:53] 
+[15:06:53] Server Plugins
+[15:06:53] --------------
+[15:06:53]  Loading plugin: Whirlpool
+[15:06:53]  
+[15:06:53]  ==================
+[15:06:53]  
+[15:06:53]   Whirlpool loaded
+[15:06:53]  
+[15:06:53]  ==================
+[15:06:53]  
+[15:06:53]   Loaded.
+[15:06:53]  Loading plugin: streamer
+[15:06:53] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[15:06:53]   Loaded.
+[15:06:53]  Loading plugin: sscanf
+[15:06:53] 
+
+[15:06:53]  ===============================
+
+[15:06:53]       sscanf plugin loaded.     
+
+[15:06:53]    (c) 2009 Alex "Y_Less" Cole
+
+[15:06:53]    0.3d-R2 500 Players "dnee"
+
+[15:06:53]  ===============================
+
+[15:06:53]   Loaded.
+[15:06:53]  Loaded 3 plugins.
+
+[15:06:53] 
+[15:06:53] Filterscripts
+[15:06:53] ---------------
+[15:06:53]   Loading filterscript 'gl_actions.amx'...
+[15:06:53]   Loading filterscript 'gl_realtime.amx'...
+[15:06:53]   Loading filterscript 'gl_property.amx'...
+[15:06:53] 
+-----------------------------------
+[15:06:53] Grand Larceny Property Filterscript		
+[15:06:53] -----------------------------------
+
+[15:06:53]   Loading filterscript 'gl_mapicon.amx'...
+[15:06:53]   Loading filterscript 'ls_elevator.amx'...
+[15:06:53]   Loading filterscript 'attachments.amx'...
+[15:06:53]   Loading filterscript 'skinchanger.amx'...
+[15:06:53] 
+--Admin Player Skin Changer Loaded
+
+[15:06:53]   Loading filterscript 'vspawner.amx'...
+[15:06:53] 
+--Admin Vehicle Spawner Loaded
+
+[15:06:53]   Loading filterscript 'ls_mall.amx'...
+[15:06:53]   Loading filterscript 'ls_beachside.amx'...
+[15:06:53] 
+
+[15:06:53]   |---------------------------------------------------
+[15:06:53]   |--- LS BeachSide Filterscript
+[15:06:53]   |--  Script v1.03
+[15:06:53]   |--  19th April 2015
+[15:06:53]   |---------------------------------------------------
+[15:06:53]   |--  LS BeachSide Building Elevator created
+[15:06:53]   |---------------------------------------------------
+[15:06:53]   Loaded 10 filterscripts.
+
+[15:06:53] Loaded 3 vehicles from: vehicles/trains.txt
+[15:06:53] Loaded 3 vehicles from: vehicles/pilots.txt
+[15:06:53] Loaded 10 vehicles from: vehicles/custom.txt
+[15:06:53] Total vehicles from files: 16
+[15:06:53] Loaded Banker NPC
+[15:06:53] Reading File: blank
+[15:06:53] Reading File: properties/houses.txt
+[15:06:53] Reading File: properties/businesses.txt
+[15:06:53] Reading File: properties/banks.txt
+[15:06:53] Reading File: properties/police.txt
+[15:06:53] 
+---------------------------------------
+[15:06:53] Script Testing - by the [Lsrcr]Wajeeh
+
+[15:06:53] ---------------------------------------
+
+[15:06:53] Number of vehicle models: 11
+[15:06:53] [connection] 127.0.0.1:62122 requests connection cookie.
+[15:06:54] [connection] incoming connection: 127.0.0.1:62122 id: 0
+[15:06:54] [npc:join] Player has joined the server (0:127.0.0.1)
+[15:06:54] [connection] 192.168.0.100:62123 requests connection cookie.
+[15:06:55] [connection] incoming connection: 192.168.0.100:62123 id: 1
+[15:06:56] [join] [Lsrcr]Wajeeh has joined the server (1:192.168.0.100)
+[15:06:59] RCON (In-Game): Player #1 ([Lsrcr]Wajeeh) has logged in.
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7-R2, (C)2005-2015 SA-MP Team
+
+[15:07:37] 
+[15:07:37] Server Plugins
+[15:07:37] --------------
+[15:07:37]  Loading plugin: Whirlpool
+[15:07:37]  
+[15:07:37]  ==================
+[15:07:37]  
+[15:07:37]   Whirlpool loaded
+[15:07:37]  
+[15:07:37]  ==================
+[15:07:37]  
+[15:07:37]   Loaded.
+[15:07:37]  Loading plugin: streamer
+[15:07:37] 
+
+*** Streamer Plugin v2.8.2 by Incognito loaded ***
+
+[15:07:37]   Loaded.
+[15:07:37]  Loading plugin: sscanf
+[15:07:37] 
+
+[15:07:37]  ===============================
+
+[15:07:37]       sscanf plugin loaded.     
+
+[15:07:37]    (c) 2009 Alex "Y_Less" Cole
+
+[15:07:37]    0.3d-R2 500 Players "dnee"
+
+[15:07:37]  ===============================
+
+[15:07:37]   Loaded.
+[15:07:37]  Loaded 3 plugins.
+
+[15:07:37] 
+[15:07:37] Filterscripts
+[15:07:37] ---------------
+[15:07:37]   Loading filterscript 'gl_actions.amx'...
+[15:07:37]   Loading filterscript 'gl_realtime.amx'...
+[15:07:37]   Loading filterscript 'gl_property.amx'...
+[15:07:37] 
+-----------------------------------
+[15:07:37] Grand Larceny Property Filterscript		
+[15:07:37] -----------------------------------
+
+[15:07:37]   Loading filterscript 'gl_mapicon.amx'...
+[15:07:37]   Loading filterscript 'ls_elevator.amx'...
+[15:07:37]   Loading filterscript 'attachments.amx'...
+[15:07:37]   Loading filterscript 'skinchanger.amx'...
+[15:07:37] 
+--Admin Player Skin Changer Loaded
+
+[15:07:37]   Loading filterscript 'vspawner.amx'...
+[15:07:37] 
+--Admin Vehicle Spawner Loaded
+
+[15:07:37]   Loading filterscript 'ls_mall.amx'...
+[15:07:37]   Loading filterscript 'ls_beachside.amx'...
+[15:07:37] 
+
+[15:07:37]   |---------------------------------------------------
+[15:07:37]   |--- LS BeachSide Filterscript
+[15:07:37]   |--  Script v1.03
+[15:07:37]   |--  19th April 2015
+[15:07:37]   |---------------------------------------------------
+[15:07:37]   |--  LS BeachSide Building Elevator created
+[15:07:37]   |---------------------------------------------------
+[15:07:37]   Loaded 10 filterscripts.
+
+[15:07:37] Loaded 3 vehicles from: vehicles/trains.txt
+[15:07:37] Loaded 3 vehicles from: vehicles/pilots.txt
+[15:07:37] Loaded 10 vehicles from: vehicles/custom.txt
+[15:07:37] Total vehicles from files: 16
+[15:07:37] Loaded Banker NPC
+[15:07:37] Reading File: blank
+[15:07:37] Reading File: properties/houses.txt
+[15:07:37] Reading File: properties/businesses.txt
+[15:07:37] Reading File: properties/banks.txt
+[15:07:37] Reading File: properties/police.txt
+[15:07:37] 
+---------------------------------------
+[15:07:37] Script Testing - by the [Lsrcr]Wajeeh
+
+[15:07:37] ---------------------------------------
+
+[15:07:37] Number of vehicle models: 11
+[15:07:37] [connection] 127.0.0.1:52561 requests connection cookie.
+[15:07:38] [connection] 192.168.0.100:52562 requests connection cookie.
+[15:07:38] [connection] incoming connection: 127.0.0.1:52561 id: 0
+[15:07:39] [npc:join] Player has joined the server (0:127.0.0.1)
+[15:07:39] [connection] incoming connection: 192.168.0.100:52562 id: 1
+[15:07:39] [join] [Lsrcr]Wajeeh has joined the server (1:192.168.0.100)
+[15:07:43] RCON (In-Game): Player #1 ([Lsrcr]Wajeeh) has logged in.

@@ -564,6 +564,7 @@ public OnPlayerSpawn(playerid)
 	{
  		Attach3DTextLabelToPlayer(Botinfo, playerid, 0.0, 0.0, 0.0);
  		ShowPlayerNameTagForPlayer(1, playerid, 1);
+ 		SetPlayerColor(playerid, 0x8B0000FF);
      	return 1;
     }
 	
