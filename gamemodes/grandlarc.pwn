@@ -556,11 +556,16 @@ public WriteVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, co
 
 // ------------------------- /* CUSTOM FUNCTIONS */ ------------------------------------
 										
-
+new Text3D:Botinfo; // name for NPC
 
 public OnPlayerSpawn(playerid)
 {
-	if(IsPlayerNPC(playerid)) return 1;
+	if(IsPlayerNPC(playerid))
+	{
+ 		Attach3DTextLabelToPlayer(Botinfo, playerid, 0.0, 0.0, 0.0);
+ 		ShowPlayerNameTagForPlayer(1, playerid, 1);
+     	return 1;
+    }
 	
 	new randSpawn = 0;
 	
@@ -827,16 +832,17 @@ public OnPlayerRequestClass(playerid, classid)
 
 //----------------------------------------------------------
 
+
 public OnGameModeInit()
 {
 	SetGameModeText("SWAT Testing Server");
 	ShowPlayerMarkers(PLAYER_MARKERS_MODE_GLOBAL);
-	ShowNameTags(1);
 	SetNameTagDrawDistance(40.0);
 	EnableStuntBonusForAll(0);
 	DisableInteriorEnterExits();
 	SetWeather(2);
 	SetWorldTime(11);
+	Botinfo = Create3DTextLabel("Player",0x8B000000,0.0, 0.0,0.0,30.0,0);
 	
 	
 	//SetObjectsDefaultCameraCol(true);
@@ -944,6 +950,8 @@ public OnGameModeInit()
 
 
 	//					NPC Settings
+	
+	ShowNameTags(1);
 
 	return 1;
 }
