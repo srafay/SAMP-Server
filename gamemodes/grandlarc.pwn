@@ -102,6 +102,12 @@ public OnPlayerConnect(playerid)
 	GetPlayerVersion(playerid, ClientVersion, 32);
 	printf("Player %d reports client version: %s", playerid, ClientVersion);*/
 
+	if(IsPlayerNPC(playerid)) {
+     SetSpawnInfo(playerid, NO_TEAM, 60, -13.0069, -122.7030, 2.0356, 0.0, -1, -1, -1, -1, -1, -1);
+     SpawnPlayer(playerid);
+     return 1;
+	}
+
  	return 1;
 }
 
@@ -806,7 +812,11 @@ ClassSel_HandleCitySelection(playerid)
 
 public OnPlayerRequestClass(playerid, classid)
 {
-	if(IsPlayerNPC(playerid)) return 1;
+	if(IsPlayerNPC(playerid)) {
+     SetSpawnInfo(playerid, NO_TEAM, 60, -13.0069, -122.7030, 2.0356, 0.0, -1, -1, -1, -1, -1, -1);
+     SpawnPlayer(playerid);
+     return 1;
+	}
 
 	if(gPlayerHasCitySelected[playerid]) {
 		ClassSel_SetupCharSelection(playerid);

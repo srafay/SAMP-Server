@@ -10,5 +10,5 @@ public OnRecordingPlaybackEnd()
 
   public OnNPCSpawn()
   {
-  	StartRecordingPlayback(RECORDING_TYPE, RECORDING);
+  	StartRecordingPlayback(2, "npcbank.rec");
   }
