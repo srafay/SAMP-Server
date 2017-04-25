@@ -543,17 +543,17 @@ CMD:gate(playerid, params[])
 {
 if(GateOpen == 0)
      {
-   		  SendClientMessage(playerid, 0xFFFFFFFF, "Gate is opening");
-          MoveDynamicObject(Gate1, 1123.66003, -1561.89551, 8.96000, 3.0);
-          MoveDynamicObject(Gate2, 1132.51465, -1561.94226, 8.96000, 3.0);
-          GateOpen = 1;
+				SendClientMessage(playerid, 0xFFFFFFFF, "Gate is opening");
+				MoveDynamicObject(Gate1, 1123.66003, -1561.89551, 7.8200, 3.0);
+				MoveDynamicObject(Gate2, 1132.51465, -1561.94226, 7.8200, 3.0);
+				GateOpen = 1;
      }
      else
      {
-          SendClientMessage(playerid, 0xFFFFFFFF, "Gate is closing");
-          MoveDynamicObject(Gate1, 1123.66003, -1561.89551, 16.05178, 2.0);
-          MoveDynamicObject(Gate2, 1132.51465, -1561.94226, 16.05180, 2.0);
-          GateOpen = 0;
+				SendClientMessage(playerid, 0xFFFFFFFF, "Gate is closing");
+				MoveDynamicObject(Gate1, 1123.66003, -1561.89551, 16.05178, 2.0);
+				MoveDynamicObject(Gate2, 1132.51465, -1561.94226, 16.05180, 2.0);
+				GateOpen = 0;
      }
      return 1;
 }
