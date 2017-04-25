@@ -40,6 +40,15 @@
 #define white "{FFFFFF}"
 #define gray "{D4D4D4}"
 
+/*  GATE TESt*/
+
+new GateOpen;
+new Gate1;
+new Gate2;
+new stock GateTimer;
+
+/* GATE TESt*/
+
 new total_vehicles_from_files=0;
 
 // Class selection globals
@@ -78,6 +87,7 @@ main()
 
 public OnPlayerConnect(playerid)
 {
+   	RemoveBuildingForPlayer(playerid, 1297, 1128.0391, -1567.5313, 15.8594, 0.25);
 	GameTextForPlayer(playerid,"~w~Script Testing Server",3000,4);
   	SendClientMessage(playerid,COLOR_WHITE,"Welcome to {88AA88}G{FFFFFF}rand {88AA88}L{FFFFFF}arceny");
   	
@@ -108,30 +118,28 @@ public OnPlayerConnect(playerid)
 
 //----------------------------------------------------------
 
-public OnPlayerCommandText(playerid, cmdtext[])
-{
-     if(!strcmp(cmdtext, "/staff"))
-     {
-        new sendername[MAX_PLAYER_NAME];
-		new string[64 + MAX_PLAYER_NAME];
-		for(new i=0; i < MAX_PLAYERS; ++i)
-		{
-		    if(IsPlayerConnected(i))
-		    {
-		        if(IsPlayerAdmin(i))
-		        {
-		            GetPlayerName(i, sendername, sizeof(sendername));
-		            format(string, 100, "Online Admins : %i, %s", IsPlayerAdmin(i), sendername);
-		            SendClientMessage(playerid, 0x00FF00FF, string);
-		        }
-		    }
-		}
-		return 1;
-     }
-     return 0;
-}
 
 // ------------------------- /* Z COMMANDS */ ------------------------------------------
+
+CMD:staff(playerid, params[])
+{
+new admin[100], string[100];
+format(string, sizeof(string), "Staff members online : ");
+SendClientMessage(playerid, 0xFFFFFFFF, string);
+	for (new i=0; i < MAX_PLAYERS; ++i)
+	{
+	    if (IsPlayerConnected(i))
+	    {
+	        if (IsPlayerAdmin(i))
+	        {
+	            GetPlayerName(i, admin, sizeof(admin));
+	            format(string, sizeof(string), "%s\n", admin);
+ 				SendClientMessage(playerid, 0xFFFFFFFF, string);
+	        }
+	    }
+	}
+	return 1;
+}
 
 CMD:healme(playerid, params[])
 {
@@ -531,6 +539,26 @@ CMD:cmds(playerid, params[])
 }
 
 
+CMD:gate(playerid, params[])
+{
+if(GateOpen == 0)
+     {
+   		  SendClientMessage(playerid, 0xFFFFFFFF, "Gate is opening");
+          MoveDynamicObject(Gate1, 1123.66003, -1561.89551, 8.96000, 3.0);
+          MoveDynamicObject(Gate2, 1132.51465, -1561.94226, 8.96000, 3.0);
+          GateOpen = 1;
+     }
+     else
+     {
+          SendClientMessage(playerid, 0xFFFFFFFF, "Gate is closing");
+          MoveDynamicObject(Gate1, 1123.66003, -1561.89551, 16.05178, 2.0);
+          MoveDynamicObject(Gate2, 1132.51465, -1561.94226, 16.05180, 2.0);
+          GateOpen = 0;
+     }
+     return 1;
+}
+
+
 // ------------------------- /* Z COMMANDS */ ------------------------------------------
 										
 										
@@ -553,6 +581,31 @@ public WriteVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, co
 	fwrite(pos, string);
 	fclose(pos);
 	return 1;
+}
+
+/*public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
+{
+	new message[100];
+	
+	if (GetVehicleModel(vehicleid) == 560)
+	{
+	    ClearAnimations(playerid);
+	}
+	if (GetVehicleModel(vehicleid) == 556 || GetVehicleModel(vehicleid) == 557)
+	{
+	    format(message, sizeof(message), "%sEntering Monster", cyan);
+		SendClientMessage(playerid, 0xFFFFFFFF, message);
+		RemovePlayerFromVehicle(playerid);
+	}
+	return 1;
+}*/
+
+public OnPlayerStateChange(playerid, newstate, oldstate)
+{
+     if(newstate == PLAYER_STATE_DRIVER && GetPlayerVehicleID(playerid) == 16)
+          RemovePlayerFromVehicle(playerid);
+
+     return 1;
 }
 
 // ------------------------- /* CUSTOM FUNCTIONS */ ------------------------------------
@@ -845,6 +898,12 @@ public OnGameModeInit()
 	SetWeather(2);
 	SetWorldTime(11);
 	Botinfo = Create3DTextLabel("Player",0x8B000000,0.0, 0.0,0.0,30.0,0);
+	
+	/* GATE */
+	Gate1 = CreateDynamicObject(971, 1123.66003, -1561.89551, 16.05178, 0.00000, 0.00000, 0.30000);
+	Gate2 = CreateDynamicObject(971, 1132.51465, -1561.94226, 16.05180, 0.00000, 0.00000, 0.00000);
+	
+	/* GATE */
 	
 	
 	//SetObjectsDefaultCameraCol(true);
