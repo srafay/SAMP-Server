@@ -1,0 +1,9 @@
+{
+  "cmd": "pawncc.exe",
+  "args": ["{FILE_ACTIVE}",  "-iC:\\Users\\scsc\\Desktop\\samp037_svr_R2-1-1_win32\\SAMP-Server\\pawno\\include", "-o{FILE_ACTIVE_PATH}\\{FILE_ACTIVE_NAME_BASE}", "-D{FILE_ACTIVE_PATH}"],
+  "sh": false,
+  "cwd": "C:\\Users\\scsc\\Desktop\\samp037_svr_R2-1-1_win32\\SAMP-Server\\pawno",
+  "env": {
+
+  }
+}

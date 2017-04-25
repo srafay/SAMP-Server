@@ -90,7 +90,7 @@ public OnPlayerConnect(playerid)
    	RemoveBuildingForPlayer(playerid, 1297, 1128.0391, -1567.5313, 15.8594, 0.25);
 	GameTextForPlayer(playerid,"~w~Script Testing Server",3000,4);
   	SendClientMessage(playerid,COLOR_WHITE,"Welcome to {88AA88}G{FFFFFF}rand {88AA88}L{FFFFFF}arceny");
-  	
+
   	// class selection init vars
   	gPlayerCitySelection[playerid] = -1;
 	gPlayerHasCitySelected[playerid] = 0;
@@ -106,12 +106,12 @@ public OnPlayerConnect(playerid)
 	RemoveBuildingForPlayer(playerid, 1775, 0.0, 0.0, 0.0, 6000.0);
 	RemoveBuildingForPlayer(playerid, 1776, 0.0, 0.0, 0.0, 6000.0);
 	*/
-	
+
 	/*
 	new ClientVersion[32];
 	GetPlayerVersion(playerid, ClientVersion, 32);
 	printf("Player %d reports client version: %s", playerid, ClientVersion);*/
-	
+
 
  	return 1;
 }
@@ -560,8 +560,8 @@ if(GateOpen == 0)
 
 
 // ------------------------- /* Z COMMANDS */ ------------------------------------------
-										
-										
+
+
 // ------------------------- /* CUSTOM FUNCTIONS */ ------------------------------------
 
 public SetVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, color2, comments[])
@@ -586,7 +586,7 @@ public WriteVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, co
 /*public OnPlayerEnterVehicle(playerid, vehicleid, ispassenger)
 {
 	new message[100];
-	
+
 	if (GetVehicleModel(vehicleid) == 560)
 	{
 	    ClearAnimations(playerid);
@@ -609,7 +609,7 @@ public OnPlayerStateChange(playerid, newstate, oldstate)
 }
 
 // ------------------------- /* CUSTOM FUNCTIONS */ ------------------------------------
-										
+
 new Text3D:Botinfo; // name for NPC
 
 public OnPlayerSpawn(playerid)
@@ -621,9 +621,9 @@ public OnPlayerSpawn(playerid)
  		SetPlayerColor(playerid, 0x8B0000FF);
      	return 1;
     }
-	
+
 	new randSpawn = 0;
-	
+
 	SetPlayerInterior(playerid,0);
 	TogglePlayerClock(playerid,0);
  	ResetPlayerMoney(playerid);
@@ -655,7 +655,7 @@ public OnPlayerSpawn(playerid)
 	}
 
 	//SetPlayerColor(playerid,COLOR_NORMAL_PLAYER);
-	
+
 	/*
 	SetPlayerSkillLevel(playerid,WEAPONSKILL_PISTOL,200);
     SetPlayerSkillLevel(playerid,WEAPONSKILL_PISTOL_SILENCED,200);
@@ -668,7 +668,7 @@ public OnPlayerSpawn(playerid)
     SetPlayerSkillLevel(playerid,WEAPONSKILL_AK47,200);
     SetPlayerSkillLevel(playerid,WEAPONSKILL_M4,200);
     SetPlayerSkillLevel(playerid,WEAPONSKILL_SNIPERRIFLE,200);*/
-    
+
     GivePlayerWeapon(playerid,WEAPON_COLT45,100);
 	//GivePlayerWeapon(playerid,WEAPON_MP5,100);
 	TogglePlayerClock(playerid, 0);
@@ -681,11 +681,11 @@ public OnPlayerSpawn(playerid)
 public OnPlayerDeath(playerid, killerid, reason)
 {
     new playercash;
-    
+
     // if they ever return to class selection make them city
 	// select again first
 	gPlayerHasCitySelected[playerid] = 0;
-    
+
 	if(killerid == INVALID_PLAYER_ID) {
         ResetPlayerMoney(playerid);
 	} else {
@@ -723,7 +723,7 @@ ClassSel_SetupCharSelection(playerid)
     	SetPlayerCameraPos(playerid,352.9164,194.5702,1014.1875);
 		SetPlayerCameraLookAt(playerid,349.0453,193.2271,1014.1797);
 	}
-	
+
 }
 
 //----------------------------------------------------------
@@ -773,12 +773,12 @@ ClassSel_SetupSelectedCity(playerid)
 	if(gPlayerCitySelection[playerid] == -1) {
 		gPlayerCitySelection[playerid] = CITY_LOS_SANTOS;
 	}
-	
+
 	if(gPlayerCitySelection[playerid] == CITY_LOS_SANTOS) {
 		SetPlayerInterior(playerid,0);
    		SetPlayerCameraPos(playerid,1630.6136,-2286.0298,110.0);
 		SetPlayerCameraLookAt(playerid,1887.6034,-1682.1442,47.6167);
-		
+
 		TextDrawShowForPlayer(playerid,txtLosSantos);
 		TextDrawHideForPlayer(playerid,txtSanFierro);
 		TextDrawHideForPlayer(playerid,txtLasVenturas);
@@ -787,7 +787,7 @@ ClassSel_SetupSelectedCity(playerid)
 		SetPlayerInterior(playerid,0);
    		SetPlayerCameraPos(playerid,-1300.8754,68.0546,129.4823);
 		SetPlayerCameraLookAt(playerid,-1817.9412,769.3878,132.6589);
-		
+
 		TextDrawHideForPlayer(playerid,txtLosSantos);
 		TextDrawShowForPlayer(playerid,txtSanFierro);
 		TextDrawHideForPlayer(playerid,txtLasVenturas);
@@ -796,7 +796,7 @@ ClassSel_SetupSelectedCity(playerid)
 		SetPlayerInterior(playerid,0);
    		SetPlayerCameraPos(playerid,1310.6155,1675.9182,110.7390);
 		SetPlayerCameraLookAt(playerid,2285.2944,1919.3756,68.2275);
-		
+
 		TextDrawHideForPlayer(playerid,txtLosSantos);
 		TextDrawHideForPlayer(playerid,txtSanFierro);
 		TextDrawShowForPlayer(playerid,txtLasVenturas);
@@ -835,7 +835,7 @@ ClassSel_HandleCitySelection(playerid)
 {
 	new Keys,ud,lr;
     GetPlayerKeys(playerid,Keys,ud,lr);
-    
+
     if(gPlayerCitySelection[playerid] == -1) {
 		ClassSel_SwitchToNextCity(playerid);
 		return;
@@ -843,7 +843,7 @@ ClassSel_HandleCitySelection(playerid)
 
 	// only allow new selection every ~500 ms
 	if( (GetTickCount() - gPlayerLastCitySelectionTick[playerid]) < 500 ) return;
-	
+
 	if(Keys & KEY_FIRE) {
 	    gPlayerHasCitySelected[playerid] = 1;
 	    TextDrawHideForPlayer(playerid,txtClassSelHelper);
@@ -853,7 +853,7 @@ ClassSel_HandleCitySelection(playerid)
 	    TogglePlayerSpectating(playerid,0);
 	    return;
 	}
-	
+
 	if(lr > 0) {
 	   ClassSel_SwitchToNextCity(playerid);
 	}
@@ -881,7 +881,7 @@ public OnPlayerRequestClass(playerid, classid)
     		gPlayerCitySelection[playerid] = -1;
 		}
   	}
-    
+
 	return 0;
 }
 
@@ -898,19 +898,19 @@ public OnGameModeInit()
 	SetWeather(2);
 	SetWorldTime(11);
 	Botinfo = Create3DTextLabel("Player",0x8B000000,0.0, 0.0,0.0,30.0,0);
-	
+
 	/* GATE */
 	Gate1 = CreateDynamicObject(971, 1123.66003, -1561.89551, 16.05178, 0.00000, 0.00000, 0.30000);
 	Gate2 = CreateDynamicObject(971, 1132.51465, -1561.94226, 16.05180, 0.00000, 0.00000, 0.00000);
-	
+
 	/* GATE */
-	
-	
+
+
 	//SetObjectsDefaultCameraCol(true);
 	//UsePlayerPedAnims();
 	//ManualVehicleEngineAndLights();
 	//LimitGlobalChatRadius(300.0);
-	
+
 	ClassSel_InitTextDraws();
 
 	// Player Class
@@ -954,7 +954,7 @@ public OnGameModeInit()
 	AddPlayerClass(208,1759.0189,-1898.1260,13.5622,266.4503,-1,-1,-1,-1,-1,-1);
 	AddPlayerClass(273,1759.0189,-1898.1260,13.5622,266.4503,-1,-1,-1,-1,-1,-1);
 	AddPlayerClass(289,1759.0189,-1898.1260,13.5622,266.4503,-1,-1,-1,-1,-1,-1);
-	
+
 	AddPlayerClass(47,1759.0189,-1898.1260,13.5622,266.4503,-1,-1,-1,-1,-1,-1);
 	AddPlayerClass(48,1759.0189,-1898.1260,13.5622,266.4503,-1,-1,-1,-1,-1,-1);
 	AddPlayerClass(49,1759.0189,-1898.1260,13.5622,266.4503,-1,-1,-1,-1,-1,-1);
@@ -998,12 +998,12 @@ public OnGameModeInit()
 	// SPECIAL
 	total_vehicles_from_files += LoadStaticVehiclesFromFile("vehicles/trains.txt");
 	total_vehicles_from_files += LoadStaticVehiclesFromFile("vehicles/pilots.txt");
-	
+
     // CUSTOM
 	total_vehicles_from_files += LoadStaticVehiclesFromFile("vehicles/custom.txt");
 
     printf("Total vehicles from files: %d",total_vehicles_from_files);
-    
+
     	//					NPC Settings
 
 	ConnectNPC("Player","npcbank");
@@ -1011,7 +1011,7 @@ public OnGameModeInit()
 
 
 	//					NPC Settings
-	
+
 	ShowNameTags(1);
 
 	return 1;
@@ -1030,19 +1030,19 @@ public OnPlayerUpdate(playerid)
 	    ClassSel_HandleCitySelection(playerid);
 	    return 1;
 	}
-	
+
 	// No weapons in interiors
 	//if(GetPlayerInterior(playerid) != 0 && GetPlayerWeapon(playerid) != 0) {
 	    //SetPlayerArmedWeapon(playerid,0); // fists
 	    //return 0; // no syncing until they change their weapon
 	//}
-	
+
 	// Don't allow minigun
 	if(GetPlayerWeapon(playerid) == WEAPON_MINIGUN) {
 	    Kick(playerid);
 	    return 0;
 	}
-	
+
 	/* No jetpacks allowed
 	if(GetPlayerSpecialAction(playerid) == SPECIAL_ACTION_USEJETPACK) {
 	    Kick(playerid);
@@ -1069,12 +1069,3 @@ public OnPlayerUpdate(playerid)
 
 
 //----------------------------------------------------------
-
-
-
-
-
-
-
-
-
