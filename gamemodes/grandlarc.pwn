@@ -395,7 +395,7 @@ CMD:vspawnd(playerid, params[])
 	}
 	else
 	{
-        new id, Float:x, Float:y, Float:z, Float:a, color1, color2, comments[50], returnID;
+        new id, Float:x, Float:y, Float:z, Float:a, color1, color2, comments[100], returnID;
 		if (isnull(params))
 		{
 			return SendClientMessage(playerid, 0x00FF0000, "Usage : {FFFFFF}vspawnd vehicleid xVal yVal zVal aVal colorid1 colorid2 comments");
@@ -403,7 +403,7 @@ CMD:vspawnd(playerid, params[])
 		else
 		{
 
-			sscanf(params, "iffffiis[49]", id, x, y, z, a, color1, color2, comments);
+			sscanf(params, "iffffiis[100]", id, x, y, z, a, color1, color2, comments);
 			returnID = SetVehSpawn(id, x, y, z, a, color1, color2,comments);
 			if (returnID == 65535)
 			{
@@ -541,21 +541,28 @@ CMD:cmds(playerid, params[])
 
 CMD:gate(playerid, params[])
 {
-if(GateOpen == 0)
-     {
+	if (IsPlayerInRangeOfPoint(playerid, 17.0, 1127.55003, -1561.89551, 9.8200))
+	{
+		if(GateOpen == 0)
+		     {
 				SendClientMessage(playerid, 0xFFFFFFFF, "Gate is opening");
 				MoveDynamicObject(Gate1, 1123.66003, -1561.89551, 7.8200, 3.0);
 				MoveDynamicObject(Gate2, 1132.51465, -1561.94226, 7.8200, 3.0);
 				GateOpen = 1;
-     }
-     else
-     {
+		     }
+		     else
+		     {
 				SendClientMessage(playerid, 0xFFFFFFFF, "Gate is closing");
 				MoveDynamicObject(Gate1, 1123.66003, -1561.89551, 16.05178, 2.0);
 				MoveDynamicObject(Gate2, 1132.51465, -1561.94226, 16.05180, 2.0);
 				GateOpen = 0;
-     }
-     return 1;
+		     }
+		     return 1;
+		}
+		else
+		{
+			SendClientMessage(playerid, 0xFFB40404, "You are not in range of the gate.");
+		}
 }
 
 
