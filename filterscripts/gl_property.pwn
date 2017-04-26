@@ -673,25 +673,25 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 	        gLastPropertyEnterNotification[playerid] = id;
           	switch( properties[id][eType] ){
 		    	case TYPE_HOUSE:{
-		        	format(pmsg,256,"* House: type /enter to enter");
+		        	format(pmsg,256,"* House: Press [F] to enter the house");
 		        	SendClientMessage( playerid, 0xFF55BBFF, pmsg );
 		        	return 1;
 				}
 
 				case TYPE_BUSINESS:{
-			   		format(pmsg,256,"* Business: type /enter to enter");
+			   		format(pmsg,256,"* Business: Press [F] to enter the business");
 		        	SendClientMessage( playerid, 0xFF55BBFF, pmsg );
 		        	return 1;
 				}
 
 				case TYPE_BANK:{
-					format(pmsg,256,"* Bank: type /enter to enter");
+					format(pmsg,256,"* Bank: Press [F] to enter the house the bank");
 		        	SendClientMessage( playerid, 0xFF55BBFF, pmsg );
 		        	return 1;
 				}
 
 				case TYPE_COP:{
-					format(pmsg,256,"* Police Station: type /enter to enter");
+					format(pmsg,256,"* Police Station: Press [F] to enter the police station");
 		        	SendClientMessage( playerid, 0xFF55BBFF, pmsg );
 		        	return 1;
 				}
@@ -703,6 +703,30 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 	return 1;
 }
 
+
+public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
+{
+    if(newkeys & KEY_SECONDARY_ATTACK)
+    {
+		if( lastPickup[playerid] != -1 || properties[lastPickup[playerid]][eType] > 0 ){
+		    new
+		        id = propPickups[lastPickup[playerid]],
+		        Float:x,
+		        Float:y,
+		        Float:z;
+
+			GetPropertyEntrance( id, x, y, z );
+	    	if( IsPlayerInRangeOfPoint( playerid, 3.0, x, y, z )){
+	    	    PutPlayerInProperty( playerid, id );
+	    	    SendClientMessage( playerid, 0x55AADDFF, "* You have entered a property.. type /exith to leave" );
+	    	    return 1;
+			}
+		}
+		return 1;
+    }
+}
+
+
 public OnPlayerCommandText(playerid, cmdtext[])
 {
 	new idx;
@@ -711,7 +735,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 	cmd = strtok(cmdtext, idx);
 
 	// Public commands.
-	if(strcmp("/enter", cmd, true) == 0) // enter property
+
+	// enter command is now replaced with F key
+	/* if(strcmp("/enter", cmd, true) == 0) // enter property
 	{
 		if( lastPickup[playerid] != -1 || properties[lastPickup[playerid]][eType] > 0 ){
 		    new
@@ -728,8 +754,8 @@ public OnPlayerCommandText(playerid, cmdtext[])
 			}
 		}
 		return 1;
-	}
-	else if(strcmp("/exit", cmd, true) == 0) // exit property
+	} */
+	if(strcmp("/exith", cmd, true) == 0) // exit property
 	{
 	    if( currentInt[playerid] > -1 && GetPlayerInterior(playerid) == GetPropertyInteriorId( currentInt[playerid] )){
 
@@ -740,11 +766,11 @@ public OnPlayerCommandText(playerid, cmdtext[])
 			new	Float:a;
 
 			// make sure they're near the exit before allowing them to exit.
-			GetPropertyExit( id, x, y, z );
+			/*GetPropertyExit( id, x, y, z );
 			if(!IsPlayerInRangeOfPoint(playerid,4.5,x,y,z)) {
-			    SendClientMessage(playerid,0xDDAA55FF,"* You must be near the property exit to /exit");
+			    SendClientMessage(playerid,0xDDAA55FF,"* You must be near the property exit to /exith");
 			    return 1;
-			}
+			}*/
 
 			a = GetPropertyEntrance( id, x, y, z );
 			SetPlayerPos( playerid, x, y, z );
