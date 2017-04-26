@@ -92,7 +92,7 @@ new propIcons[MAX_TYPES][E_P_TYPES] =	{
 											{ 1274, "Bank" }, 			// TYPE_BANK dollar sign icon
 											{ 1247, "Police Station" }	// TYPE_COP Bribe Star 1247
 										};
-										
+
 new	propFile[MAX_TYPES][64] =   {
 									{ "blank" },
 		                            { "properties/houses.txt" },
@@ -100,7 +100,7 @@ new	propFile[MAX_TYPES][64] =   {
 		                            { "properties/banks.txt" },
 		                            { "properties/police.txt" }
 							 	};
-							 	
+
 //  Keep track of what properties we've sent an /enter notification for
 new gLastPropertyEnterNotification[MAX_PLAYERS];
 
@@ -409,7 +409,7 @@ PutPlayerInProperty( playerid, propId, propVW = 0 )
 {
 	new Float:x, Float:y, Float:z, Float:a;
 	new intFileId;
-	
+
     a = GetPropertyExit( propId, x, y, z );
 	SetPlayerPos( playerid, x, y, z );
 	SetPlayerFacingAngle( playerid, a );
@@ -417,11 +417,11 @@ PutPlayerInProperty( playerid, propId, propVW = 0 )
 	SetPlayerVirtualWorld( playerid, (propVW==0)? propId+PROP_VW:propVW );
 	intFileId = GetPropertyInteriorFileId(propId);
 	currentInt[playerid] = propId;
-	
+
 	//new dbgstring[128];
 	//format(dbgstring,sizeof(dbgstring),"PutPlayerInProperty(%d): FileInt=%d",propId,intFileId);
 	//SendClientMessage(playerid,0xFFFFFFFF,dbgstring);
-	
+
 	// the following will make the client shop scripts run if we tell it
 	// the name of the shop.
 	if(intFileId == 22) {
@@ -445,7 +445,7 @@ PutPlayerInProperty( playerid, propId, propVW = 0 )
 	else if(intFileId == 123) {
 	    SetPlayerShopName(playerid,"AMMUN5");
 	}
-	
+
 }
 
 // Adds new property to property file
@@ -491,11 +491,11 @@ CreateProperty( uniqIntId, iconId,  Float:entX, Float:entY, Float:entZ, Float:en
 		properties[unid][ePrice] 	= price;
 		properties[unid][eType] 	= p_type;
 		format( properties[unid][ePname], 64, "%s", name );
-		
+
 		new text_info[256];
-		
+
 		propTextInfo[unid] = Text3D:INVALID_3DTEXT_ID;
-		
+
 		if(p_type == TYPE_HOUSE) {
 		    format(text_info,256,"{FFFFFF}[{88EE88}House{FFFFFF}]");
 		    propTextInfo[unid] = Create3DTextLabel(text_info,0x88EE88FF,entX,entY,entZ+0.75,20.0,0,1);
@@ -668,7 +668,7 @@ public OnPlayerPickUpPickup(playerid, pickupid)
 	new pmsg[256];
 
 	if( properties[id][eType] > 0 ){
-	
+
 	    if(gLastPropertyEnterNotification[playerid] != id){
 	        gLastPropertyEnterNotification[playerid] = id;
           	switch( properties[id][eType] ){
@@ -709,7 +709,7 @@ public OnPlayerCommandText(playerid, cmdtext[])
 	new cmd[256];
 
 	cmd = strtok(cmdtext, idx);
-	
+
 	// Public commands.
 	if(strcmp("/enter", cmd, true) == 0) // enter property
 	{
@@ -755,10 +755,10 @@ public OnPlayerCommandText(playerid, cmdtext[])
 		currentInt[playerid] = -1;
 		return 1;
 	}
-	
+
 	// The rest of the commands here are for
 	// property creation which is admin only.
-	
+
 	if(!IsPlayerAdmin(playerid)) return 0;
 
 	if(strcmp("/chouse", cmd, true) == 0) // creates a house type property

@@ -707,6 +707,21 @@ public OnPlayerDeath(playerid, killerid, reason)
 
 //----------------------------------------------------------
 
+
+/*{
+    if(newkeys & KEY_SECONDARY_FIRE)
+    {
+        if(IsPlayerInRangeOfPoint(playerid, 1.0, 1170.66, -1489.51, 22.76))
+		{
+
+		}
+    }
+
+}*/
+
+
+//----------------------------------------------------------
+
 ClassSel_SetupCharSelection(playerid)
 {
    	if(gPlayerCitySelection[playerid] == CITY_LOS_SANTOS) {
@@ -911,6 +926,11 @@ public OnGameModeInit()
 	Gate2 = CreateDynamicObject(971, 1132.51465, -1561.94226, 16.05180, 0.00000, 0.00000, 0.00000);
 
 	/* GATE */
+
+	/* Houses*/
+	AddStaticPickup(1273, 1, 1170.66, -1489.51, 22.76, -1);
+
+	/* Houses */
 
 
 	//SetObjectsDefaultCameraCol(true);
