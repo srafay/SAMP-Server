@@ -64,6 +64,21 @@ new Text:txtLasVenturas;
 //new thisanimid=0;
 //new lastanimid=0;
 
+new DCC_Channel:g_WelcomeChannelId;
+
+native DCC_Connect(const bot_token[]);
+
+native DCC_Channel:DCC_FindChannelByName(const channel_name[]);
+native DCC_Channel:DCC_FindChannelById(const channel_id[]);
+
+native DCC_IsChannelPrivate(DCC_Channel:channel, &bool:is_private);
+native DCC_GetChannelName(DCC_Channel:channel, dest[], max_size = sizeof dest);
+native DCC_GetChannelId(DCC_Channel:channel, dest[], max_size = sizeof dest);
+native DCC_GetChannelTopic(DCC_Channel:channel, dest[], max_size = sizeof dest);
+
+native DCC_SendChannelMessage(DCC_Channel:channel, const message[]);
+forward DCC_OnChannelMessage(DCC_Channel:channel, const author[], const message[]);
+
 //----------------------------------------------------------
 
 
@@ -565,6 +580,37 @@ CMD:gate(playerid, params[])
 		}
 }
 
+CMD:dmsg(playerid, params[])
+{
+	if (!IsPlayerAdmin(playerid))
+    {
+	    new message[100];
+        format(message, sizeof(message), "%sPermission Denied", red);
+		return SendClientMessage(playerid, 0xFFFFFFFF, message);
+	}
+	else
+	{
+	    if (isnull(params))
+	    {
+			new message[100];
+	        format(message, sizeof(message), "Usage : %s/dmsg message");
+		    return SendClientMessage(playerid,0xFFFFFFFF, message);
+	    }
+	    else
+	    {
+	        new message[100];
+	        new text[100];
+	        new playername[30];
+			sscanf(params, "s[99]", message);
+			GetPlayerName(playerid, playername, 29);
+			format(text, sizeof text, "%s(%d) : %s", playername, playerid, message);
+			DCC_SendChannelMessage(g_WelcomeChannelId, text);
+			return SendClientMessage(playerid, 0x00B40404, "Message sent to the discord channel");
+	    }
+	}
+	
+}
+
 
 // ------------------------- /* Z COMMANDS */ ------------------------------------------
 
@@ -587,6 +633,22 @@ public WriteVehSpawn(modelid, Float:x, Float:y, Float:z, Float:angle, color1, co
 	format(string, sizeof(string), "%i,%f,%f,%f,%f,%i,%i ; %s\r\n", modelid, x, y, z, angle, color1, color2, comments);
 	fwrite(pos, string);
 	fclose(pos);
+	return 1;
+}
+
+public DCC_OnChannelMessage(DCC_Channel:channel, const author[], const message[])
+{
+	new name[100];
+	format(name, sizeof name, author);
+	if ( strcmp(name, "SAMP-BOT", true) )
+	{
+		new channel_name[32];
+		DCC_GetChannelName(channel, channel_name);
+
+		new str[145];
+		format(str, sizeof str, "[Discord/%s] %s: %s", channel_name, author, message);
+		SendClientMessageToAll(-1, str);
+	}
 	return 1;
 }
 
@@ -679,8 +741,17 @@ public OnPlayerSpawn(playerid)
     GivePlayerWeapon(playerid,WEAPON_COLT45,100);
 	//GivePlayerWeapon(playerid,WEAPON_MP5,100);
 	TogglePlayerClock(playerid, 0);
+	
+	if (_:g_WelcomeChannelId == 0)
+		g_WelcomeChannelId = DCC_FindChannelById("335802762287775745"); // Discord channel ID
+
+	new str[128], name[50];
+	GetPlayerName(playerid, name, 50);
+	format(str, sizeof str, "Player %s joined the server.", name);
+	DCC_SendChannelMessage(g_WelcomeChannelId, str);
 
 	return 1;
+
 }
 
 //----------------------------------------------------------
@@ -909,9 +980,9 @@ public OnPlayerRequestClass(playerid, classid)
 
 //----------------------------------------------------------
 
-
 public OnGameModeInit()
 {
+    DCC_Connect("MzM1Nzk4NjI2OTg5Mzc1NDg4.DEvAcQ.SmqkKTbWzt8Fatyz78Y0m2Q3TBo");
 	SetGameModeText("SWAT Testing Server");
 	ShowPlayerMarkers(PLAYER_MARKERS_MODE_GLOBAL);
 	SetNameTagDrawDistance(40.0);

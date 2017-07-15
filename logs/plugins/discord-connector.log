@@ -1,0 +1,3033 @@
+[20:28:09] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[20:28:10] [DEBUG] DCC_Connect("*****")
+[20:28:10] [DEBUG] CCallback::Create(amx=0x7aff00, name='DCC_OnChannelMessage')
+[20:28:10] [DEBUG] CNetwork::Initialize
+[20:28:10] [DEBUG] CNetwork::HttpConnect
+[20:28:11] [DEBUG] CNetwork::HttpGet
+[20:28:11] [DEBUG] CNetwork::HttpSendRequest
+[20:28:11] [DEBUG] CNetwork::HttpPrepareRequest
+[20:28:11] [DEBUG] CNetwork::HttpSendRequest(/api/v5/gateway) (actual send)
+[20:28:11] [DEBUG] CNetwork::HttpWriteRequest
+[20:28:11] [DEBUG] CNetwork::WsConnect
+[20:28:13] [DEBUG] CNetwork::WsRead
+[20:28:13] [DEBUG] CNetwork::WsIdentify
+[20:28:13] [DEBUG] CNetwork::OnWsRead
+[20:28:13] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-5"
+        ],
+        "heartbeat_interval": 41250
+    },
+    "op": 10,
+    "s": null,
+    "t": null
+}
+[20:28:13] [DEBUG] CNetwork::DoHeartbeat
+[20:28:13] [DEBUG] sending heartbeat
+[20:28:13] [DEBUG] CNetwork::WsRead
+[20:28:14] [DEBUG] CNetwork::OnWsRead
+[20:28:14] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:28:14] [DEBUG] heartbeat ACK
+[20:28:14] [DEBUG] CNetwork::WsRead
+[20:28:14] [DEBUG] CNetwork::OnWsRead
+[20:28:14] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-5",
+            "discord-sessions-prd-1-1"
+        ],
+        "guilds": [
+            {
+                "id": "335799382282600449",
+                "unavailable": true
+            }
+        ],
+        "presences": [],
+        "private_channels": [],
+        "relationships": [],
+        "session_id": "50568d0b8ff49febd0e1512702ef49de",
+        "user": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "email": null,
+            "id": "335798626989375488",
+            "mfa_enabled": false,
+            "username": "SAMP-BOT",
+            "verified": true
+        },
+        "user_settings": {},
+        "v": 5
+    },
+    "op": 0,
+    "s": 1,
+    "t": "READY"
+}
+[20:28:14] [DEBUG] CNetwork::WsRead
+[20:28:14] [DEBUG] CNetwork::OnWsRead
+[20:28:14] [DEBUG] OnWsRead: {
+    "d": {
+        "afk_channel_id": null,
+        "afk_timeout": 300,
+        "application_id": null,
+        "channels": [
+            {
+                "id": "335799382282600449",
+                "is_private": false,
+                "last_message_id": null,
+                "name": "general",
+                "permission_overwrites": [],
+                "position": 0,
+                "topic": null,
+                "type": "text"
+            },
+            {
+                "bitrate": 64000,
+                "id": "335799382282600450",
+                "is_private": false,
+                "name": "General",
+                "permission_overwrites": [],
+                "position": 0,
+                "type": "voice",
+                "user_limit": 0
+            },
+            {
+                "id": "335802762287775745",
+                "is_private": false,
+                "last_message_id": null,
+                "name": "in-game-channel",
+                "permission_overwrites": [],
+                "position": 1,
+                "topic": null,
+                "type": "text"
+            }
+        ],
+        "default_message_notifications": 0,
+        "emojis": [],
+        "explicit_content_filter": 0,
+        "features": [],
+        "icon": null,
+        "id": "335799382282600449",
+        "joined_at": "2017-07-15T15:08:03.087723+00:00",
+        "large": false,
+        "member_count": 2,
+        "members": [
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:06:51.606000+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "77a0e7835afc255cf304ccce50108905",
+                    "discriminator": "9855",
+                    "id": "299995629617283072",
+                    "username": "Wajeeh"
+                }
+            },
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:08:03.087723+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+                    "bot": true,
+                    "discriminator": "6510",
+                    "id": "335798626989375488",
+                    "username": "SAMP-BOT"
+                }
+            }
+        ],
+        "mfa_level": 0,
+        "name": "testing bot",
+        "owner_id": "299995629617283072",
+        "presences": [
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "299995629617283072"
+                }
+            },
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "335798626989375488"
+                }
+            }
+        ],
+        "region": "russia",
+        "roles": [
+            {
+                "color": 0,
+                "hoist": false,
+                "id": "335799382282600449",
+                "managed": false,
+                "mentionable": false,
+                "name": "@everyone",
+                "permissions": 104324161,
+                "position": 0
+            }
+        ],
+        "splash": null,
+        "unavailable": false,
+        "verification_level": 0,
+        "voice_states": []
+    },
+    "op": 0,
+    "s": 2,
+    "t": "GUILD_CREATE"
+}
+[20:28:14] [DEBUG] CNetwork::WsRead
+[20:28:14] [DEBUG] DCC_Connect: return value: '1'
+[20:28:15] [DEBUG] CNetwork::OnWsRead
+[20:28:15] [DEBUG] OnWsRead: {
+    "d": {
+        "game": null,
+        "guild_id": "335799382282600449",
+        "nick": null,
+        "roles": [],
+        "status": "offline",
+        "user": {
+            "id": "299995629617283072"
+        }
+    },
+    "op": 0,
+    "s": 3,
+    "t": "PRESENCE_UPDATE"
+}
+[20:28:15] [DEBUG] CNetwork::WsRead
+[20:28:16] [DEBUG] CNetwork::OnWsRead
+[20:28:16] [DEBUG] OnWsRead: {
+    "d": {
+        "game": null,
+        "guild_id": "335799382282600449",
+        "nick": null,
+        "roles": [],
+        "status": "online",
+        "user": {
+            "avatar": "77a0e7835afc255cf304ccce50108905",
+            "discriminator": "9855",
+            "id": "299995629617283072",
+            "username": "Wajeeh"
+        }
+    },
+    "op": 0,
+    "s": 4,
+    "t": "PRESENCE_UPDATE"
+}
+[20:28:16] [DEBUG] CNetwork::WsRead
+[20:28:17] [DEBUG] CNetwork::OnWsRead
+[20:28:17] [DEBUG] OnWsRead: {
+    "d": {
+        "channel_id": "335799382282600450",
+        "deaf": false,
+        "guild_id": "335799382282600449",
+        "mute": false,
+        "self_deaf": false,
+        "self_mute": true,
+        "self_video": false,
+        "session_id": "93af83e25d3f5912c105a84058a00236",
+        "suppress": false,
+        "user_id": "299995629617283072"
+    },
+    "op": 0,
+    "s": 5,
+    "t": "VOICE_STATE_UPDATE"
+}
+[20:28:17] [DEBUG] CNetwork::WsRead
+[20:28:23] [DEBUG] CNetwork::OnWsRead
+[20:28:23] [DEBUG] OnWsRead: {
+    "d": {
+        "channel_id": null,
+        "deaf": false,
+        "guild_id": "335799382282600449",
+        "mute": false,
+        "self_deaf": false,
+        "self_mute": true,
+        "self_video": false,
+        "session_id": "93af83e25d3f5912c105a84058a00236",
+        "suppress": false,
+        "user_id": "299995629617283072"
+    },
+    "op": 0,
+    "s": 6,
+    "t": "VOICE_STATE_UPDATE"
+}
+[20:28:23] [DEBUG] CNetwork::WsRead
+[20:28:55] [DEBUG] CNetwork::DoHeartbeat
+[20:28:55] [DEBUG] sending heartbeat
+[20:28:55] [DEBUG] CNetwork::OnWsRead
+[20:28:55] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:28:55] [DEBUG] heartbeat ACK
+[20:28:55] [DEBUG] CNetwork::WsRead
+[20:29:36] [DEBUG] CNetwork::DoHeartbeat
+[20:29:36] [DEBUG] sending heartbeat
+[20:29:36] [DEBUG] CNetwork::OnWsRead
+[20:29:36] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:29:36] [DEBUG] heartbeat ACK
+[20:29:36] [DEBUG] CNetwork::WsRead
+[20:30:17] [DEBUG] CNetwork::DoHeartbeat
+[20:30:17] [DEBUG] sending heartbeat
+[20:30:17] [DEBUG] CNetwork::OnWsRead
+[20:30:17] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:30:17] [DEBUG] heartbeat ACK
+[20:30:17] [DEBUG] CNetwork::WsRead
+[20:30:58] [DEBUG] CNetwork::DoHeartbeat
+[20:30:58] [DEBUG] sending heartbeat
+[20:30:59] [DEBUG] CNetwork::OnWsRead
+[20:30:59] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:30:59] [DEBUG] heartbeat ACK
+[20:30:59] [DEBUG] CNetwork::WsRead
+[20:32:04] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[20:32:04] [DEBUG] DCC_Connect("*****")
+[20:32:04] [DEBUG] CCallback::Create(amx=0x76ff00, name='DCC_OnChannelMessage')
+[20:32:04] [DEBUG] CNetwork::Initialize
+[20:32:04] [DEBUG] CNetwork::HttpConnect
+[20:32:05] [DEBUG] CNetwork::HttpGet
+[20:32:05] [DEBUG] CNetwork::HttpSendRequest
+[20:32:05] [DEBUG] CNetwork::HttpPrepareRequest
+[20:32:05] [DEBUG] CNetwork::HttpSendRequest(/api/v5/gateway) (actual send)
+[20:32:05] [DEBUG] CNetwork::HttpWriteRequest
+[20:32:05] [DEBUG] CNetwork::WsConnect
+[20:32:07] [DEBUG] CNetwork::WsRead
+[20:32:07] [DEBUG] CNetwork::WsIdentify
+[20:32:07] [DEBUG] CNetwork::OnWsRead
+[20:32:07] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-9"
+        ],
+        "heartbeat_interval": 41250
+    },
+    "op": 10,
+    "s": null,
+    "t": null
+}
+[20:32:07] [DEBUG] CNetwork::DoHeartbeat
+[20:32:07] [DEBUG] sending heartbeat
+[20:32:07] [DEBUG] CNetwork::WsRead
+[20:32:07] [DEBUG] CNetwork::OnWsRead
+[20:32:07] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:32:07] [DEBUG] heartbeat ACK
+[20:32:07] [DEBUG] CNetwork::WsRead
+[20:32:07] [DEBUG] CNetwork::OnWsRead
+[20:32:07] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-9",
+            "discord-sessions-prd-1-3"
+        ],
+        "guilds": [
+            {
+                "id": "335799382282600449",
+                "unavailable": true
+            }
+        ],
+        "presences": [],
+        "private_channels": [],
+        "relationships": [],
+        "session_id": "34fbbd2f58f91ecedda6e6857c459d96",
+        "user": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "email": null,
+            "id": "335798626989375488",
+            "mfa_enabled": false,
+            "username": "SAMP-BOT",
+            "verified": true
+        },
+        "user_settings": {},
+        "v": 5
+    },
+    "op": 0,
+    "s": 1,
+    "t": "READY"
+}
+[20:32:07] [DEBUG] CNetwork::WsRead
+[20:32:07] [DEBUG] CNetwork::OnWsRead
+[20:32:07] [DEBUG] OnWsRead: {
+    "d": {
+        "afk_channel_id": null,
+        "afk_timeout": 300,
+        "application_id": null,
+        "channels": [
+            {
+                "id": "335799382282600449",
+                "is_private": false,
+                "last_message_id": null,
+                "name": "general",
+                "permission_overwrites": [],
+                "position": 0,
+                "topic": null,
+                "type": "text"
+            },
+            {
+                "bitrate": 64000,
+                "id": "335799382282600450",
+                "is_private": false,
+                "name": "General",
+                "permission_overwrites": [],
+                "position": 0,
+                "type": "voice",
+                "user_limit": 0
+            },
+            {
+                "id": "335802762287775745",
+                "is_private": false,
+                "last_message_id": null,
+                "name": "in-game-channel",
+                "permission_overwrites": [],
+                "position": 1,
+                "topic": null,
+                "type": "text"
+            }
+        ],
+        "default_message_notifications": 0,
+        "emojis": [],
+        "explicit_content_filter": 0,
+        "features": [],
+        "icon": null,
+        "id": "335799382282600449",
+        "joined_at": "2017-07-15T15:08:03.087723+00:00",
+        "large": false,
+        "member_count": 2,
+        "members": [
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:06:51.606000+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "77a0e7835afc255cf304ccce50108905",
+                    "discriminator": "9855",
+                    "id": "299995629617283072",
+                    "username": "Wajeeh"
+                }
+            },
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:08:03.087723+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+                    "bot": true,
+                    "discriminator": "6510",
+                    "id": "335798626989375488",
+                    "username": "SAMP-BOT"
+                }
+            }
+        ],
+        "mfa_level": 0,
+        "name": "testing bot",
+        "owner_id": "299995629617283072",
+        "presences": [
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "299995629617283072"
+                }
+            },
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "335798626989375488"
+                }
+            }
+        ],
+        "region": "russia",
+        "roles": [
+            {
+                "color": 0,
+                "hoist": false,
+                "id": "335799382282600449",
+                "managed": false,
+                "mentionable": false,
+                "name": "@everyone",
+                "permissions": 104324161,
+                "position": 0
+            }
+        ],
+        "splash": null,
+        "unavailable": false,
+        "verification_level": 0,
+        "voice_states": []
+    },
+    "op": 0,
+    "s": 2,
+    "t": "GUILD_CREATE"
+}
+[20:32:07] [DEBUG] CNetwork::WsRead
+[20:32:07] [DEBUG] DCC_Connect: return value: '1'
+[20:32:20] [DEBUG] DCC_FindChannelById("335802762287775745")
+[20:32:20] [DEBUG] DCC_FindChannelById: return value: '2'
+[20:32:20] [DEBUG] DCC_SendChannelMessage(2, "Player [Lsrcr]Wajeeh joined the server.")
+[20:32:20] [DEBUG] CNetwork::HttpPost
+[20:32:20] [DEBUG] CNetwork::HttpSendRequest
+[20:32:20] [DEBUG] CNetwork::HttpPrepareRequest
+[20:32:20] [DEBUG] CNetwork::HttpSendRequest(/api/v5/channels/335802762287775745/messages) (actual send)
+[20:32:20] [DEBUG] CNetwork::HttpWriteRequest
+[20:32:20] [DEBUG] DCC_SendChannelMessage: return value: '1'
+[20:32:21] [DEBUG] CNetwork::OnWsRead
+[20:32:21] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "id": "335798626989375488",
+            "username": "SAMP-BOT"
+        },
+        "channel_id": "335802762287775745",
+        "content": "Player [Lsrcr]Wajeeh joined the server.",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335805791292620800",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": null,
+        "pinned": false,
+        "timestamp": "2017-07-15T15:32:19.614000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 3,
+    "t": "MESSAGE_CREATE"
+}
+[20:32:21] [DEBUG] CNetwork::WsRead
+[20:32:42] [DEBUG] CNetwork::OnWsRead
+[20:32:42] [DEBUG] OnWsRead: {
+    "d": {
+        "channel_id": "335802762287775745",
+        "timestamp": 1500132761,
+        "user_id": "299995629617283072"
+    },
+    "op": 0,
+    "s": 4,
+    "t": "TYPING_START"
+}
+[20:32:42] [DEBUG] CNetwork::WsRead
+[20:32:43] [DEBUG] CNetwork::OnWsRead
+[20:32:43] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "77a0e7835afc255cf304ccce50108905",
+            "discriminator": "9855",
+            "id": "299995629617283072",
+            "username": "Wajeeh"
+        },
+        "channel_id": "335802762287775745",
+        "content": "hello",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335805884989177867",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": "335805890990964736",
+        "pinned": false,
+        "timestamp": "2017-07-15T15:32:41.953000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 5,
+    "t": "MESSAGE_CREATE"
+}
+[20:32:43] [DEBUG] CNetwork::WsRead
+[20:32:48] [DEBUG] CNetwork::DoHeartbeat
+[20:32:48] [DEBUG] sending heartbeat
+[20:32:49] [DEBUG] CNetwork::OnWsRead
+[20:32:49] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:32:49] [DEBUG] heartbeat ACK
+[20:32:49] [DEBUG] CNetwork::WsRead
+[20:33:29] [DEBUG] CNetwork::DoHeartbeat
+[20:33:29] [DEBUG] sending heartbeat
+[20:33:30] [DEBUG] CNetwork::OnWsRead
+[20:33:30] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:33:30] [DEBUG] heartbeat ACK
+[20:33:30] [DEBUG] CNetwork::WsRead
+[20:34:11] [DEBUG] CNetwork::DoHeartbeat
+[20:34:11] [DEBUG] sending heartbeat
+[20:34:11] [DEBUG] CNetwork::OnWsRead
+[20:34:11] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:34:11] [DEBUG] heartbeat ACK
+[20:34:11] [DEBUG] CNetwork::WsRead
+[20:34:52] [DEBUG] CNetwork::DoHeartbeat
+[20:34:52] [DEBUG] sending heartbeat
+[20:34:53] [DEBUG] CNetwork::OnWsRead
+[20:34:53] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:34:53] [DEBUG] heartbeat ACK
+[20:34:53] [DEBUG] CNetwork::WsRead
+[20:35:33] [DEBUG] CNetwork::DoHeartbeat
+[20:35:33] [DEBUG] sending heartbeat
+[20:35:34] [DEBUG] CNetwork::OnWsRead
+[20:35:34] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:35:34] [DEBUG] heartbeat ACK
+[20:35:34] [DEBUG] CNetwork::WsRead
+[20:36:14] [DEBUG] CNetwork::DoHeartbeat
+[20:36:14] [DEBUG] sending heartbeat
+[20:36:15] [DEBUG] CNetwork::OnWsRead
+[20:36:15] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:36:15] [DEBUG] heartbeat ACK
+[20:36:15] [DEBUG] CNetwork::WsRead
+[20:38:18] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[20:38:18] [DEBUG] DCC_Connect("*****")
+[20:38:18] [DEBUG] CCallback::Create(amx=0x76ff00, name='DCC_OnChannelMessage')
+[20:38:18] [DEBUG] CCallback::Create - callback index for 'DCC_OnChannelMessage': 0
+[20:38:18] [INFO] Callback 'DCC_OnChannelMessage' set up for delayed execution.
+[20:38:18] [DEBUG] CNetwork::Initialize
+[20:38:18] [DEBUG] CNetwork::HttpConnect
+[20:38:19] [DEBUG] CNetwork::HttpGet
+[20:38:19] [DEBUG] CNetwork::HttpSendRequest
+[20:38:19] [DEBUG] CNetwork::HttpPrepareRequest
+[20:38:19] [DEBUG] CNetwork::HttpSendRequest(/api/v5/gateway) (actual send)
+[20:38:19] [DEBUG] CNetwork::HttpWriteRequest
+[20:38:19] [DEBUG] CNetwork::WsConnect
+[20:38:20] [DEBUG] CNetwork::WsRead
+[20:38:20] [DEBUG] CNetwork::WsIdentify
+[20:38:20] [DEBUG] CNetwork::OnWsRead
+[20:38:20] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-22"
+        ],
+        "heartbeat_interval": 41250
+    },
+    "op": 10,
+    "s": null,
+    "t": null
+}
+[20:38:20] [DEBUG] CNetwork::DoHeartbeat
+[20:38:20] [DEBUG] sending heartbeat
+[20:38:20] [DEBUG] CNetwork::WsRead
+[20:38:21] [DEBUG] CNetwork::OnWsRead
+[20:38:21] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:38:21] [DEBUG] heartbeat ACK
+[20:38:21] [DEBUG] CNetwork::WsRead
+[20:38:21] [DEBUG] CNetwork::OnWsRead
+[20:38:21] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-22",
+            "discord-sessions-prd-1-8"
+        ],
+        "guilds": [
+            {
+                "id": "335799382282600449",
+                "unavailable": true
+            }
+        ],
+        "presences": [],
+        "private_channels": [],
+        "relationships": [],
+        "session_id": "e558050556c13d007e3c830f97e596d5",
+        "user": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "email": null,
+            "id": "335798626989375488",
+            "mfa_enabled": false,
+            "username": "SAMP-BOT",
+            "verified": true
+        },
+        "user_settings": {},
+        "v": 5
+    },
+    "op": 0,
+    "s": 1,
+    "t": "READY"
+}
+[20:38:21] [DEBUG] CNetwork::WsRead
+[20:38:21] [DEBUG] CNetwork::OnWsRead
+[20:38:21] [DEBUG] OnWsRead: {
+    "d": {
+        "afk_channel_id": null,
+        "afk_timeout": 300,
+        "application_id": null,
+        "channels": [
+            {
+                "id": "335799382282600449",
+                "is_private": false,
+                "last_message_id": null,
+                "name": "general",
+                "permission_overwrites": [],
+                "position": 0,
+                "topic": null,
+                "type": "text"
+            },
+            {
+                "bitrate": 64000,
+                "id": "335799382282600450",
+                "is_private": false,
+                "name": "General",
+                "permission_overwrites": [],
+                "position": 0,
+                "type": "voice",
+                "user_limit": 0
+            },
+            {
+                "id": "335802762287775745",
+                "is_private": false,
+                "last_message_id": "335805884989177867",
+                "name": "in-game-channel",
+                "permission_overwrites": [],
+                "position": 1,
+                "topic": null,
+                "type": "text"
+            }
+        ],
+        "default_message_notifications": 0,
+        "emojis": [],
+        "explicit_content_filter": 0,
+        "features": [],
+        "icon": null,
+        "id": "335799382282600449",
+        "joined_at": "2017-07-15T15:08:03.087723+00:00",
+        "large": false,
+        "member_count": 2,
+        "members": [
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:06:51.606000+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "77a0e7835afc255cf304ccce50108905",
+                    "discriminator": "9855",
+                    "id": "299995629617283072",
+                    "username": "Wajeeh"
+                }
+            },
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:08:03.087723+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+                    "bot": true,
+                    "discriminator": "6510",
+                    "id": "335798626989375488",
+                    "username": "SAMP-BOT"
+                }
+            }
+        ],
+        "mfa_level": 0,
+        "name": "testing bot",
+        "owner_id": "299995629617283072",
+        "presences": [
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "299995629617283072"
+                }
+            },
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "335798626989375488"
+                }
+            }
+        ],
+        "region": "russia",
+        "roles": [
+            {
+                "color": 0,
+                "hoist": false,
+                "id": "335799382282600449",
+                "managed": false,
+                "mentionable": false,
+                "name": "@everyone",
+                "permissions": 104324161,
+                "position": 0
+            }
+        ],
+        "splash": null,
+        "unavailable": false,
+        "verification_level": 0,
+        "voice_states": []
+    },
+    "op": 0,
+    "s": 2,
+    "t": "GUILD_CREATE"
+}
+[20:38:21] [DEBUG] CNetwork::WsRead
+[20:38:21] [DEBUG] DCC_Connect: return value: '1'
+[20:38:30] [DEBUG] DCC_FindChannelById("335802762287775745")
+[20:38:30] [DEBUG] DCC_FindChannelById: return value: '2'
+[20:38:30] [DEBUG] DCC_SendChannelMessage(2, "Player [Lsrcr]Wajeeh joined the server.")
+[20:38:30] [DEBUG] CNetwork::HttpPost
+[20:38:30] [DEBUG] CNetwork::HttpSendRequest
+[20:38:30] [DEBUG] CNetwork::HttpPrepareRequest
+[20:38:30] [DEBUG] DCC_SendChannelMessage: return value: '1'
+[20:38:30] [DEBUG] CNetwork::HttpSendRequest(/api/v5/channels/335802762287775745/messages) (actual send)
+[20:38:30] [DEBUG] CNetwork::HttpWriteRequest
+[20:38:31] [DEBUG] CNetwork::OnWsRead
+[20:38:31] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "id": "335798626989375488",
+            "username": "SAMP-BOT"
+        },
+        "channel_id": "335802762287775745",
+        "content": "Player [Lsrcr]Wajeeh joined the server.",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335807342207696897",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": null,
+        "pinned": false,
+        "timestamp": "2017-07-15T15:38:29.381000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 3,
+    "t": "MESSAGE_CREATE"
+}
+[20:38:31] [DEBUG] CNetwork::WsRead
+[20:38:31] [DEBUG] CCallback::Execute(amx=0x76ff00, index=0)
+[20:38:31] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[20:38:31] [DEBUG] executing AMX callback with index '0'
+[20:38:31] [DEBUG] DCC_GetChannelName(2, 0x03C0CFE8, 32)
+[20:38:31] [DEBUG] DCC_GetChannelName: return value: '1'
+[20:38:31] [DEBUG] AMX callback executed with error '0'
+[20:38:31] [INFO] Callback successfully executed.
+[20:39:02] [DEBUG] CNetwork::DoHeartbeat
+[20:39:02] [DEBUG] sending heartbeat
+[20:39:02] [DEBUG] CNetwork::OnWsRead
+[20:39:02] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:39:02] [DEBUG] heartbeat ACK
+[20:39:02] [DEBUG] CNetwork::WsRead
+[20:39:18] [DEBUG] CNetwork::OnWsRead
+[20:39:18] [DEBUG] OnWsRead: {
+    "d": {
+        "channel_id": "335802762287775745",
+        "timestamp": 1500133156,
+        "user_id": "299995629617283072"
+    },
+    "op": 0,
+    "s": 4,
+    "t": "TYPING_START"
+}
+[20:39:18] [DEBUG] CNetwork::WsRead
+[20:39:20] [DEBUG] CNetwork::OnWsRead
+[20:39:20] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "77a0e7835afc255cf304ccce50108905",
+            "discriminator": "9855",
+            "id": "299995629617283072",
+            "username": "Wajeeh"
+        },
+        "channel_id": "335802762287775745",
+        "content": "hello server",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335807547552432128",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": "335807553516601344",
+        "pinned": false,
+        "timestamp": "2017-07-15T15:39:18.339000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 5,
+    "t": "MESSAGE_CREATE"
+}
+[20:39:20] [DEBUG] CNetwork::WsRead
+[20:39:20] [DEBUG] CCallback::Execute(amx=0x76ff00, index=0)
+[20:39:20] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[20:39:20] [DEBUG] executing AMX callback with index '0'
+[20:39:20] [DEBUG] DCC_GetChannelName(2, 0x03C0CFE8, 32)
+[20:39:20] [DEBUG] DCC_GetChannelName: return value: '1'
+[20:39:20] [DEBUG] AMX callback executed with error '0'
+[20:39:20] [INFO] Callback successfully executed.
+[20:39:43] [DEBUG] CNetwork::DoHeartbeat
+[20:39:43] [DEBUG] sending heartbeat
+[20:39:43] [DEBUG] CNetwork::OnWsRead
+[20:39:43] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:39:43] [DEBUG] heartbeat ACK
+[20:39:43] [DEBUG] CNetwork::WsRead
+[20:40:24] [DEBUG] CNetwork::DoHeartbeat
+[20:40:24] [DEBUG] sending heartbeat
+[20:40:24] [DEBUG] CNetwork::OnWsRead
+[20:40:24] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:40:24] [DEBUG] heartbeat ACK
+[20:40:24] [DEBUG] CNetwork::WsRead
+[20:41:05] [DEBUG] CNetwork::DoHeartbeat
+[20:41:05] [DEBUG] sending heartbeat
+[20:41:06] [DEBUG] CNetwork::OnWsRead
+[20:41:06] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:41:06] [DEBUG] heartbeat ACK
+[20:41:06] [DEBUG] CNetwork::WsRead
+[20:41:47] [DEBUG] CNetwork::DoHeartbeat
+[20:41:47] [DEBUG] sending heartbeat
+[20:41:47] [DEBUG] CNetwork::OnWsRead
+[20:41:47] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:41:47] [DEBUG] heartbeat ACK
+[20:41:47] [DEBUG] CNetwork::WsRead
+[20:42:28] [DEBUG] CNetwork::DoHeartbeat
+[20:42:28] [DEBUG] sending heartbeat
+[20:42:28] [DEBUG] CNetwork::OnWsRead
+[20:42:28] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:42:28] [DEBUG] heartbeat ACK
+[20:42:28] [DEBUG] CNetwork::WsRead
+[20:43:09] [DEBUG] CNetwork::DoHeartbeat
+[20:43:09] [DEBUG] sending heartbeat
+[20:43:09] [DEBUG] CNetwork::OnWsRead
+[20:43:09] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:43:09] [DEBUG] heartbeat ACK
+[20:43:09] [DEBUG] CNetwork::WsRead
+[20:43:50] [DEBUG] CNetwork::DoHeartbeat
+[20:43:50] [DEBUG] sending heartbeat
+[20:43:51] [DEBUG] CNetwork::OnWsRead
+[20:43:51] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:43:51] [DEBUG] heartbeat ACK
+[20:43:51] [DEBUG] CNetwork::WsRead
+[20:49:15] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[20:49:15] [DEBUG] DCC_Connect("*****")
+[20:49:15] [DEBUG] CCallback::Create(amx=0x5aff00, name='DCC_OnChannelMessage')
+[20:49:15] [DEBUG] CCallback::Create - callback index for 'DCC_OnChannelMessage': 0
+[20:49:15] [INFO] Callback 'DCC_OnChannelMessage' set up for delayed execution.
+[20:49:15] [DEBUG] CNetwork::Initialize
+[20:49:15] [DEBUG] CNetwork::HttpConnect
+[20:49:17] [DEBUG] CNetwork::HttpGet
+[20:49:17] [DEBUG] CNetwork::HttpSendRequest
+[20:49:17] [DEBUG] CNetwork::HttpPrepareRequest
+[20:49:17] [DEBUG] CNetwork::HttpSendRequest(/api/v5/gateway) (actual send)
+[20:49:17] [DEBUG] CNetwork::HttpWriteRequest
+[20:49:17] [DEBUG] CNetwork::WsConnect
+[20:49:18] [DEBUG] CNetwork::WsRead
+[20:49:18] [DEBUG] CNetwork::WsIdentify
+[20:49:18] [DEBUG] CNetwork::OnWsRead
+[20:49:18] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-5"
+        ],
+        "heartbeat_interval": 41250
+    },
+    "op": 10,
+    "s": null,
+    "t": null
+}
+[20:49:18] [DEBUG] CNetwork::DoHeartbeat
+[20:49:18] [DEBUG] sending heartbeat
+[20:49:18] [DEBUG] CNetwork::WsRead
+[20:49:18] [DEBUG] CNetwork::OnWsRead
+[20:49:18] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:49:18] [DEBUG] heartbeat ACK
+[20:49:18] [DEBUG] CNetwork::WsRead
+[20:49:18] [DEBUG] CNetwork::OnWsRead
+[20:49:18] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-5",
+            "discord-sessions-prd-1-2"
+        ],
+        "guilds": [
+            {
+                "id": "335799382282600449",
+                "unavailable": true
+            }
+        ],
+        "presences": [],
+        "private_channels": [],
+        "relationships": [],
+        "session_id": "aa589355a162183a2d0e66926338fd24",
+        "user": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "email": null,
+            "id": "335798626989375488",
+            "mfa_enabled": false,
+            "username": "SAMP-BOT",
+            "verified": true
+        },
+        "user_settings": {},
+        "v": 5
+    },
+    "op": 0,
+    "s": 1,
+    "t": "READY"
+}
+[20:49:18] [DEBUG] CNetwork::WsRead
+[20:49:18] [DEBUG] CNetwork::OnWsRead
+[20:49:18] [DEBUG] OnWsRead: {
+    "d": {
+        "afk_channel_id": null,
+        "afk_timeout": 300,
+        "application_id": null,
+        "channels": [
+            {
+                "id": "335799382282600449",
+                "is_private": false,
+                "last_message_id": null,
+                "name": "general",
+                "permission_overwrites": [],
+                "position": 0,
+                "topic": null,
+                "type": "text"
+            },
+            {
+                "bitrate": 64000,
+                "id": "335799382282600450",
+                "is_private": false,
+                "name": "General",
+                "permission_overwrites": [],
+                "position": 0,
+                "type": "voice",
+                "user_limit": 0
+            },
+            {
+                "id": "335802762287775745",
+                "is_private": false,
+                "last_message_id": "335807547552432128",
+                "name": "in-game-channel",
+                "permission_overwrites": [],
+                "position": 1,
+                "topic": null,
+                "type": "text"
+            }
+        ],
+        "default_message_notifications": 0,
+        "emojis": [],
+        "explicit_content_filter": 0,
+        "features": [],
+        "icon": null,
+        "id": "335799382282600449",
+        "joined_at": "2017-07-15T15:08:03.087723+00:00",
+        "large": false,
+        "member_count": 2,
+        "members": [
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:06:51.606000+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "77a0e7835afc255cf304ccce50108905",
+                    "discriminator": "9855",
+                    "id": "299995629617283072",
+                    "username": "Wajeeh"
+                }
+            },
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:08:03.087723+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+                    "bot": true,
+                    "discriminator": "6510",
+                    "id": "335798626989375488",
+                    "username": "SAMP-BOT"
+                }
+            }
+        ],
+        "mfa_level": 0,
+        "name": "testing bot",
+        "owner_id": "299995629617283072",
+        "presences": [
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "299995629617283072"
+                }
+            },
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "335798626989375488"
+                }
+            }
+        ],
+        "region": "russia",
+        "roles": [
+            {
+                "color": 0,
+                "hoist": false,
+                "id": "335799382282600449",
+                "managed": false,
+                "mentionable": false,
+                "name": "@everyone",
+                "permissions": 104324161,
+                "position": 0
+            }
+        ],
+        "splash": null,
+        "unavailable": false,
+        "verification_level": 0,
+        "voice_states": []
+    },
+    "op": 0,
+    "s": 2,
+    "t": "GUILD_CREATE"
+}
+[20:49:18] [DEBUG] CNetwork::WsRead
+[20:49:18] [DEBUG] DCC_Connect: return value: '1'
+[20:49:39] [DEBUG] DCC_FindChannelById("335802762287775745")
+[20:49:39] [DEBUG] DCC_FindChannelById: return value: '2'
+[20:49:39] [DEBUG] DCC_SendChannelMessage(2, "Player [Lsrcr]Wajeeh joined the server.")
+[20:49:39] [DEBUG] CNetwork::HttpPost
+[20:49:39] [DEBUG] CNetwork::HttpSendRequest
+[20:49:39] [DEBUG] CNetwork::HttpPrepareRequest
+[20:49:39] [DEBUG] DCC_SendChannelMessage: return value: '1'
+[20:49:39] [DEBUG] CNetwork::HttpSendRequest(/api/v5/channels/335802762287775745/messages) (actual send)
+[20:49:39] [DEBUG] CNetwork::HttpWriteRequest
+[20:49:39] [DEBUG] CNetwork::OnWsRead
+[20:49:39] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "id": "335798626989375488",
+            "username": "SAMP-BOT"
+        },
+        "channel_id": "335802762287775745",
+        "content": "Player [Lsrcr]Wajeeh joined the server.",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335810145558724609",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": null,
+        "pinned": false,
+        "timestamp": "2017-07-15T15:49:37.752000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 3,
+    "t": "MESSAGE_CREATE"
+}
+[20:49:39] [DEBUG] CNetwork::WsRead
+[20:49:39] [DEBUG] CCallback::Execute(amx=0x5aff00, index=0)
+[20:49:39] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[20:49:39] [DEBUG] executing AMX callback with index '0'
+[20:49:39] [DEBUG] DCC_GetChannelName(2, 0x038FCF4C, 32)
+[20:49:39] [DEBUG] DCC_GetChannelName: return value: '1'
+[20:49:39] [DEBUG] AMX callback executed with error '0'
+[20:49:39] [INFO] Callback successfully executed.
+[20:49:59] [DEBUG] CNetwork::DoHeartbeat
+[20:49:59] [DEBUG] sending heartbeat
+[20:49:59] [DEBUG] CNetwork::OnWsRead
+[20:49:59] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:49:59] [DEBUG] heartbeat ACK
+[20:49:59] [DEBUG] CNetwork::WsRead
+[20:50:26] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[20:50:27] [DEBUG] DCC_Connect("*****")
+[20:50:27] [DEBUG] CCallback::Create(amx=0x1e4ff00, name='DCC_OnChannelMessage')
+[20:50:27] [DEBUG] CCallback::Create - callback index for 'DCC_OnChannelMessage': 0
+[20:50:27] [INFO] Callback 'DCC_OnChannelMessage' set up for delayed execution.
+[20:50:27] [DEBUG] CNetwork::Initialize
+[20:50:27] [DEBUG] CNetwork::HttpConnect
+[20:50:27] [DEBUG] CNetwork::HttpGet
+[20:50:27] [DEBUG] CNetwork::HttpSendRequest
+[20:50:27] [DEBUG] CNetwork::HttpPrepareRequest
+[20:50:27] [DEBUG] CNetwork::HttpSendRequest(/api/v5/gateway) (actual send)
+[20:50:27] [DEBUG] CNetwork::HttpWriteRequest
+[20:50:27] [DEBUG] CNetwork::WsConnect
+[20:50:28] [DEBUG] CNetwork::WsRead
+[20:50:28] [DEBUG] CNetwork::WsIdentify
+[20:50:28] [DEBUG] CNetwork::OnWsRead
+[20:50:28] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-15"
+        ],
+        "heartbeat_interval": 41250
+    },
+    "op": 10,
+    "s": null,
+    "t": null
+}
+[20:50:28] [DEBUG] CNetwork::DoHeartbeat
+[20:50:28] [DEBUG] sending heartbeat
+[20:50:28] [DEBUG] CNetwork::WsRead
+[20:50:28] [DEBUG] CNetwork::OnWsRead
+[20:50:28] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:50:28] [DEBUG] heartbeat ACK
+[20:50:28] [DEBUG] CNetwork::WsRead
+[20:50:28] [DEBUG] CNetwork::OnWsRead
+[20:50:28] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-15",
+            "discord-sessions-prd-1-15"
+        ],
+        "guilds": [
+            {
+                "id": "335799382282600449",
+                "unavailable": true
+            }
+        ],
+        "presences": [],
+        "private_channels": [],
+        "relationships": [],
+        "session_id": "541174252f40e4cac34c726f47df75ce",
+        "user": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "email": null,
+            "id": "335798626989375488",
+            "mfa_enabled": false,
+            "username": "SAMP-BOT",
+            "verified": true
+        },
+        "user_settings": {},
+        "v": 5
+    },
+    "op": 0,
+    "s": 1,
+    "t": "READY"
+}
+[20:50:28] [DEBUG] CNetwork::WsRead
+[20:50:28] [DEBUG] CNetwork::OnWsRead
+[20:50:28] [DEBUG] OnWsRead: {
+    "d": {
+        "afk_channel_id": null,
+        "afk_timeout": 300,
+        "application_id": null,
+        "channels": [
+            {
+                "id": "335799382282600449",
+                "is_private": false,
+                "last_message_id": null,
+                "name": "general",
+                "permission_overwrites": [],
+                "position": 0,
+                "topic": null,
+                "type": "text"
+            },
+            {
+                "bitrate": 64000,
+                "id": "335799382282600450",
+                "is_private": false,
+                "name": "General",
+                "permission_overwrites": [],
+                "position": 0,
+                "type": "voice",
+                "user_limit": 0
+            },
+            {
+                "id": "335802762287775745",
+                "is_private": false,
+                "last_message_id": "335810145558724609",
+                "name": "in-game-channel",
+                "permission_overwrites": [],
+                "position": 1,
+                "topic": null,
+                "type": "text"
+            }
+        ],
+        "default_message_notifications": 0,
+        "emojis": [],
+        "explicit_content_filter": 0,
+        "features": [],
+        "icon": null,
+        "id": "335799382282600449",
+        "joined_at": "2017-07-15T15:08:03.087723+00:00",
+        "large": false,
+        "member_count": 2,
+        "members": [
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:06:51.606000+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "77a0e7835afc255cf304ccce50108905",
+                    "discriminator": "9855",
+                    "id": "299995629617283072",
+                    "username": "Wajeeh"
+                }
+            },
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:08:03.087723+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+                    "bot": true,
+                    "discriminator": "6510",
+                    "id": "335798626989375488",
+                    "username": "SAMP-BOT"
+                }
+            }
+        ],
+        "mfa_level": 0,
+        "name": "testing bot",
+        "owner_id": "299995629617283072",
+        "presences": [
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "299995629617283072"
+                }
+            },
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "335798626989375488"
+                }
+            }
+        ],
+        "region": "russia",
+        "roles": [
+            {
+                "color": 0,
+                "hoist": false,
+                "id": "335799382282600449",
+                "managed": false,
+                "mentionable": false,
+                "name": "@everyone",
+                "permissions": 104324161,
+                "position": 0
+            }
+        ],
+        "splash": null,
+        "unavailable": false,
+        "verification_level": 0,
+        "voice_states": []
+    },
+    "op": 0,
+    "s": 2,
+    "t": "GUILD_CREATE"
+}
+[20:50:28] [DEBUG] CNetwork::WsRead
+[20:50:28] [DEBUG] DCC_Connect: return value: '1'
+[20:50:38] [DEBUG] DCC_FindChannelById("335802762287775745")
+[20:50:38] [DEBUG] DCC_FindChannelById: return value: '2'
+[20:50:38] [DEBUG] DCC_SendChannelMessage(2, "Player [Lsrcr]Wajeeh joined the server.")
+[20:50:38] [DEBUG] CNetwork::HttpPost
+[20:50:38] [DEBUG] CNetwork::HttpSendRequest
+[20:50:38] [DEBUG] CNetwork::HttpPrepareRequest
+[20:50:38] [DEBUG] DCC_SendChannelMessage: return value: '1'
+[20:50:38] [DEBUG] CNetwork::HttpSendRequest(/api/v5/channels/335802762287775745/messages) (actual send)
+[20:50:38] [DEBUG] CNetwork::HttpWriteRequest
+[20:50:38] [DEBUG] CNetwork::OnWsRead
+[20:50:38] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "id": "335798626989375488",
+            "username": "SAMP-BOT"
+        },
+        "channel_id": "335802762287775745",
+        "content": "Player [Lsrcr]Wajeeh joined the server.",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335810393383632896",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": null,
+        "pinned": false,
+        "timestamp": "2017-07-15T15:50:36.838000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 3,
+    "t": "MESSAGE_CREATE"
+}
+[20:50:38] [DEBUG] CNetwork::WsRead
+[20:50:38] [DEBUG] CCallback::Execute(amx=0x1e4ff00, index=0)
+[20:50:38] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[20:50:38] [DEBUG] executing AMX callback with index '0'
+[20:50:38] [DEBUG] AMX callback executed with error '0'
+[20:50:38] [INFO] Callback successfully executed.
+[20:50:59] [DEBUG] CNetwork::OnWsRead
+[20:50:59] [DEBUG] OnWsRead: {
+    "d": {
+        "channel_id": "335802762287775745",
+        "timestamp": 1500133858,
+        "user_id": "299995629617283072"
+    },
+    "op": 0,
+    "s": 4,
+    "t": "TYPING_START"
+}
+[20:50:59] [DEBUG] CNetwork::WsRead
+[20:51:01] [DEBUG] CNetwork::OnWsRead
+[20:51:01] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "77a0e7835afc255cf304ccce50108905",
+            "discriminator": "9855",
+            "id": "299995629617283072",
+            "username": "Wajeeh"
+        },
+        "channel_id": "335802762287775745",
+        "content": "hello server",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335810490045431812",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": "335810496353533952",
+        "pinned": false,
+        "timestamp": "2017-07-15T15:50:59.884000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 5,
+    "t": "MESSAGE_CREATE"
+}
+[20:51:01] [DEBUG] CNetwork::WsRead
+[20:51:01] [DEBUG] CCallback::Execute(amx=0x1e4ff00, index=0)
+[20:51:01] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[20:51:01] [DEBUG] executing AMX callback with index '0'
+[20:51:01] [DEBUG] DCC_GetChannelName(2, 0x038ECF48, 32)
+[20:51:01] [DEBUG] DCC_GetChannelName: return value: '1'
+[20:51:01] [DEBUG] AMX callback executed with error '0'
+[20:51:01] [INFO] Callback successfully executed.
+[20:51:05] [DEBUG] CNetwork::OnWsRead
+[20:51:05] [DEBUG] OnWsRead: {
+    "d": {
+        "channel_id": "335802762287775745",
+        "timestamp": 1500133863,
+        "user_id": "299995629617283072"
+    },
+    "op": 0,
+    "s": 6,
+    "t": "TYPING_START"
+}
+[20:51:05] [DEBUG] CNetwork::WsRead
+[20:51:07] [DEBUG] CNetwork::OnWsRead
+[20:51:07] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "77a0e7835afc255cf304ccce50108905",
+            "discriminator": "9855",
+            "id": "299995629617283072",
+            "username": "Wajeeh"
+        },
+        "channel_id": "335802762287775745",
+        "content": "hello server",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335810513294589962",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": "335810518876946432",
+        "pinned": false,
+        "timestamp": "2017-07-15T15:51:05.427000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 7,
+    "t": "MESSAGE_CREATE"
+}
+[20:51:07] [DEBUG] CNetwork::WsRead
+[20:51:07] [DEBUG] CCallback::Execute(amx=0x1e4ff00, index=0)
+[20:51:07] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[20:51:07] [DEBUG] executing AMX callback with index '0'
+[20:51:07] [DEBUG] DCC_GetChannelName(2, 0x038ECF48, 32)
+[20:51:07] [DEBUG] DCC_GetChannelName: return value: '1'
+[20:51:07] [DEBUG] AMX callback executed with error '0'
+[20:51:07] [INFO] Callback successfully executed.
+[20:51:09] [DEBUG] CNetwork::DoHeartbeat
+[20:51:09] [DEBUG] sending heartbeat
+[20:51:10] [DEBUG] CNetwork::OnWsRead
+[20:51:10] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:51:10] [DEBUG] heartbeat ACK
+[20:51:10] [DEBUG] CNetwork::WsRead
+[20:55:37] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[20:55:37] [DEBUG] DCC_Connect("*****")
+[20:55:38] [DEBUG] CCallback::Create(amx=0x1e4ff00, name='DCC_OnChannelMessage')
+[20:55:38] [DEBUG] CCallback::Create - callback index for 'DCC_OnChannelMessage': 0
+[20:55:38] [INFO] Callback 'DCC_OnChannelMessage' set up for delayed execution.
+[20:55:38] [DEBUG] CNetwork::Initialize
+[20:55:38] [DEBUG] CNetwork::HttpConnect
+[20:55:39] [DEBUG] CNetwork::HttpGet
+[20:55:39] [DEBUG] CNetwork::HttpSendRequest
+[20:55:39] [DEBUG] CNetwork::HttpPrepareRequest
+[20:55:39] [DEBUG] CNetwork::HttpSendRequest(/api/v5/gateway) (actual send)
+[20:55:39] [DEBUG] CNetwork::HttpWriteRequest
+[20:55:39] [DEBUG] CNetwork::WsConnect
+[20:55:40] [DEBUG] CNetwork::WsRead
+[20:55:40] [DEBUG] CNetwork::WsIdentify
+[20:55:40] [DEBUG] CNetwork::OnWsRead
+[20:55:40] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-13"
+        ],
+        "heartbeat_interval": 41250
+    },
+    "op": 10,
+    "s": null,
+    "t": null
+}
+[20:55:40] [DEBUG] CNetwork::DoHeartbeat
+[20:55:40] [DEBUG] sending heartbeat
+[20:55:40] [DEBUG] CNetwork::WsRead
+[20:55:40] [DEBUG] CNetwork::OnWsRead
+[20:55:40] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:55:40] [DEBUG] heartbeat ACK
+[20:55:40] [DEBUG] CNetwork::WsRead
+[20:55:40] [DEBUG] CNetwork::OnWsRead
+[20:55:40] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-13",
+            "discord-sessions-prd-1-5"
+        ],
+        "guilds": [
+            {
+                "id": "335799382282600449",
+                "unavailable": true
+            }
+        ],
+        "presences": [],
+        "private_channels": [],
+        "relationships": [],
+        "session_id": "98041df38dd3f35532cced7897787b2e",
+        "user": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "email": null,
+            "id": "335798626989375488",
+            "mfa_enabled": false,
+            "username": "SAMP-BOT",
+            "verified": true
+        },
+        "user_settings": {},
+        "v": 5
+    },
+    "op": 0,
+    "s": 1,
+    "t": "READY"
+}
+[20:55:40] [DEBUG] CNetwork::WsRead
+[20:55:40] [DEBUG] CNetwork::OnWsRead
+[20:55:40] [DEBUG] OnWsRead: {
+    "d": {
+        "afk_channel_id": null,
+        "afk_timeout": 300,
+        "application_id": null,
+        "channels": [
+            {
+                "id": "335799382282600449",
+                "is_private": false,
+                "last_message_id": null,
+                "name": "general",
+                "permission_overwrites": [],
+                "position": 0,
+                "topic": null,
+                "type": "text"
+            },
+            {
+                "bitrate": 64000,
+                "id": "335799382282600450",
+                "is_private": false,
+                "name": "General",
+                "permission_overwrites": [],
+                "position": 0,
+                "type": "voice",
+                "user_limit": 0
+            },
+            {
+                "id": "335802762287775745",
+                "is_private": false,
+                "last_message_id": "335810513294589962",
+                "name": "in-game-channel",
+                "permission_overwrites": [],
+                "position": 1,
+                "topic": null,
+                "type": "text"
+            }
+        ],
+        "default_message_notifications": 0,
+        "emojis": [],
+        "explicit_content_filter": 0,
+        "features": [],
+        "icon": null,
+        "id": "335799382282600449",
+        "joined_at": "2017-07-15T15:08:03.087723+00:00",
+        "large": false,
+        "member_count": 2,
+        "members": [
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:06:51.606000+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "77a0e7835afc255cf304ccce50108905",
+                    "discriminator": "9855",
+                    "id": "299995629617283072",
+                    "username": "Wajeeh"
+                }
+            },
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:08:03.087723+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+                    "bot": true,
+                    "discriminator": "6510",
+                    "id": "335798626989375488",
+                    "username": "SAMP-BOT"
+                }
+            }
+        ],
+        "mfa_level": 0,
+        "name": "testing bot",
+        "owner_id": "299995629617283072",
+        "presences": [
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "299995629617283072"
+                }
+            },
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "335798626989375488"
+                }
+            }
+        ],
+        "region": "russia",
+        "roles": [
+            {
+                "color": 0,
+                "hoist": false,
+                "id": "335799382282600449",
+                "managed": false,
+                "mentionable": false,
+                "name": "@everyone",
+                "permissions": 104324161,
+                "position": 0
+            }
+        ],
+        "splash": null,
+        "unavailable": false,
+        "verification_level": 0,
+        "voice_states": []
+    },
+    "op": 0,
+    "s": 2,
+    "t": "GUILD_CREATE"
+}
+[20:55:40] [DEBUG] CNetwork::WsRead
+[20:55:40] [DEBUG] DCC_Connect: return value: '1'
+[20:55:49] [DEBUG] DCC_FindChannelById("335802762287775745")
+[20:55:49] [DEBUG] DCC_FindChannelById: return value: '2'
+[20:55:49] [DEBUG] DCC_SendChannelMessage(2, "Player [Lsrcr]Wajeeh joined the server.")
+[20:55:49] [DEBUG] CNetwork::HttpPost
+[20:55:49] [DEBUG] CNetwork::HttpSendRequest
+[20:55:49] [DEBUG] CNetwork::HttpPrepareRequest
+[20:55:49] [DEBUG] CNetwork::HttpSendRequest(/api/v5/channels/335802762287775745/messages) (actual send)
+[20:55:49] [DEBUG] CNetwork::HttpWriteRequest
+[20:55:49] [DEBUG] DCC_SendChannelMessage: return value: '1'
+[20:55:50] [DEBUG] CNetwork::OnWsRead
+[20:55:50] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "id": "335798626989375488",
+            "username": "SAMP-BOT"
+        },
+        "channel_id": "335802762287775745",
+        "content": "Player [Lsrcr]Wajeeh joined the server.",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335811699414138881",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": null,
+        "pinned": false,
+        "timestamp": "2017-07-15T15:55:48.220000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 3,
+    "t": "MESSAGE_CREATE"
+}
+[20:55:50] [DEBUG] CNetwork::WsRead
+[20:55:50] [DEBUG] CCallback::Execute(amx=0x1e4ff00, index=0)
+[20:55:50] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[20:55:50] [DEBUG] executing AMX callback with index '0'
+[20:55:50] [DEBUG] AMX callback executed with error '0'
+[20:55:50] [INFO] Callback successfully executed.
+[20:56:08] [DEBUG] CNetwork::OnWsRead
+[20:56:08] [DEBUG] OnWsRead: {
+    "d": {
+        "channel_id": "335802762287775745",
+        "timestamp": 1500134166,
+        "user_id": "299995629617283072"
+    },
+    "op": 0,
+    "s": 4,
+    "t": "TYPING_START"
+}
+[20:56:08] [DEBUG] CNetwork::WsRead
+[20:56:12] [DEBUG] CNetwork::OnWsRead
+[20:56:12] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "77a0e7835afc255cf304ccce50108905",
+            "discriminator": "9855",
+            "id": "299995629617283072",
+            "username": "Wajeeh"
+        },
+        "channel_id": "335802762287775745",
+        "content": "hello (from discord)",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335811795677609986",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": "335811801792905216",
+        "pinned": false,
+        "timestamp": "2017-07-15T15:56:11.171000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 5,
+    "t": "MESSAGE_CREATE"
+}
+[20:56:12] [DEBUG] CNetwork::WsRead
+[20:56:12] [DEBUG] CCallback::Execute(amx=0x1e4ff00, index=0)
+[20:56:12] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[20:56:12] [DEBUG] executing AMX callback with index '0'
+[20:56:12] [DEBUG] DCC_GetChannelName(2, 0x03D0CF1C, 32)
+[20:56:12] [DEBUG] DCC_GetChannelName: return value: '1'
+[20:56:12] [DEBUG] AMX callback executed with error '0'
+[20:56:12] [INFO] Callback successfully executed.
+[20:56:21] [DEBUG] CNetwork::DoHeartbeat
+[20:56:21] [DEBUG] sending heartbeat
+[20:56:22] [DEBUG] CNetwork::OnWsRead
+[20:56:22] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:56:22] [DEBUG] heartbeat ACK
+[20:56:22] [DEBUG] CNetwork::WsRead
+[20:57:02] [DEBUG] CNetwork::DoHeartbeat
+[20:57:02] [DEBUG] sending heartbeat
+[20:57:03] [DEBUG] CNetwork::OnWsRead
+[20:57:03] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:57:03] [DEBUG] heartbeat ACK
+[20:57:03] [DEBUG] CNetwork::WsRead
+[20:57:44] [DEBUG] CNetwork::DoHeartbeat
+[20:57:44] [DEBUG] sending heartbeat
+[20:57:44] [DEBUG] CNetwork::OnWsRead
+[20:57:44] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:57:44] [DEBUG] heartbeat ACK
+[20:57:44] [DEBUG] CNetwork::WsRead
+[20:58:25] [DEBUG] CNetwork::DoHeartbeat
+[20:58:25] [DEBUG] sending heartbeat
+[20:58:25] [DEBUG] CNetwork::OnWsRead
+[20:58:25] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:58:25] [DEBUG] heartbeat ACK
+[20:58:25] [DEBUG] CNetwork::WsRead
+[20:59:06] [DEBUG] CNetwork::DoHeartbeat
+[20:59:06] [DEBUG] sending heartbeat
+[20:59:07] [DEBUG] CNetwork::OnWsRead
+[20:59:07] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[20:59:07] [DEBUG] heartbeat ACK
+[20:59:07] [DEBUG] CNetwork::WsRead
+[21:05:57] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[21:05:57] [DEBUG] DCC_Connect("*****")
+[21:05:58] [DEBUG] CCallback::Create(amx=0x202ff00, name='DCC_OnChannelMessage')
+[21:05:58] [DEBUG] CCallback::Create - callback index for 'DCC_OnChannelMessage': 0
+[21:05:58] [INFO] Callback 'DCC_OnChannelMessage' set up for delayed execution.
+[21:05:58] [DEBUG] CNetwork::Initialize
+[21:05:58] [DEBUG] CNetwork::HttpConnect
+[21:05:58] [DEBUG] CNetwork::HttpGet
+[21:05:58] [DEBUG] CNetwork::HttpSendRequest
+[21:05:58] [DEBUG] CNetwork::HttpPrepareRequest
+[21:05:58] [DEBUG] CNetwork::HttpSendRequest(/api/v5/gateway) (actual send)
+[21:05:58] [DEBUG] CNetwork::HttpWriteRequest
+[21:05:58] [DEBUG] CNetwork::WsConnect
+[21:06:00] [DEBUG] CNetwork::WsRead
+[21:06:00] [DEBUG] CNetwork::WsIdentify
+[21:06:00] [DEBUG] CNetwork::OnWsRead
+[21:06:00] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-13"
+        ],
+        "heartbeat_interval": 41250
+    },
+    "op": 10,
+    "s": null,
+    "t": null
+}
+[21:06:00] [DEBUG] CNetwork::DoHeartbeat
+[21:06:00] [DEBUG] sending heartbeat
+[21:06:00] [DEBUG] CNetwork::WsRead
+[21:06:00] [DEBUG] CNetwork::OnWsRead
+[21:06:00] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:06:00] [DEBUG] heartbeat ACK
+[21:06:00] [DEBUG] CNetwork::WsRead
+[21:06:00] [DEBUG] CNetwork::OnWsRead
+[21:06:00] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-13",
+            "discord-sessions-prd-1-1"
+        ],
+        "guilds": [
+            {
+                "id": "335799382282600449",
+                "unavailable": true
+            }
+        ],
+        "presences": [],
+        "private_channels": [],
+        "relationships": [],
+        "session_id": "a949cbe168c588fe52b96be73a878186",
+        "user": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "email": null,
+            "id": "335798626989375488",
+            "mfa_enabled": false,
+            "username": "SAMP-BOT",
+            "verified": true
+        },
+        "user_settings": {},
+        "v": 5
+    },
+    "op": 0,
+    "s": 1,
+    "t": "READY"
+}
+[21:06:00] [DEBUG] CNetwork::WsRead
+[21:06:00] [DEBUG] CNetwork::OnWsRead
+[21:06:00] [DEBUG] OnWsRead: {
+    "d": {
+        "afk_channel_id": null,
+        "afk_timeout": 300,
+        "application_id": null,
+        "channels": [
+            {
+                "id": "335799382282600449",
+                "is_private": false,
+                "last_message_id": null,
+                "name": "general",
+                "permission_overwrites": [],
+                "position": 0,
+                "topic": null,
+                "type": "text"
+            },
+            {
+                "bitrate": 64000,
+                "id": "335799382282600450",
+                "is_private": false,
+                "name": "General",
+                "permission_overwrites": [],
+                "position": 0,
+                "type": "voice",
+                "user_limit": 0
+            },
+            {
+                "id": "335802762287775745",
+                "is_private": false,
+                "last_message_id": "335811795677609986",
+                "name": "in-game-channel",
+                "permission_overwrites": [],
+                "position": 1,
+                "topic": null,
+                "type": "text"
+            }
+        ],
+        "default_message_notifications": 0,
+        "emojis": [],
+        "explicit_content_filter": 0,
+        "features": [],
+        "icon": null,
+        "id": "335799382282600449",
+        "joined_at": "2017-07-15T15:08:03.087723+00:00",
+        "large": false,
+        "member_count": 2,
+        "members": [
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:06:51.606000+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "77a0e7835afc255cf304ccce50108905",
+                    "discriminator": "9855",
+                    "id": "299995629617283072",
+                    "username": "Wajeeh"
+                }
+            },
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:08:03.087723+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+                    "bot": true,
+                    "discriminator": "6510",
+                    "id": "335798626989375488",
+                    "username": "SAMP-BOT"
+                }
+            }
+        ],
+        "mfa_level": 0,
+        "name": "testing bot",
+        "owner_id": "299995629617283072",
+        "presences": [
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "299995629617283072"
+                }
+            },
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "335798626989375488"
+                }
+            }
+        ],
+        "region": "russia",
+        "roles": [
+            {
+                "color": 0,
+                "hoist": false,
+                "id": "335799382282600449",
+                "managed": false,
+                "mentionable": false,
+                "name": "@everyone",
+                "permissions": 104324161,
+                "position": 0
+            }
+        ],
+        "splash": null,
+        "unavailable": false,
+        "verification_level": 0,
+        "voice_states": []
+    },
+    "op": 0,
+    "s": 2,
+    "t": "GUILD_CREATE"
+}
+[21:06:00] [DEBUG] CNetwork::WsRead
+[21:06:00] [DEBUG] DCC_Connect: return value: '1'
+[21:06:18] [DEBUG] DCC_FindChannelById("335802762287775745")
+[21:06:18] [DEBUG] DCC_FindChannelById: return value: '2'
+[21:06:18] [DEBUG] DCC_SendChannelMessage(2, "Player [Lsrcr]Wajeeh joined the server.")
+[21:06:18] [DEBUG] CNetwork::HttpPost
+[21:06:18] [DEBUG] CNetwork::HttpSendRequest
+[21:06:18] [DEBUG] CNetwork::HttpPrepareRequest
+[21:06:18] [DEBUG] CNetwork::HttpSendRequest(/api/v5/channels/335802762287775745/messages) (actual send)
+[21:06:18] [DEBUG] CNetwork::HttpWriteRequest
+[21:06:18] [DEBUG] DCC_SendChannelMessage: return value: '1'
+[21:06:19] [DEBUG] CNetwork::OnWsRead
+[21:06:19] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "id": "335798626989375488",
+            "username": "SAMP-BOT"
+        },
+        "channel_id": "335802762287775745",
+        "content": "Player [Lsrcr]Wajeeh joined the server.",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335814337753251844",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": null,
+        "pinned": false,
+        "timestamp": "2017-07-15T16:06:17.249000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 3,
+    "t": "MESSAGE_CREATE"
+}
+[21:06:19] [DEBUG] CNetwork::WsRead
+[21:06:19] [DEBUG] CCallback::Execute(amx=0x202ff00, index=0)
+[21:06:19] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[21:06:19] [DEBUG] executing AMX callback with index '0'
+[21:06:19] [DEBUG] AMX callback executed with error '0'
+[21:06:19] [INFO] Callback successfully executed.
+[21:06:31] [DEBUG] CNetwork::OnWsRead
+[21:06:31] [DEBUG] OnWsRead: {
+    "d": {
+        "channel_id": "335802762287775745",
+        "timestamp": 1500134789,
+        "user_id": "299995629617283072"
+    },
+    "op": 0,
+    "s": 4,
+    "t": "TYPING_START"
+}
+[21:06:31] [DEBUG] CNetwork::WsRead
+[21:06:39] [DEBUG] CNetwork::OnWsRead
+[21:06:39] [DEBUG] OnWsRead: {
+    "d": {
+        "channel_id": "335802762287775745",
+        "timestamp": 1500134797,
+        "user_id": "299995629617283072"
+    },
+    "op": 0,
+    "s": 5,
+    "t": "TYPING_START"
+}
+[21:06:39] [DEBUG] CNetwork::WsRead
+[21:06:40] [DEBUG] CNetwork::OnWsRead
+[21:06:40] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "77a0e7835afc255cf304ccce50108905",
+            "discriminator": "9855",
+            "id": "299995629617283072",
+            "username": "Wajeeh"
+        },
+        "channel_id": "335802762287775745",
+        "content": "hello wajeeh (sending from discord)",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335814429331554306",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": "335814435463495680",
+        "pinned": false,
+        "timestamp": "2017-07-15T16:06:39.083000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 6,
+    "t": "MESSAGE_CREATE"
+}
+[21:06:40] [DEBUG] CNetwork::WsRead
+[21:06:40] [DEBUG] CCallback::Execute(amx=0x202ff00, index=0)
+[21:06:40] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[21:06:40] [DEBUG] executing AMX callback with index '0'
+[21:06:40] [DEBUG] DCC_GetChannelName(2, 0x03AFD2A0, 32)
+[21:06:40] [DEBUG] DCC_GetChannelName: return value: '1'
+[21:06:40] [DEBUG] AMX callback executed with error '0'
+[21:06:40] [INFO] Callback successfully executed.
+[21:06:41] [DEBUG] CNetwork::DoHeartbeat
+[21:06:41] [DEBUG] sending heartbeat
+[21:06:41] [DEBUG] CNetwork::OnWsRead
+[21:06:41] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:06:41] [DEBUG] heartbeat ACK
+[21:06:41] [DEBUG] CNetwork::WsRead
+[21:07:22] [DEBUG] CNetwork::DoHeartbeat
+[21:07:22] [DEBUG] sending heartbeat
+[21:07:23] [DEBUG] CNetwork::OnWsRead
+[21:07:23] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:07:23] [DEBUG] heartbeat ACK
+[21:07:23] [DEBUG] CNetwork::WsRead
+[21:07:42] [DEBUG] DCC_SendChannelMessage(2, "Hello discord! (sending from the game)")
+[21:07:42] [DEBUG] CNetwork::HttpPost
+[21:07:42] [DEBUG] CNetwork::HttpSendRequest
+[21:07:42] [DEBUG] CNetwork::HttpPrepareRequest
+[21:07:42] [DEBUG] DCC_SendChannelMessage: return value: '1'
+[21:07:42] [DEBUG] CNetwork::HttpSendRequest(/api/v5/channels/335802762287775745/messages) (actual send)
+[21:07:42] [DEBUG] CNetwork::HttpWriteRequest
+[21:07:43] [DEBUG] CNetwork::OnWsRead
+[21:07:43] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "id": "335798626989375488",
+            "username": "SAMP-BOT"
+        },
+        "channel_id": "335802762287775745",
+        "content": "Hello discord! (sending from the game)",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335814690976563203",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": null,
+        "pinned": false,
+        "timestamp": "2017-07-15T16:07:41.464000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 7,
+    "t": "MESSAGE_CREATE"
+}
+[21:07:43] [DEBUG] CNetwork::WsRead
+[21:07:43] [DEBUG] CCallback::Execute(amx=0x202ff00, index=0)
+[21:07:43] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[21:07:43] [DEBUG] executing AMX callback with index '0'
+[21:07:43] [DEBUG] AMX callback executed with error '0'
+[21:07:43] [INFO] Callback successfully executed.
+[21:11:50] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[21:11:51] [DEBUG] DCC_Connect("*****")
+[21:11:51] [DEBUG] CCallback::Create(amx=0x78ff00, name='DCC_OnChannelMessage')
+[21:11:51] [DEBUG] CCallback::Create - callback index for 'DCC_OnChannelMessage': 0
+[21:11:51] [INFO] Callback 'DCC_OnChannelMessage' set up for delayed execution.
+[21:11:51] [DEBUG] CNetwork::Initialize
+[21:11:51] [DEBUG] CNetwork::HttpConnect
+[21:11:51] [DEBUG] CNetwork::HttpGet
+[21:11:51] [DEBUG] CNetwork::HttpSendRequest
+[21:11:51] [DEBUG] CNetwork::HttpPrepareRequest
+[21:11:51] [DEBUG] CNetwork::HttpSendRequest(/api/v5/gateway) (actual send)
+[21:11:51] [DEBUG] CNetwork::HttpWriteRequest
+[21:11:51] [DEBUG] CNetwork::WsConnect
+[21:11:53] [DEBUG] CNetwork::WsRead
+[21:11:53] [DEBUG] CNetwork::WsIdentify
+[21:11:53] [DEBUG] CNetwork::OnWsRead
+[21:11:53] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-4"
+        ],
+        "heartbeat_interval": 41250
+    },
+    "op": 10,
+    "s": null,
+    "t": null
+}
+[21:11:53] [DEBUG] CNetwork::DoHeartbeat
+[21:11:53] [DEBUG] sending heartbeat
+[21:11:53] [DEBUG] CNetwork::WsRead
+[21:11:53] [DEBUG] CNetwork::OnWsRead
+[21:11:53] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:11:53] [DEBUG] heartbeat ACK
+[21:11:53] [DEBUG] CNetwork::WsRead
+[21:11:53] [DEBUG] CNetwork::OnWsRead
+[21:11:53] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-4",
+            "discord-sessions-prd-1-6"
+        ],
+        "guilds": [
+            {
+                "id": "335799382282600449",
+                "unavailable": true
+            }
+        ],
+        "presences": [],
+        "private_channels": [],
+        "relationships": [],
+        "session_id": "82f664a6e8b83863cd80449382d20805",
+        "user": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "email": null,
+            "id": "335798626989375488",
+            "mfa_enabled": false,
+            "username": "SAMP-BOT",
+            "verified": true
+        },
+        "user_settings": {},
+        "v": 5
+    },
+    "op": 0,
+    "s": 1,
+    "t": "READY"
+}
+[21:11:53] [DEBUG] CNetwork::WsRead
+[21:11:53] [DEBUG] CNetwork::OnWsRead
+[21:11:53] [DEBUG] OnWsRead: {
+    "d": {
+        "afk_channel_id": null,
+        "afk_timeout": 300,
+        "application_id": null,
+        "channels": [
+            {
+                "id": "335799382282600449",
+                "is_private": false,
+                "last_message_id": null,
+                "name": "general",
+                "permission_overwrites": [],
+                "position": 0,
+                "topic": null,
+                "type": "text"
+            },
+            {
+                "bitrate": 64000,
+                "id": "335799382282600450",
+                "is_private": false,
+                "name": "General",
+                "permission_overwrites": [],
+                "position": 0,
+                "type": "voice",
+                "user_limit": 0
+            },
+            {
+                "id": "335802762287775745",
+                "is_private": false,
+                "last_message_id": "335814690976563203",
+                "name": "in-game-channel",
+                "permission_overwrites": [],
+                "position": 1,
+                "topic": null,
+                "type": "text"
+            }
+        ],
+        "default_message_notifications": 0,
+        "emojis": [],
+        "explicit_content_filter": 0,
+        "features": [],
+        "icon": null,
+        "id": "335799382282600449",
+        "joined_at": "2017-07-15T15:08:03.087723+00:00",
+        "large": false,
+        "member_count": 2,
+        "members": [
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:06:51.606000+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "77a0e7835afc255cf304ccce50108905",
+                    "discriminator": "9855",
+                    "id": "299995629617283072",
+                    "username": "Wajeeh"
+                }
+            },
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:08:03.087723+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+                    "bot": true,
+                    "discriminator": "6510",
+                    "id": "335798626989375488",
+                    "username": "SAMP-BOT"
+                }
+            }
+        ],
+        "mfa_level": 0,
+        "name": "testing bot",
+        "owner_id": "299995629617283072",
+        "presences": [
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "299995629617283072"
+                }
+            },
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "335798626989375488"
+                }
+            }
+        ],
+        "region": "russia",
+        "roles": [
+            {
+                "color": 0,
+                "hoist": false,
+                "id": "335799382282600449",
+                "managed": false,
+                "mentionable": false,
+                "name": "@everyone",
+                "permissions": 104324161,
+                "position": 0
+            }
+        ],
+        "splash": null,
+        "unavailable": false,
+        "verification_level": 0,
+        "voice_states": []
+    },
+    "op": 0,
+    "s": 2,
+    "t": "GUILD_CREATE"
+}
+[21:11:53] [DEBUG] CNetwork::WsRead
+[21:11:53] [DEBUG] DCC_Connect: return value: '1'
+[21:12:01] [DEBUG] DCC_FindChannelById("335802762287775745")
+[21:12:01] [DEBUG] DCC_FindChannelById: return value: '2'
+[21:12:01] [DEBUG] DCC_SendChannelMessage(2, "Player [Lsrcr]Wajeeh joined the server.")
+[21:12:01] [DEBUG] CNetwork::HttpPost
+[21:12:01] [DEBUG] CNetwork::HttpSendRequest
+[21:12:01] [DEBUG] CNetwork::HttpPrepareRequest
+[21:12:01] [DEBUG] CNetwork::HttpSendRequest(/api/v5/channels/335802762287775745/messages) (actual send)
+[21:12:01] [DEBUG] CNetwork::HttpWriteRequest
+[21:12:01] [DEBUG] DCC_SendChannelMessage: return value: '1'
+[21:12:01] [DEBUG] CNetwork::OnWsRead
+[21:12:01] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "id": "335798626989375488",
+            "username": "SAMP-BOT"
+        },
+        "channel_id": "335802762287775745",
+        "content": "Player [Lsrcr]Wajeeh joined the server.",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335815776202129408",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": null,
+        "pinned": false,
+        "timestamp": "2017-07-15T16:12:00.202000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 3,
+    "t": "MESSAGE_CREATE"
+}
+[21:12:01] [DEBUG] CNetwork::WsRead
+[21:12:01] [DEBUG] CCallback::Execute(amx=0x78ff00, index=0)
+[21:12:01] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[21:12:01] [DEBUG] executing AMX callback with index '0'
+[21:12:01] [DEBUG] AMX callback executed with error '0'
+[21:12:01] [INFO] Callback successfully executed.
+[21:12:26] [DEBUG] DCC_SendChannelMessage(2, "[Lsrcr]Wajeeh(1) : Hello discord (sending from the game)")
+[21:12:26] [DEBUG] CNetwork::HttpPost
+[21:12:26] [DEBUG] CNetwork::HttpSendRequest
+[21:12:26] [DEBUG] CNetwork::HttpPrepareRequest
+[21:12:26] [DEBUG] DCC_SendChannelMessage: return value: '1'
+[21:12:26] [DEBUG] CNetwork::HttpSendRequest(/api/v5/channels/335802762287775745/messages) (actual send)
+[21:12:26] [DEBUG] CNetwork::HttpWriteRequest
+[21:12:26] [DEBUG] CNetwork::OnWsRead
+[21:12:26] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "id": "335798626989375488",
+            "username": "SAMP-BOT"
+        },
+        "channel_id": "335802762287775745",
+        "content": "[Lsrcr]Wajeeh(1) : Hello discord (sending from the game)",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335815879025754113",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": null,
+        "pinned": false,
+        "timestamp": "2017-07-15T16:12:24.717000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 4,
+    "t": "MESSAGE_CREATE"
+}
+[21:12:26] [DEBUG] CNetwork::WsRead
+[21:12:26] [DEBUG] CCallback::Execute(amx=0x78ff00, index=0)
+[21:12:26] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[21:12:26] [DEBUG] executing AMX callback with index '0'
+[21:12:26] [DEBUG] AMX callback executed with error '0'
+[21:12:26] [INFO] Callback successfully executed.
+[21:12:34] [DEBUG] CNetwork::DoHeartbeat
+[21:12:34] [DEBUG] sending heartbeat
+[21:12:34] [DEBUG] CNetwork::OnWsRead
+[21:12:34] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:12:34] [DEBUG] heartbeat ACK
+[21:12:34] [DEBUG] CNetwork::WsRead
+[21:14:11] [INFO] changed log level from 'warning, error' to 'debug, info, warning, error'
+[21:14:11] [DEBUG] DCC_Connect("*****")
+[21:14:12] [DEBUG] CCallback::Create(amx=0x217ff00, name='DCC_OnChannelMessage')
+[21:14:12] [DEBUG] CCallback::Create - callback index for 'DCC_OnChannelMessage': 0
+[21:14:12] [INFO] Callback 'DCC_OnChannelMessage' set up for delayed execution.
+[21:14:12] [DEBUG] CNetwork::Initialize
+[21:14:12] [DEBUG] CNetwork::HttpConnect
+[21:14:12] [DEBUG] CNetwork::HttpGet
+[21:14:12] [DEBUG] CNetwork::HttpSendRequest
+[21:14:12] [DEBUG] CNetwork::HttpPrepareRequest
+[21:14:12] [DEBUG] CNetwork::HttpSendRequest(/api/v5/gateway) (actual send)
+[21:14:12] [DEBUG] CNetwork::HttpWriteRequest
+[21:14:12] [DEBUG] CNetwork::WsConnect
+[21:14:14] [DEBUG] CNetwork::WsRead
+[21:14:14] [DEBUG] CNetwork::WsIdentify
+[21:14:14] [DEBUG] CNetwork::OnWsRead
+[21:14:14] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-11"
+        ],
+        "heartbeat_interval": 41250
+    },
+    "op": 10,
+    "s": null,
+    "t": null
+}
+[21:14:14] [DEBUG] CNetwork::DoHeartbeat
+[21:14:14] [DEBUG] sending heartbeat
+[21:14:14] [DEBUG] CNetwork::WsRead
+[21:14:14] [DEBUG] CNetwork::OnWsRead
+[21:14:14] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:14:14] [DEBUG] heartbeat ACK
+[21:14:14] [DEBUG] CNetwork::WsRead
+[21:14:14] [DEBUG] CNetwork::OnWsRead
+[21:14:14] [DEBUG] OnWsRead: {
+    "d": {
+        "_trace": [
+            "discord-gateway-prd-1-11",
+            "discord-sessions-prd-1-11"
+        ],
+        "guilds": [
+            {
+                "id": "335799382282600449",
+                "unavailable": true
+            }
+        ],
+        "presences": [],
+        "private_channels": [],
+        "relationships": [],
+        "session_id": "a8aa90e52be68830221461e73e2cb179",
+        "user": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "email": null,
+            "id": "335798626989375488",
+            "mfa_enabled": false,
+            "username": "SAMP-BOT",
+            "verified": true
+        },
+        "user_settings": {},
+        "v": 5
+    },
+    "op": 0,
+    "s": 1,
+    "t": "READY"
+}
+[21:14:14] [DEBUG] CNetwork::WsRead
+[21:14:14] [DEBUG] CNetwork::OnWsRead
+[21:14:14] [DEBUG] OnWsRead: {
+    "d": {
+        "afk_channel_id": null,
+        "afk_timeout": 300,
+        "application_id": null,
+        "channels": [
+            {
+                "id": "335799382282600449",
+                "is_private": false,
+                "last_message_id": null,
+                "name": "general",
+                "permission_overwrites": [],
+                "position": 0,
+                "topic": null,
+                "type": "text"
+            },
+            {
+                "bitrate": 64000,
+                "id": "335799382282600450",
+                "is_private": false,
+                "name": "General",
+                "permission_overwrites": [],
+                "position": 0,
+                "type": "voice",
+                "user_limit": 0
+            },
+            {
+                "id": "335802762287775745",
+                "is_private": false,
+                "last_message_id": "335815879025754113",
+                "name": "in-game-channel",
+                "permission_overwrites": [],
+                "position": 1,
+                "topic": null,
+                "type": "text"
+            }
+        ],
+        "default_message_notifications": 0,
+        "emojis": [],
+        "explicit_content_filter": 0,
+        "features": [],
+        "icon": null,
+        "id": "335799382282600449",
+        "joined_at": "2017-07-15T15:08:03.087723+00:00",
+        "large": false,
+        "member_count": 2,
+        "members": [
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:06:51.606000+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "77a0e7835afc255cf304ccce50108905",
+                    "discriminator": "9855",
+                    "id": "299995629617283072",
+                    "username": "Wajeeh"
+                }
+            },
+            {
+                "deaf": false,
+                "joined_at": "2017-07-15T15:08:03.087723+00:00",
+                "mute": false,
+                "roles": [],
+                "user": {
+                    "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+                    "bot": true,
+                    "discriminator": "6510",
+                    "id": "335798626989375488",
+                    "username": "SAMP-BOT"
+                }
+            }
+        ],
+        "mfa_level": 0,
+        "name": "testing bot",
+        "owner_id": "299995629617283072",
+        "presences": [
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "299995629617283072"
+                }
+            },
+            {
+                "game": null,
+                "status": "online",
+                "user": {
+                    "id": "335798626989375488"
+                }
+            }
+        ],
+        "region": "russia",
+        "roles": [
+            {
+                "color": 0,
+                "hoist": false,
+                "id": "335799382282600449",
+                "managed": false,
+                "mentionable": false,
+                "name": "@everyone",
+                "permissions": 104324161,
+                "position": 0
+            }
+        ],
+        "splash": null,
+        "unavailable": false,
+        "verification_level": 0,
+        "voice_states": []
+    },
+    "op": 0,
+    "s": 2,
+    "t": "GUILD_CREATE"
+}
+[21:14:14] [DEBUG] CNetwork::WsRead
+[21:14:14] [DEBUG] DCC_Connect: return value: '1'
+[21:14:36] [DEBUG] DCC_FindChannelById("335802762287775745")
+[21:14:36] [DEBUG] DCC_FindChannelById: return value: '2'
+[21:14:36] [DEBUG] DCC_SendChannelMessage(2, "Player [Lsrcr]Wajeeh joined the server.")
+[21:14:36] [DEBUG] CNetwork::HttpPost
+[21:14:36] [DEBUG] CNetwork::HttpSendRequest
+[21:14:36] [DEBUG] CNetwork::HttpPrepareRequest
+[21:14:36] [DEBUG] CNetwork::HttpSendRequest(/api/v5/channels/335802762287775745/messages) (actual send)
+[21:14:36] [DEBUG] CNetwork::HttpWriteRequest
+[21:14:36] [DEBUG] DCC_SendChannelMessage: return value: '1'
+[21:14:36] [DEBUG] CNetwork::OnWsRead
+[21:14:36] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "id": "335798626989375488",
+            "username": "SAMP-BOT"
+        },
+        "channel_id": "335802762287775745",
+        "content": "Player [Lsrcr]Wajeeh joined the server.",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335816426403135488",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": null,
+        "pinned": false,
+        "timestamp": "2017-07-15T16:14:35.222000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 3,
+    "t": "MESSAGE_CREATE"
+}
+[21:14:36] [DEBUG] CNetwork::WsRead
+[21:14:36] [DEBUG] CCallback::Execute(amx=0x217ff00, index=0)
+[21:14:36] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[21:14:36] [DEBUG] executing AMX callback with index '0'
+[21:14:36] [DEBUG] AMX callback executed with error '0'
+[21:14:36] [INFO] Callback successfully executed.
+[21:14:55] [DEBUG] CNetwork::DoHeartbeat
+[21:14:55] [DEBUG] sending heartbeat
+[21:14:55] [DEBUG] CNetwork::OnWsRead
+[21:14:55] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:14:55] [DEBUG] heartbeat ACK
+[21:14:55] [DEBUG] CNetwork::WsRead
+[21:15:13] [DEBUG] DCC_SendChannelMessage(2, "[Lsrcr]Wajeeh(1) : hello discord (sending from the game)")
+[21:15:13] [DEBUG] CNetwork::HttpPost
+[21:15:13] [DEBUG] CNetwork::HttpSendRequest
+[21:15:13] [DEBUG] CNetwork::HttpPrepareRequest
+[21:15:13] [DEBUG] CNetwork::HttpSendRequest(/api/v5/channels/335802762287775745/messages) (actual send)
+[21:15:13] [DEBUG] CNetwork::HttpWriteRequest
+[21:15:13] [DEBUG] DCC_SendChannelMessage: return value: '1'
+[21:15:14] [DEBUG] CNetwork::OnWsRead
+[21:15:14] [DEBUG] OnWsRead: {
+    "d": {
+        "attachments": [],
+        "author": {
+            "avatar": "6025e1849342a67a0eaedb61cf2fe37f",
+            "bot": true,
+            "discriminator": "6510",
+            "id": "335798626989375488",
+            "username": "SAMP-BOT"
+        },
+        "channel_id": "335802762287775745",
+        "content": "[Lsrcr]Wajeeh(1) : hello discord (sending from the game)",
+        "edited_timestamp": null,
+        "embeds": [],
+        "id": "335816582737428501",
+        "mention_everyone": false,
+        "mention_roles": [],
+        "mentions": [],
+        "nonce": null,
+        "pinned": false,
+        "timestamp": "2017-07-15T16:15:12.495000+00:00",
+        "tts": false,
+        "type": 0
+    },
+    "op": 0,
+    "s": 4,
+    "t": "MESSAGE_CREATE"
+}
+[21:15:14] [DEBUG] CNetwork::WsRead
+[21:15:14] [DEBUG] CCallback::Execute(amx=0x217ff00, index=0)
+[21:15:14] [INFO] Executing callback 'DCC_OnChannelMessage'...
+[21:15:14] [DEBUG] executing AMX callback with index '0'
+[21:15:14] [DEBUG] AMX callback executed with error '0'
+[21:15:14] [INFO] Callback successfully executed.
+[21:15:36] [DEBUG] CNetwork::DoHeartbeat
+[21:15:36] [DEBUG] sending heartbeat
+[21:15:37] [DEBUG] CNetwork::OnWsRead
+[21:15:37] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:15:37] [DEBUG] heartbeat ACK
+[21:15:37] [DEBUG] CNetwork::WsRead
+[21:16:18] [DEBUG] CNetwork::DoHeartbeat
+[21:16:18] [DEBUG] sending heartbeat
+[21:16:18] [DEBUG] CNetwork::OnWsRead
+[21:16:18] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:16:18] [DEBUG] heartbeat ACK
+[21:16:18] [DEBUG] CNetwork::WsRead
+[21:16:59] [DEBUG] CNetwork::DoHeartbeat
+[21:16:59] [DEBUG] sending heartbeat
+[21:16:59] [DEBUG] CNetwork::OnWsRead
+[21:16:59] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:16:59] [DEBUG] heartbeat ACK
+[21:16:59] [DEBUG] CNetwork::WsRead
+[21:17:40] [DEBUG] CNetwork::DoHeartbeat
+[21:17:40] [DEBUG] sending heartbeat
+[21:17:40] [DEBUG] CNetwork::OnWsRead
+[21:17:40] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:17:40] [DEBUG] heartbeat ACK
+[21:17:40] [DEBUG] CNetwork::WsRead
+[21:18:21] [DEBUG] CNetwork::DoHeartbeat
+[21:18:21] [DEBUG] sending heartbeat
+[21:18:22] [DEBUG] CNetwork::OnWsRead
+[21:18:22] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:18:22] [DEBUG] heartbeat ACK
+[21:18:22] [DEBUG] CNetwork::WsRead
+[21:19:03] [DEBUG] CNetwork::DoHeartbeat
+[21:19:03] [DEBUG] sending heartbeat
+[21:19:03] [DEBUG] CNetwork::OnWsRead
+[21:19:03] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:19:03] [DEBUG] heartbeat ACK
+[21:19:03] [DEBUG] CNetwork::WsRead
+[21:19:44] [DEBUG] CNetwork::DoHeartbeat
+[21:19:44] [DEBUG] sending heartbeat
+[21:19:44] [DEBUG] CNetwork::OnWsRead
+[21:19:44] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:19:44] [DEBUG] heartbeat ACK
+[21:19:44] [DEBUG] CNetwork::WsRead
+[21:20:25] [DEBUG] CNetwork::DoHeartbeat
+[21:20:25] [DEBUG] sending heartbeat
+[21:20:25] [DEBUG] CNetwork::OnWsRead
+[21:20:25] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:20:25] [DEBUG] heartbeat ACK
+[21:20:25] [DEBUG] CNetwork::WsRead
+[21:21:06] [DEBUG] CNetwork::DoHeartbeat
+[21:21:06] [DEBUG] sending heartbeat
+[21:21:07] [DEBUG] CNetwork::OnWsRead
+[21:21:07] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:21:07] [DEBUG] heartbeat ACK
+[21:21:07] [DEBUG] CNetwork::WsRead
+[21:21:48] [DEBUG] CNetwork::DoHeartbeat
+[21:21:48] [DEBUG] sending heartbeat
+[21:21:48] [DEBUG] CNetwork::OnWsRead
+[21:21:48] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:21:48] [DEBUG] heartbeat ACK
+[21:21:48] [DEBUG] CNetwork::WsRead
+[21:22:29] [DEBUG] CNetwork::DoHeartbeat
+[21:22:29] [DEBUG] sending heartbeat
+[21:22:29] [DEBUG] CNetwork::OnWsRead
+[21:22:29] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:22:29] [DEBUG] heartbeat ACK
+[21:22:29] [DEBUG] CNetwork::WsRead
+[21:23:10] [DEBUG] CNetwork::DoHeartbeat
+[21:23:10] [DEBUG] sending heartbeat
+[21:23:10] [DEBUG] CNetwork::OnWsRead
+[21:23:10] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:23:10] [DEBUG] heartbeat ACK
+[21:23:10] [DEBUG] CNetwork::WsRead
+[21:23:51] [DEBUG] CNetwork::DoHeartbeat
+[21:23:51] [DEBUG] sending heartbeat
+[21:23:52] [DEBUG] CNetwork::OnWsRead
+[21:23:52] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:23:52] [DEBUG] heartbeat ACK
+[21:23:52] [DEBUG] CNetwork::WsRead
+[21:24:33] [DEBUG] CNetwork::DoHeartbeat
+[21:24:33] [DEBUG] sending heartbeat
+[21:24:33] [DEBUG] CNetwork::OnWsRead
+[21:24:33] [DEBUG] OnWsRead: {
+    "d": null,
+    "op": 11,
+    "s": null,
+    "t": null
+}
+[21:24:33] [DEBUG] heartbeat ACK
+[21:24:33] [DEBUG] CNetwork::WsRead
